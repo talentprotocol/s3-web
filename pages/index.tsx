@@ -13,11 +13,6 @@ const Home: NextPage = () => {
         <title>Talent Protocol</title>
         <meta name="description" content="TALENT APP" />
         <link rel="icon" href="/favicon.ico" />
-        {/* TODO: ADD STYLED COMPONENTS GLOBALS */}
-        <style>
-          {`* { box-sizing: border-box; }
-          html, body { margin: 0; padding: 0; }`}
-        </style>
       </Head>
       <main>
         <HeroSection>

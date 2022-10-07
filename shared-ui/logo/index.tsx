@@ -1,5 +1,5 @@
 import { Container } from "./styled";
 
 export const Logo = () => (
-    <Container color="LIGHT_PURPLE">Talet Protocol</Container>
+    <Container color="LIGHT_PURPLE">Talent Protocol</Container>
 )
