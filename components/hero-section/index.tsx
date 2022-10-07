@@ -1,11 +1,10 @@
 import { Container } from "./styled";
 
 interface Props {
-    children: JSX.Element | JSX.Element[]
+  children: JSX.Element | JSX.Element[];
+  className?: string;
 }
 
-export const HeroSection = ({ children }: Props) => (
-    <Container>
-        {children}
-    </Container>
-)
+export const HeroSection = ({ children, className }: Props) => (
+  <Container className={className}>{children}</Container>
+);

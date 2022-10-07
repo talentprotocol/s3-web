@@ -1,5 +1,3 @@
 import { Container } from "./styled";
 
-export const Mosaic = () => (
-    <Container/>
-);
+export const Mosaic = () => <Container />;
