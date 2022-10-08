@@ -21,3 +21,11 @@ export const DoorsRow = styled.div`
   gap: 25px;
   padding: 104px 0 122px;
 `;
+
+export const FooterRow = styled.div`
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+`;

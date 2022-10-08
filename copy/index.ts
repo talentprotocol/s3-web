@@ -33,5 +33,28 @@ export const COPY = {
   },
   DOOS_HERO: {
     TITLE: "Your key to open the doors to web3.",
+    DOORS: [
+      {
+        LABEL_TEXT: "Beginner",
+        TITLE: "Create your profile.",
+        SUB_TITLE:
+          "Unlock access to scholarships, work opportunities and a supportive community.",
+        BUTTON: "Get started"
+      },
+      {
+        LABEL_TEXT: "Intermediate",
+        TITLE: "Reserve your handle.",
+        SUB_TITLE: "Own your profile and career data as an NFT.",
+        BUTTON: "Learn more"
+      },
+      {
+        LABEL_TEXT: "Advanced",
+        TITLE: "Launch your token.",
+        SUB_TITLE:
+          "Build an on-chain community, truly vested in your career.",
+        BUTTON: "Learn more"
+      },
+    ],
+    FOOTER: "See all benefits"
   },
 };
