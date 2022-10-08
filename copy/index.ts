@@ -31,4 +31,7 @@ export const COPY = {
       },
     ],
   },
+  DOOS_HERO: {
+    TITLE: "Your key to open the doors to web3.",
+  },
 };

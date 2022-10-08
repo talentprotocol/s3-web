@@ -5,6 +5,7 @@ import { HeroSection } from "components/hero-section";
 import { LandingHero } from "components/landing-hero";
 import { Mosaic } from "components/mosaic";
 import { TabSection } from "components/tab-section";
+import { DoorsSection } from "components/doors-hero";
 
 const Home: NextPage = () => {
   return (
@@ -21,6 +22,9 @@ const Home: NextPage = () => {
           <Mosaic />
         </HeroSection>
         <TabSection />
+        <HeroSection>
+          <DoorsSection />
+        </HeroSection>
       </main>
     </>
   );

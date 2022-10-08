@@ -1,6 +1,8 @@
-import { COPY } from "copy";
 import { useMemo, useState } from "react";
+import Image from "next/image";
 import { Typography } from "shared-ui";
+import { COPY } from "copy";
+import webpageImage from "./assets/about/web-page.svg";
 import {
   Container,
   ContentArea,
@@ -33,15 +35,19 @@ export const TabSection = () => {
       <ContentPane>
         <ContentArea>
           <Typography
-            type="h2"
+            type="h3"
             text={COPY.TAB_HERO.TABS[activeTab].CONTENT_HEADER}
+            color="WHITE"
           />
           <Typography
-            type="body2"
+            type="body1"
             text={COPY.TAB_HERO.TABS[activeTab].CONTENT_DESCRIPTION}
+            color="WHITE"
           />
         </ContentArea>
-        <ImageHolder>123123</ImageHolder>
+        <ImageHolder>
+          <Image src={webpageImage} alt="webpage" />
+        </ImageHolder>
       </ContentPane>
     </Container>
   );

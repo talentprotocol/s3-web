@@ -8,6 +8,8 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
+  max-width: 962px;
+  margin: auto;
 `;
 
 export const PurpleText = styled.span`

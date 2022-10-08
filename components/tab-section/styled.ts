@@ -36,18 +36,26 @@ export const TabElement = styled.span<TabElementProps>`
 
 export const ContentPane = styled.div`
   max-width: 1024px;
+  height: 100%;
   margin: auto;
   display: flex;
   justify-content: center;
+  padding-top: 122px;
+  gap: 122px;
 `;
 
 export const ContentArea = styled.article`
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  flex-basis: 50%;
+  flex-basis: 372px;
+  min-width: 372px;
 `;
 
 export const ImageHolder = styled.div`
-  position: relative;
-  flex-basis: 50%;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
 `;
