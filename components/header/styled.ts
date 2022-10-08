@@ -12,4 +12,5 @@ export const LogoArea = styled.div`
 
 export const NavArea = styled.nav`
   display: flex;
+  gap: 10px;
 `;

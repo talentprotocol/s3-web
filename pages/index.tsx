@@ -20,7 +20,7 @@ const Home: NextPage = () => {
           <LandingHero />
           <Mosaic />
         </HeroSection>
-        <TabSection/>
+        <TabSection />
       </main>
     </>
   );

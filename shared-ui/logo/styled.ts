@@ -1,13 +1,13 @@
 import styled from "styled-components";
-import { fontNormal } from "shared-ui/typography";
+import { COLORS } from "../colors";
+import { fontNormal } from "../typography";
 import { LogoStyledProps } from "./types";
-import { COLORS } from "shared-ui/colors";
 
 export const Container = styled.span<LogoStyledProps>`
-    ${fontNormal};
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 20px;
-    color: ${({ color }) => COLORS[color]};
+  ${fontNormal};
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 20px;
+  color: ${({ color }) => COLORS[color]};
 `;

@@ -1,5 +1,5 @@
 import { COPY } from "copy";
-import { Typography } from "shared-ui/typography";
+import { Typography } from "shared-ui";
 import { Container, PurpleText } from "./styled";
 
 export const LandingHero = () => (
@@ -9,7 +9,7 @@ export const LandingHero = () => (
         {COPY.LANDING_HERO.TITLE_BLACK_1}
         <PurpleText>{COPY.LANDING_HERO.TITLE_PURPLE}</PurpleText>
         {COPY.LANDING_HERO.TITLE_BLACK_2}
-      </> 
+      </>
     </Typography>
     <Typography text={COPY.LANDING_HERO.SUBTITLE} type="body1" />
   </Container>

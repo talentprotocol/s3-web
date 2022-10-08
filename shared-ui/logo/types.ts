@@ -1,5 +1,5 @@
-import { AvailableColors } from "shared-ui/colors";
+import { AvailableColors } from "../colors";
 
 export interface LogoStyledProps {
-    color: AvailableColors;
+  color: AvailableColors;
 }

@@ -18,5 +18,5 @@ export enum TypographyTypeEnum {
 export interface Props {
   type: TypographyType;
   text?: string;
-  children?: JSX.Element
+  children?: JSX.Element;
 }

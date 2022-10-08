@@ -1,4 +1,5 @@
-import { Logo } from "shared-ui/logo";
+import { COPY } from "copy";
+import { Button, Logo } from "shared-ui";
 import { Container, LogoArea, NavArea } from "./styled";
 
 export const Header = () => (
@@ -7,8 +8,18 @@ export const Header = () => (
       <Logo />
     </LogoArea>
     <NavArea>
-      <a href="https://google.com">Login</a>
-      <a href="https://google.com">Signup</a>
+      <Button
+        text={COPY.LANDING_HERO.HEADER_LOGIN}
+        type="link"
+        variant="secondary"
+        href="/"
+      />
+      <Button
+        text={COPY.LANDING_HERO.HEADER_SIGN_UP}
+        type="link"
+        variant="primary"
+        href="/"
+      />
     </NavArea>
   </Container>
 );
