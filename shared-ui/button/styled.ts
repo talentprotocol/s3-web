@@ -23,6 +23,13 @@ const tertiaryStyles = css`
   border-radius: 32px;
 `;
 
+const quaternaryStyles = css`
+  background-color: ${COLORS.BLACK};
+  color: ${COLORS.WHITE};
+  padding: 14px 32px;
+  border-radius: 32px;
+`;
+
 export const ButtonLinkContainer = styled.a<StyledButtonProps>`
   ${fontNormal}
   font-style: normal;
@@ -38,6 +45,8 @@ export const ButtonLinkContainer = styled.a<StyledButtonProps>`
         return secondaryStyles;
       case VariantTypeEnum.TERTIARY:
         return tertiaryStyles;
+      case VariantTypeEnum.QUATERNARY:
+        return quaternaryStyles;
       case VariantTypeEnum.PRIMARY:
       default:
         return primaryStyles;

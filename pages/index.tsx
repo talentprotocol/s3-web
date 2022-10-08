@@ -7,6 +7,8 @@ import { Mosaic } from "components/mosaic";
 import { TabSection } from "components/tab-section";
 import { DoorsSection } from "components/doors-hero";
 import { ProfileSection } from "components/profile-section";
+import { CareerCircleSection } from "components/career-circle-section";
+import { OpportunitySection } from "components/opportunity-section";
 
 const Home: NextPage = () => {
   return (
@@ -27,6 +29,8 @@ const Home: NextPage = () => {
           <DoorsSection />
         </HeroSection>
         <ProfileSection />
+        <CareerCircleSection />
+        <OpportunitySection />
       </main>
     </>
   );

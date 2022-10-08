@@ -9,32 +9,32 @@ import {
   InnerContainer,
 } from "./styled";
 
-export const ProfileSection = () => (
+export const CareerCircleSection = () => (
   <Container>
     <InnerContainer>
+      <ImageHolder></ImageHolder>
       <ContentArea>
-        <LabelTag text={COPY.PROFILE_HERO.TAG} type="secondary" />
+        <LabelTag text={COPY.CAREER_CIRCLE_SECTION.TAG} type="default" />
         <Typography
           type="h2"
-          text={COPY.PROFILE_HERO.TITLE}
-          color="WHITE"
+          text={COPY.CAREER_CIRCLE_SECTION.TITLE}
+          color="BLACK"
         />
         <Typography
           type="body2"
-          text={COPY.PROFILE_HERO.TEXT}
-          color="WHITE"
+          text={COPY.CAREER_CIRCLE_SECTION.TEXT}
+          color="BLACK"
         />
         <ActionArea>
           <Button
-            text={COPY.PROFILE_HERO.BUTTON}
+            text={COPY.CAREER_CIRCLE_SECTION.BUTTON}
             type="link"
-            variant="tertiary"
+            variant="quaternary"
           >
             <ButtonIcon>--E</ButtonIcon>
           </Button>
         </ActionArea>
       </ContentArea>
-      <ImageHolder></ImageHolder>
     </InnerContainer>
   </Container>
 );

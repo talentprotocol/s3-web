@@ -63,4 +63,16 @@ export const COPY = {
     TEXT: "Claim ownership of your profile. Your career data and your social graph, stored as an NFT. You decide where and how to use it. You’re in control.",
     BUTTON: "Create your profile",
   },
+  CAREER_CIRCLE_SECTION: {
+    TAG: "Community",
+    TITLE: "Start a career circle, your token-gated community.",
+    TEXT: "A Career Circle is your personal community of supporters. You can token-gate it with NFTs or a Social Token. Give away your tokens to people that helped you in the past and sell them to new supporters.",
+    BUTTON: "Apply for a Token",
+  },
+  OPPORTUNITY_SECTION: {
+    TAG: "Opportunities",
+    TITLE: "There’s a web3 opportunity waiting for you.",
+    TEXT: "Access a curated list of fresh opportunities. Work on exciting web3 projects, meet a co-founder, partner on side projects & more.",
+    BUTTON: "Discover opportunities",
+  }
 };

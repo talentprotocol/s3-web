@@ -9,26 +9,26 @@ import {
   InnerContainer,
 } from "./styled";
 
-export const ProfileSection = () => (
+export const OpportunitySection = () => (
   <Container>
     <InnerContainer>
       <ContentArea>
-        <LabelTag text={COPY.PROFILE_HERO.TAG} type="secondary" />
+        <LabelTag text={COPY.OPPORTUNITY_SECTION.TAG} type="default" />
         <Typography
           type="h2"
-          text={COPY.PROFILE_HERO.TITLE}
-          color="WHITE"
+          text={COPY.OPPORTUNITY_SECTION.TITLE}
+          color="BLACK"
         />
         <Typography
           type="body2"
-          text={COPY.PROFILE_HERO.TEXT}
-          color="WHITE"
+          text={COPY.OPPORTUNITY_SECTION.TEXT}
+          color="BLACK"
         />
         <ActionArea>
           <Button
-            text={COPY.PROFILE_HERO.BUTTON}
+            text={COPY.OPPORTUNITY_SECTION.BUTTON}
             type="link"
-            variant="tertiary"
+            variant="quaternary"
           >
             <ButtonIcon>--E</ButtonIcon>
           </Button>
