@@ -1,3 +1,5 @@
+import { AvailableColors } from "../colors";
+
 export type TypographyType =
   | "h1"
   | "h2"
@@ -18,5 +20,10 @@ export enum TypographyTypeEnum {
 export interface Props {
   type: TypographyType;
   text?: string;
+  color?: AvailableColors;
   children?: JSX.Element;
+}
+
+export interface StyledTypographyProps {
+  color?: AvailableColors;
 }

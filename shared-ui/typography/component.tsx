@@ -1,7 +1,12 @@
 import { H1, H2, H3, BODY1, BODY2, GENERAL } from "./styled";
 import { Props, TypographyTypeEnum } from "./types";
 
-export const Typography = ({ text, type, children }: Props) => {
+export const Typography = ({
+  text,
+  type,
+  color,
+  children,
+}: Props) => {
   switch (type) {
     case TypographyTypeEnum.H1:
       return <H1>{text || children}</H1>;

@@ -14,6 +14,6 @@ export const Button = ({ text, type, variant, href }: Props) => {
       );
     case ButtonTypeEnum.DEFAULT:
     default:
-      return <div>default</div>;
+      return <div>TBD</div>;
   }
 };
