@@ -16,6 +16,13 @@ const secondaryStyles = css`
   align-items: center;
 `;
 
+const tertiaryStyles = css`
+  background-color: ${COLORS.WHITE};
+  color: ${COLORS.BLACK};
+  padding: 14px 32px;
+  border-radius: 32px;
+`;
+
 export const ButtonLinkContainer = styled.a<StyledButtonProps>`
   ${fontNormal}
   font-style: normal;
@@ -24,8 +31,16 @@ export const ButtonLinkContainer = styled.a<StyledButtonProps>`
   line-height: 24px;
   text-decoration: none;
   cursor: pointer;
-  ${({ variant }) =>
-    variant === VariantTypeEnum.PRIMARY
-      ? primaryStyles
-      : secondaryStyles}
+  display: flex;
+  ${({ variant }) => {
+    switch (variant) {
+      case VariantTypeEnum.SECONDARY:
+        return secondaryStyles;
+      case VariantTypeEnum.TERTIARY:
+        return tertiaryStyles;
+      case VariantTypeEnum.PRIMARY:
+      default:
+        return primaryStyles;
+    }
+  }}
 `;

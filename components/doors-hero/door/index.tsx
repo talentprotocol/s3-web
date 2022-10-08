@@ -8,7 +8,7 @@ export const Door = ({
   labelText,
   title,
   subTitle,
-  buttonText
+  buttonText,
 }: Props) => {
   const textColor: AvailableColors = isHighlighted
     ? "WHITE"
@@ -19,7 +19,9 @@ export const Door = ({
       <Typography type="body1" text={title} color={textColor} />
       <Typography type="body2" text={subTitle} color={textColor} />
       <DoorFooter>
-        <DoorButton isHighlighted={isHighlighted}>{buttonText}</DoorButton>
+        <DoorButton isHighlighted={isHighlighted}>
+          {buttonText}
+        </DoorButton>
       </DoorFooter>
     </Container>
   );

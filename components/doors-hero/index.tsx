@@ -1,7 +1,12 @@
 import { COPY } from "copy";
 import { Typography } from "shared-ui";
 import { Door } from "./door";
-import { Container, DoorsRow, FooterRow, TitleContainer } from "./styled";
+import {
+  Container,
+  DoorsRow,
+  FooterRow,
+  TitleContainer,
+} from "./styled";
 
 export const DoorsSection = () => (
   <Container>

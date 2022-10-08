@@ -39,22 +39,28 @@ export const COPY = {
         TITLE: "Create your profile.",
         SUB_TITLE:
           "Unlock access to scholarships, work opportunities and a supportive community.",
-        BUTTON: "Get started"
+        BUTTON: "Get started",
       },
       {
         LABEL_TEXT: "Intermediate",
         TITLE: "Reserve your handle.",
         SUB_TITLE: "Own your profile and career data as an NFT.",
-        BUTTON: "Learn more"
+        BUTTON: "Learn more",
       },
       {
         LABEL_TEXT: "Advanced",
         TITLE: "Launch your token.",
         SUB_TITLE:
           "Build an on-chain community, truly vested in your career.",
-        BUTTON: "Learn more"
+        BUTTON: "Learn more",
       },
     ],
-    FOOTER: "See all benefits"
+    FOOTER: "See all benefits",
+  },
+  PROFILE_HERO: {
+    TAG: "Ownership",
+    TITLE: "Own your profile, control your future.",
+    TEXT: "Claim ownership of your profile. Your career data and your social graph, stored as an NFT. You decide where and how to use it. You’re in control.",
+    BUTTON: "Create your profile",
   },
 };

@@ -38,7 +38,7 @@ export const DoorButton = styled.button<StyledDoorProps>`
   border-radius: 32px;
   background: ${COLORS.BLACK};
   color: ${COLORS.WHITE};
-  border:none;
+  border: none;
   cursor: pointer;
 
   ${({ isHighlighted }) =>
