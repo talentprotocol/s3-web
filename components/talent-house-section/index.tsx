@@ -9,35 +9,42 @@ import {
   InnerContainer,
 } from "./styled";
 
-export const OpportunitySection = () => (
+export const TalentHouseSection = () => (
   <Container>
     <InnerContainer>
+      <ImageHolder></ImageHolder>
       <ContentArea>
         <LabelTag
-          text={COPY.OPPORTUNITY_SECTION.TAG}
-          type="default"
+          text={COPY.TALENT_HOUSE_SECTION.TAG}
+          type="tertiary"
         />
         <Typography
           type="h2"
-          text={COPY.OPPORTUNITY_SECTION.TITLE}
-          color="BLACK"
+          text={COPY.TALENT_HOUSE_SECTION.TITLE}
+          color="LIGHT_YELLOW"
         />
         <Typography
           type="body2"
-          text={COPY.OPPORTUNITY_SECTION.TEXT}
-          color="BLACK"
+          text={COPY.TALENT_HOUSE_SECTION.TEXT}
+          color="LIGHT_YELLOW"
         />
         <ActionArea>
           <Button
-            text={COPY.OPPORTUNITY_SECTION.BUTTON}
+            text={COPY.TALENT_HOUSE_SECTION.BUTTONS[0]}
             type="link"
-            variant="quaternary"
+            variant="pentanary"
+          >
+            <ButtonIcon>--E</ButtonIcon>
+          </Button>
+          <Button
+            text={COPY.TALENT_HOUSE_SECTION.BUTTONS[1]}
+            type="link"
+            variant="hexanary"
           >
             <ButtonIcon>--E</ButtonIcon>
           </Button>
         </ActionArea>
       </ContentArea>
-      <ImageHolder></ImageHolder>
     </InnerContainer>
   </Container>
 );

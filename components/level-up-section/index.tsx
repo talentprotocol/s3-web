@@ -9,29 +9,26 @@ import {
   InnerContainer,
 } from "./styled";
 
-export const OpportunitySection = () => (
+export const LevelUpSection = () => (
   <Container>
     <InnerContainer>
       <ContentArea>
-        <LabelTag
-          text={COPY.OPPORTUNITY_SECTION.TAG}
-          type="default"
-        />
+        <LabelTag text={COPY.LEVEL_UP_SECTION.TAG} type="secondary" />
         <Typography
           type="h2"
-          text={COPY.OPPORTUNITY_SECTION.TITLE}
-          color="BLACK"
+          text={COPY.LEVEL_UP_SECTION.TITLE}
+          color="WHITE"
         />
         <Typography
           type="body2"
-          text={COPY.OPPORTUNITY_SECTION.TEXT}
-          color="BLACK"
+          text={COPY.LEVEL_UP_SECTION.TEXT}
+          color="WHITE"
         />
         <ActionArea>
           <Button
-            text={COPY.OPPORTUNITY_SECTION.BUTTON}
+            text={COPY.LEVEL_UP_SECTION.BUTTON}
             type="link"
-            variant="quaternary"
+            variant="tertiary"
           >
             <ButtonIcon>--E</ButtonIcon>
           </Button>

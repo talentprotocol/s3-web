@@ -9,6 +9,8 @@ import { DoorsSection } from "components/doors-hero";
 import { ProfileSection } from "components/profile-section";
 import { CareerCircleSection } from "components/career-circle-section";
 import { OpportunitySection } from "components/opportunity-section";
+import { TalentHouseSection } from "components/talent-house-section";
+import { LevelUpSection } from "components/level-up-section";
 
 const Home: NextPage = () => {
   return (
@@ -31,6 +33,8 @@ const Home: NextPage = () => {
         <ProfileSection />
         <CareerCircleSection />
         <OpportunitySection />
+        <TalentHouseSection />
+        <LevelUpSection />
       </main>
     </>
   );

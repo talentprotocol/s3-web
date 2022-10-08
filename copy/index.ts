@@ -64,7 +64,7 @@ export const COPY = {
     BUTTON: "Create your profile",
   },
   CAREER_CIRCLE_SECTION: {
-    TAG: "Community",
+    TAG: " Community",
     TITLE: "Start a career circle, your token-gated community.",
     TEXT: "A Career Circle is your personal community of supporters. You can token-gate it with NFTs or a Social Token. Give away your tokens to people that helped you in the past and sell them to new supporters.",
     BUTTON: "Apply for a Token",
@@ -74,5 +74,17 @@ export const COPY = {
     TITLE: "There’s a web3 opportunity waiting for you.",
     TEXT: "Access a curated list of fresh opportunities. Work on exciting web3 projects, meet a co-founder, partner on side projects & more.",
     BUTTON: "Discover opportunities",
-  }
+  },
+  TALENT_HOUSE_SECTION: {
+    TAG: "Scholarships",
+    TITLE: "Talent House. Home to the next web3 builders.",
+    TEXT: "Win a scholarship to attend your first crypto event and hang out with the most talented innovators in the web3 space.",
+    BUTTONS: ["Apply to next edition", "See past editions"],
+  },
+  LEVEL_UP_SECTION: {
+    TAG: "Mentorship",
+    TITLE: "Level up your career.",
+    TEXT: "Looking for guidance? Get matched with a mentor or mentee who can help you grow, and access exclusive resources and events.",
+    BUTTON: "Find out more",
+  },
 };

@@ -14,7 +14,10 @@ export const CareerCircleSection = () => (
     <InnerContainer>
       <ImageHolder></ImageHolder>
       <ContentArea>
-        <LabelTag text={COPY.CAREER_CIRCLE_SECTION.TAG} type="default" />
+        <LabelTag
+          text={COPY.CAREER_CIRCLE_SECTION.TAG}
+          type="default"
+        />
         <Typography
           type="h2"
           text={COPY.CAREER_CIRCLE_SECTION.TITLE}

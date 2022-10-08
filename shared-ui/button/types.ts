@@ -10,9 +10,17 @@ export enum VariantTypeEnum {
   SECONDARY = "secondary",
   TERTIARY = "tertiary",
   QUATERNARY = "quaternary",
+  PENTANARY = "pentanary",
+  HEXANARY = "hexanary",
 }
 
-export type VariantType = "primary" | "secondary" | "tertiary" | "quaternary";
+export type VariantType =
+  | "primary"
+  | "secondary"
+  | "tertiary"
+  | "quaternary"
+  | "pentanary"
+  | "hexanary";
 
 export interface Props {
   text: string;

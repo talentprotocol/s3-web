@@ -42,3 +42,16 @@ export const SecondaryContainer = styled.span`{
   color: ${COLORS.WHITE};
   border-radius: 48px;
 `;
+
+export const TertiaryContainer = styled.span`{
+  ${fontNormal}
+  display: flex;
+  justify-content: center;
+  padding: 6px 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 165%;
+  border: 1px solid ${COLORS.LIGHT_YELLOW};
+  color: ${COLORS.LIGHT_YELLOW};
+  border-radius: 48px;
+`;
