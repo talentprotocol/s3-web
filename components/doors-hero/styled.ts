@@ -18,6 +18,7 @@ export const DoorsRow = styled.div`
   flex-grow: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 25px;
   padding: 104px 0 122px;
 `;
