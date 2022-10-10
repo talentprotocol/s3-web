@@ -1,4 +1,6 @@
+import Image from "next/image";
 import { COPY } from "copy";
+import ownershipImage from "./assets/ownership.png";
 import { Button, LabelTag, Typography } from "shared-ui";
 import {
   ActionArea,
@@ -34,7 +36,9 @@ export const ProfileSection = () => (
           </Button>
         </ActionArea>
       </ContentArea>
-      <ImageHolder></ImageHolder>
+      <ImageHolder>
+        <Image src={ownershipImage} alt="ownership"/>
+      </ImageHolder>
     </InnerContainer>
   </Container>
 );

@@ -34,21 +34,21 @@ export const TabSection = () => {
     <Container>
       <Tabs>{memoedTabs}</Tabs>
       <ContentPane>
-      <ContentArea>
-        <Typography
-          type="h3"
-          text={COPY.TAB_HERO.TABS[activeTab].CONTENT_HEADER}
-          color="WHITE"
-        />
-        <Typography
-          type="body1"
-          text={COPY.TAB_HERO.TABS[activeTab].CONTENT_DESCRIPTION}
-          color="WHITE"
-        />
-      </ContentArea>
+        <ContentArea>
+          <Typography
+            type="h3"
+            text={COPY.TAB_HERO.TABS[activeTab].CONTENT_HEADER}
+            color="WHITE"
+          />
+          <Typography
+            type="body1"
+            text={COPY.TAB_HERO.TABS[activeTab].CONTENT_DESCRIPTION}
+            color="WHITE"
+          />
+        </ContentArea>
         <ImageHolder>
-          <ImagePositioner >
-            <Image priority src={profileImage} alt="webpage"/>
+          <ImagePositioner>
+            <Image priority src={profileImage} alt="webpage" />
           </ImagePositioner>
         </ImageHolder>
       </ContentPane>

@@ -1,5 +1,7 @@
 import { COPY } from "copy";
+import Image from "next/image";
 import { Button, LabelTag, Typography } from "shared-ui";
+import communityImage from "./assets/community.png";
 import {
   ActionArea,
   ButtonIcon,
@@ -12,7 +14,9 @@ import {
 export const CareerCircleSection = () => (
   <Container>
     <InnerContainer>
-      <ImageHolder></ImageHolder>
+      <ImageHolder>
+        <Image src={communityImage} alt="community"/>
+      </ImageHolder>
       <ContentArea>
         <LabelTag
           text={COPY.CAREER_CIRCLE_SECTION.TAG}

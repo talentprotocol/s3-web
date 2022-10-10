@@ -73,7 +73,7 @@ export const ImagePositioner = styled.div`
   @media (min-width: 1024px) {
     width: 850px;
   }
-  
+
   @media (min-width: 1240px) {
     width: 900px;
   }

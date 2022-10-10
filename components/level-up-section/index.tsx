@@ -1,5 +1,7 @@
+import Image from "next/image";
 import { COPY } from "copy";
 import { Button, LabelTag, Typography } from "shared-ui";
+import mentorshipImage from "./assets/mentorship.png";
 import {
   ActionArea,
   ButtonIcon,
@@ -34,7 +36,9 @@ export const LevelUpSection = () => (
           </Button>
         </ActionArea>
       </ContentArea>
-      <ImageHolder></ImageHolder>
+      <ImageHolder>
+        <Image src={mentorshipImage} alt="mentorship"/>
+      </ImageHolder>
     </InnerContainer>
   </Container>
 );

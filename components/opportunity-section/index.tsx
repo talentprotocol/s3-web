@@ -1,5 +1,7 @@
+import Image from "next/image";
 import { COPY } from "copy";
 import { Button, LabelTag, Typography } from "shared-ui";
+import opportunitiesImage from "./assets/opportunities.png";
 import {
   ActionArea,
   ButtonIcon,
@@ -37,7 +39,9 @@ export const OpportunitySection = () => (
           </Button>
         </ActionArea>
       </ContentArea>
-      <ImageHolder></ImageHolder>
+      <ImageHolder>
+        <Image src={opportunitiesImage} alt="opportunities"/>
+      </ImageHolder>
     </InnerContainer>
   </Container>
 );

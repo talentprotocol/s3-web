@@ -1,5 +1,7 @@
+import Image from "next/image";
 import { COPY } from "copy";
 import { Button, LabelTag, Typography } from "shared-ui";
+import scholarshipImage from "./assets/scholarship.png";
 import {
   ActionArea,
   ButtonIcon,
@@ -12,7 +14,9 @@ import {
 export const TalentHouseSection = () => (
   <Container>
     <InnerContainer>
-      <ImageHolder></ImageHolder>
+      <ImageHolder>
+        <Image src={scholarshipImage} alt="scholarship" />
+      </ImageHolder>
       <ContentArea>
         <LabelTag
           text={COPY.TALENT_HOUSE_SECTION.TAG}
