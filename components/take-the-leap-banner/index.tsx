@@ -13,31 +13,30 @@ import {
   StyledButtonWrapper,
   Slider,
   SliderContainer,
+  SliderEntryContainer,
 } from "./styled";
 
-const AMOUNT_OF_SLIDER_ENTRIES = 250;
+const AMOUNT_OF_SLIDER_ENTRIES = new Array(100).fill(undefined);
 
 export const TakeTheLeapBanner = () => {
   const emailRef = useRef<HTMLInputElement>(null);
   const sliderContent = useMemo(
     () =>
-      new Array(AMOUNT_OF_SLIDER_ENTRIES)
-        .fill(null)
-        .map((_, index) => (
-          <>
-            <Typography
-              type="h3"
-              key={`slider-piece-${index}`}
-              text={COPY.TAKE_THE_LEAP_BANNER.SLIDER}
-            />
-            <Typography
-              type="h3"
-              key={`slider-piece-suffix-${index}`}
-              text={COPY.TAKE_THE_LEAP_BANNER.SLIDER_SUFFIX}
-              color="LIGHT_PURPLE"
-            />
-          </>
-        )),
+      AMOUNT_OF_SLIDER_ENTRIES.map((_, index) => (
+        <SliderEntryContainer key={`silder-entry-${index}`}>
+          <Typography
+            type="h3"
+            key={`slider-piece-${index}`}
+            text={COPY.TAKE_THE_LEAP_BANNER.SLIDER}
+          />
+          <Typography
+            type="h3"
+            key={`slider-piece-suffix-${index}`}
+            text={COPY.TAKE_THE_LEAP_BANNER.SLIDER_SUFFIX}
+            color="LIGHT_PURPLE"
+          />
+        </SliderEntryContainer>
+      )),
     []
   );
   return (

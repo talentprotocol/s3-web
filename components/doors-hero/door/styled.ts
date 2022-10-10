@@ -4,12 +4,11 @@ import { StyledDoorProps } from "./types";
 
 export const Container = styled.div<StyledDoorProps>`
   flex-basis: 372px;
-  max-height: 380px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   padding: 40px;
-  gap: 40px;
+  gap: 16px;
   border-radius: 24px;
   border: 2px solid ${COLORS.GREY};
 
@@ -21,11 +20,20 @@ export const Container = styled.div<StyledDoorProps>`
     `}
 `;
 
+export const LabelContainer = styled.div`
+  margin-bottom: 24px;
+`;
+
+export const DescriptionContainer = styled.div`
+  height: 78px;
+`;
+
 export const DoorFooter = styled.div`
   flex-grow: 1;
   display: flex;
   align-items: flex-end;
   width: 100%;
+  margin-top: 24px;
 `;
 
 export const DoorButton = styled.button<StyledDoorProps>`

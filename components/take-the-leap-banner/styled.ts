@@ -80,12 +80,18 @@ const sliderRotation = keyframes`
     }
 `;
 
+export const SliderEntryContainer = styled.div`
+  display: flex;
+  gap: 12px;
+`;
+
 export const SliderContainer = styled.section`
   position: relative;
   background: ${COLORS.YELLOW};
   height: 96px;
   overflow-x: hidden;
   border: 2px solid ${COLORS.DARK_BLUE};
+  overflow-y: hidden;
 `;
 
 export const Slider = styled.div`

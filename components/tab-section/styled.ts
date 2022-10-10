@@ -1,13 +1,13 @@
 import styled, { css } from "styled-components";
 import { HeroSection } from "components/hero-section";
 import { COLORS, fontNormal } from "shared-ui";
-import { TabElementProps } from "./types";
+import { ImagePositionerProps, TabElementProps } from "./types";
 
 export const Container = styled(HeroSection)`
   background-color: ${COLORS.LIGHT_PURPLE};
   display: flex;
   flex-direction: column;
-  padding: 88px 0 122px;
+  padding: 88px 140px 122px;
 `;
 
 export const Tabs = styled.div`
@@ -35,7 +35,7 @@ export const TabElement = styled.span<TabElementProps>`
 `;
 
 export const ContentPane = styled.div`
-  max-width: 1024px;
+  max-width: 1240px;
   height: 100%;
   margin: auto;
   display: flex;
@@ -50,12 +50,21 @@ export const ContentArea = styled.article`
   flex-direction: column;
   flex-basis: 372px;
   min-width: 372px;
+  gap: 24px;
 `;
 
 export const ImageHolder = styled.div`
   flex-grow: 1;
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
+  position: relative;
+`;
+
+export const ImagePositioner = styled.div<ImagePositionerProps>`
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  ${({ width }) => width && css`
+    width: ${width * 0.6}px;
+  `}
 `;

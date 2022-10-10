@@ -141,7 +141,7 @@ export const COPY = {
         },
         {
           NAME: "Privacy Policy",
-        }
+        },
       ],
     },
     SOCIALS: {

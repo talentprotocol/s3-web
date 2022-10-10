@@ -1,5 +1,11 @@
 import { AvailableColors, LabelTag, Typography } from "shared-ui";
-import { Container, DoorButton, DoorFooter } from "./styled";
+import {
+  Container,
+  DescriptionContainer,
+  DoorButton,
+  DoorFooter,
+  LabelContainer,
+} from "./styled";
 import { Props } from "./types";
 
 export const Door = ({
@@ -15,9 +21,13 @@ export const Door = ({
     : "BLACK";
   return (
     <Container isHighlighted={isHighlighted}>
-      <LabelTag type={labelType} text={labelText} />
+      <LabelContainer>
+        <LabelTag type={labelType} text={labelText} />
+      </LabelContainer>
       <Typography type="body1" text={title} color={textColor} />
-      <Typography type="body2" text={subTitle} color={textColor} />
+      <DescriptionContainer>
+        <Typography type="body2" text={subTitle} color={textColor} />
+      </DescriptionContainer>
       <DoorFooter>
         <DoorButton isHighlighted={isHighlighted}>
           {buttonText}
