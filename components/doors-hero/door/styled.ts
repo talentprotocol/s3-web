@@ -4,6 +4,7 @@ import { StyledDoorProps } from "./types";
 
 export const Container = styled.div<StyledDoorProps>`
   flex-basis: 372px;
+  max-height: 380px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;

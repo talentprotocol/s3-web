@@ -2,8 +2,6 @@ import styled from "styled-components";
 import { COLORS } from "../colors";
 import { fontNormal } from "../typography";
 
-console.log(COLORS);
-
 export const DefaultContainer = styled.span`
   ${fontNormal}
   display: flex;
