@@ -103,6 +103,63 @@ export const COPY = {
     TITLE_LIGHT_YELLOW: "Fully open-source and",
     TITLE_YELLOW: "building in public.",
     TEXT: "We believe that openness and transparency are better for the world. That's why we're fully open-source, building in public, and on a path to progressive decentralization.",
-    BUTTON: "Find out more"
-  }
+    BUTTON: "Find out more",
+  },
+  FOOTER: {
+    LOGO: "Talent Protocol",
+    DESCRIPTION:
+      "The web3 professional community for high-potential builders.",
+    COPYRIGHT: [
+      "Talent Protocol MTÜ © 2022",
+      "contact@talentprotocol.com",
+    ],
+    PROJECT: {
+      TITLE: "Project",
+      LINKS: [
+        {
+          NAME: "About",
+        },
+        {
+          NAME: "Blog",
+        },
+        {
+          NAME: "Bounties",
+        },
+        {
+          NAME: "Ambassadors",
+        },
+      ],
+    },
+    HELP: {
+      TITLE: "Help",
+      LINKS: [
+        {
+          NAME: "FAQ",
+        },
+        {
+          NAME: "Terms of Service ",
+        },
+        {
+          NAME: "Privacy Policy",
+        }
+      ],
+    },
+    SOCIALS: {
+      TITLE: "Socials",
+      LINKS: [
+        {
+          NAME: "Twitter",
+        },
+        {
+          NAME: "Discord",
+        },
+        {
+          NAME: "Github",
+        },
+        {
+          NAME: "Telegram",
+        },
+      ],
+    },
+  },
 };

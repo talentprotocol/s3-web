@@ -14,6 +14,7 @@ import { LevelUpSection } from "components/level-up-section";
 import { TrustSection } from "components/trust-section";
 import { TakeTheLeapBanner } from "components/take-the-leap-banner";
 import { OpenSourceBanner } from "components/open-source-banner";
+import { Footer } from "components/footer";
 
 const Home: NextPage = () => {
   return (
@@ -44,6 +45,7 @@ const Home: NextPage = () => {
         <TakeTheLeapBanner />
         <OpenSourceBanner />
       </main>
+      <Footer />
     </>
   );
 };

@@ -85,6 +85,7 @@ export const SliderContainer = styled.section`
   background: ${COLORS.YELLOW};
   height: 96px;
   overflow-x: hidden;
+  border: 2px solid ${COLORS.DARK_BLUE};
 `;
 
 export const Slider = styled.div`
