@@ -87,4 +87,7 @@ export const COPY = {
     TEXT: "Looking for guidance? Get matched with a mentor or mentee who can help you grow, and access exclusive resources and events.",
     BUTTON: "Find out more",
   },
+  TRUST_SECTION: {
+    TITLE: "Trusted by builders worldwide.",
+  },
 };

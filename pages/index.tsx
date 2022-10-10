@@ -11,6 +11,7 @@ import { CareerCircleSection } from "components/career-circle-section";
 import { OpportunitySection } from "components/opportunity-section";
 import { TalentHouseSection } from "components/talent-house-section";
 import { LevelUpSection } from "components/level-up-section";
+import { TrustSection } from "components/trust-section";
 
 const Home: NextPage = () => {
   return (
@@ -35,6 +36,9 @@ const Home: NextPage = () => {
         <OpportunitySection />
         <TalentHouseSection />
         <LevelUpSection />
+        <HeroSection>
+          <TrustSection />
+        </HeroSection>
       </main>
     </>
   );
