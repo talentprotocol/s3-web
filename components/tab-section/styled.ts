@@ -8,6 +8,7 @@ export const Container = styled(HeroSection)`
   display: flex;
   flex-direction: column;
   padding: 88px 140px 122px;
+  overflow-x: hidden;
 `;
 
 export const Tabs = styled.div`
@@ -65,6 +66,6 @@ export const ImagePositioner = styled.div<ImagePositionerProps>`
   top: 50%;
   transform: translate(0, -50%);
   ${({ width }) => width && css`
-    width: ${width < 1200 ? width * 0.6 : 1200}px;
+    width: ${width < 1100 ? width * 0.6 : 1100}px;
   `}
 `;
