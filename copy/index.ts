@@ -90,4 +90,11 @@ export const COPY = {
   TRUST_SECTION: {
     TITLE: "Trusted by builders worldwide.",
   },
+  TAKE_THE_LEAP_BANNER: {
+    TITLE_BLACK1: "Take the",
+    TITLE_PURPLE1: "leap to web3.",
+    SUBTITLE:
+      "Subscribe to our newsletter and we'll keep you in the loop with what’s exciting in the web3 world. Work opportunities from our partners and success stories from our community.",
+    INPUT_PLACEHOLDER: "What's your email?"
+  },
 };

@@ -12,6 +12,7 @@ import { OpportunitySection } from "components/opportunity-section";
 import { TalentHouseSection } from "components/talent-house-section";
 import { LevelUpSection } from "components/level-up-section";
 import { TrustSection } from "components/trust-section";
+import { TakeTheLeapBanner } from "components/take-the-leap-banner";
 
 const Home: NextPage = () => {
   return (
@@ -39,6 +40,7 @@ const Home: NextPage = () => {
         <HeroSection>
           <TrustSection />
         </HeroSection>
+        <TakeTheLeapBanner />
       </main>
     </>
   );
