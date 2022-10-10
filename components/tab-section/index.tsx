@@ -12,11 +12,9 @@ import {
   TabElement,
   Tabs,
 } from "./styled";
-import { useWindowSize } from "hooks/on-window-resize";
 
 export const TabSection = () => {
   const [activeTab, setActiveTab] = useState(0);
-  const windowSize = useWindowSize();
   const memoedTabs = useMemo(
     () =>
       COPY.TAB_HERO.TABS.map((tab, index) => {
@@ -32,28 +30,25 @@ export const TabSection = () => {
       }),
     [activeTab]
   );
-  const memoedContent = useMemo(() => (
-    <ContentArea>
-      <Typography
-        type="h3"
-        text={COPY.TAB_HERO.TABS[activeTab].CONTENT_HEADER}
-        color="WHITE"
-      />
-      <Typography
-        type="body1"
-        text={COPY.TAB_HERO.TABS[activeTab].CONTENT_DESCRIPTION}
-        color="WHITE"
-      />
-    </ContentArea>
-  ), [activeTab])
   return (
     <Container>
       <Tabs>{memoedTabs}</Tabs>
       <ContentPane>
-      {memoedContent}
+      <ContentArea>
+        <Typography
+          type="h3"
+          text={COPY.TAB_HERO.TABS[activeTab].CONTENT_HEADER}
+          color="WHITE"
+        />
+        <Typography
+          type="body1"
+          text={COPY.TAB_HERO.TABS[activeTab].CONTENT_DESCRIPTION}
+          color="WHITE"
+        />
+      </ContentArea>
         <ImageHolder>
-          <ImagePositioner width={windowSize.width}>
-            <Image src={profileImage} alt="webpage"/>
+          <ImagePositioner >
+            <Image priority src={profileImage} alt="webpage"/>
           </ImagePositioner>
         </ImageHolder>
       </ContentPane>

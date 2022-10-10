@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 import { HeroSection } from "components/hero-section";
 import { COLORS, fontNormal } from "shared-ui";
-import { ImagePositionerProps, TabElementProps } from "./types";
+import { TabElementProps } from "./types";
 
 export const Container = styled(HeroSection)`
   background-color: ${COLORS.LIGHT_PURPLE};
@@ -61,11 +61,20 @@ export const ImageHolder = styled.div`
   position: relative;
 `;
 
-export const ImagePositioner = styled.div<ImagePositionerProps>`
+export const ImagePositioner = styled.div`
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
-  ${({ width }) => width && css`
-    width: ${width < 1100 ? width * 0.6 : 1100}px;
-  `}
+
+  @media (min-width: 768px) {
+    width: 760px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 850px;
+  }
+  
+  @media (min-width: 1240px) {
+    width: 900px;
+  }
 `;
