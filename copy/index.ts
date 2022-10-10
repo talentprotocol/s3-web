@@ -95,6 +95,14 @@ export const COPY = {
     TITLE_PURPLE1: "leap to web3.",
     SUBTITLE:
       "Subscribe to our newsletter and we'll keep you in the loop with what’s exciting in the web3 world. Work opportunities from our partners and success stories from our community.",
-    INPUT_PLACEHOLDER: "What's your email?"
+    INPUT_PLACEHOLDER: "What's your email?",
+    SLIDER: "Reserve your handle",
+    SLIDER_SUFFIX: "--E",
   },
+  OPEN_SOURCE_BANNER: {
+    TITLE_LIGHT_YELLOW: "Fully open-source and",
+    TITLE_YELLOW: "building in public.",
+    TEXT: "We believe that openness and transparency are better for the world. That's why we're fully open-source, building in public, and on a path to progressive decentralization.",
+    BUTTON: "Find out more"
+  }
 };

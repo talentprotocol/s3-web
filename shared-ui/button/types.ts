@@ -12,6 +12,7 @@ export enum VariantTypeEnum {
   QUATERNARY = "quaternary",
   PENTANARY = "pentanary",
   HEXANARY = "hexanary",
+  SEPTENARY = "septenary"
 }
 
 export type VariantType =
@@ -20,7 +21,8 @@ export type VariantType =
   | "tertiary"
   | "quaternary"
   | "pentanary"
-  | "hexanary";
+  | "hexanary"
+  | "septenary";
 
 export interface Props {
   text: string;

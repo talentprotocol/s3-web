@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Button, COLORS, fontNormal } from "shared-ui";
 
 export const Container = styled.section`
@@ -47,27 +47,53 @@ export const StyledInput = styled.input`
 `;
 
 export const ButtonWrapper = styled.div`
-    position: relative;
+  position: relative;
 `;
 
 export const StyledButtonWrapper = styled.div`
-    position: absolute;
-    left: 17px;
-    top: -1px;
+  position: absolute;
+  left: 17px;
+  top: -1px;
 `;
 
 export const StyledButton = styled.button`
-    ${fontNormal}
-    width: 52px;
-    height: 52px;
-    overflow: hidden;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 24px;
-    padding: 12px;
-    background: ${COLORS.DARK_BLUE};
-    color: ${COLORS.LIGHT_YELLOW};
-    border-radius: 60%;
-    border: none;
+  ${fontNormal}
+  width: 52px;
+  height: 52px;
+  overflow: hidden;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 24px;
+  padding: 12px;
+  background: ${COLORS.DARK_BLUE};
+  color: ${COLORS.LIGHT_YELLOW};
+  border-radius: 60%;
+  border: none;
 `;
 
+const sliderRotation = keyframes`
+    from {
+        left: -290%;
+    }
+    to {
+        left: -10%;
+    }
+`;
+
+export const SliderContainer = styled.section`
+  position: relative;
+  background: ${COLORS.YELLOW};
+  height: 96px;
+  overflow-x: hidden;
+`;
+
+export const Slider = styled.div`
+  position: absolute;
+  display: flex;
+  gap: 12px;
+  padding: 24px 0;
+  overflow-x: scroll;
+  overflow: auto;
+  white-space: nowrap;
+  animation: ${sliderRotation} 60s linear infinite;
+`;

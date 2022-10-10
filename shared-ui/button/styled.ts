@@ -44,6 +44,14 @@ const hexanaryStyles = css`
   align-items: center;
 `;
 
+const septenaryStyles = css`
+  background-color: ${COLORS.YELLOW};
+  color: ${COLORS.BLACK};
+  padding: 14px 32px;
+  display: flex;
+  border-radius: 32px;
+`;
+
 export const ButtonLinkContainer = styled.a<StyledButtonProps>`
   ${fontNormal}
   font-style: normal;
@@ -65,6 +73,8 @@ export const ButtonLinkContainer = styled.a<StyledButtonProps>`
         return pentanaryStyles;
       case VariantTypeEnum.HEXANARY:
         return hexanaryStyles;
+      case VariantTypeEnum.SEPTENARY:
+        return septenaryStyles;
       case VariantTypeEnum.PRIMARY:
       default:
         return primaryStyles;
