@@ -65,6 +65,6 @@ export const ImagePositioner = styled.div<ImagePositionerProps>`
   top: 50%;
   transform: translate(0, -50%);
   ${({ width }) => width && css`
-    width: ${width * 0.6}px;
+    width: ${width < 1200 ? width * 0.6 : 1200}px;
   `}
 `;
