@@ -53,3 +53,17 @@ export const TertiaryContainer = styled.span`{
   color: ${COLORS.LIGHT_YELLOW};
   border-radius: 48px;
 `;
+
+export const QuaternaryContainer = styled.span`{
+  ${fontNormal}
+  display: flex;
+  justify-content: center;
+  padding: 6px 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 165%;
+  background: ${COLORS.YELLOW};
+  border: 1px solid ${COLORS.DARK_BLUE};
+  color: ${COLORS.DARK_BLUE};
+  border-radius: 48px;
+`;

@@ -1,6 +1,7 @@
 import {
   DefaultContainer,
   HighlightedContainer,
+  QuaternaryContainer,
   SecondaryContainer,
   TertiaryContainer,
 } from "./styled";
@@ -14,6 +15,8 @@ export const LabelTag = ({ text, type }: Props) => {
       return <SecondaryContainer>{text}</SecondaryContainer>;
     case TagTypeEnum.TERTIARY:
       return <TertiaryContainer>{text}</TertiaryContainer>;
+    case TagTypeEnum.QUATERNARY:
+      return <QuaternaryContainer>{text}</QuaternaryContainer>;
     case TagTypeEnum.DEFAULT:
     default:
       return <DefaultContainer>{text}</DefaultContainer>;

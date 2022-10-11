@@ -94,6 +94,12 @@ export const COPY = {
   },
   TRUST_SECTION: {
     TITLE: "Trusted by builders worldwide.",
+    TESTIMONIALS: [
+      {
+        TEXT: "Self-starter and go-getter fuelled by a curiousity for technology and social change. She currently works in the crypto team at Revolut, a UK-based fintech startup.",
+        AUTHOR: "Si Jia Wen, Crypto @ Revolut"
+      }
+    ]
   },
   TAKE_THE_LEAP_BANNER: {
     TITLE_BLACK1: "Take the",

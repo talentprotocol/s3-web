@@ -3,13 +3,15 @@ export enum TagTypeEnum {
   HIGHLIGHTED = "highlighted",
   SECONDARY = "secondary",
   TERTIARY = "tertiary",
+  QUATERNARY = "quaternary"
 }
 
 export type TagType =
   | "default"
   | "highlighted"
   | "secondary"
-  | "tertiary";
+  | "tertiary"
+  | "quaternary";
 
 export interface Props {
   type: TagType;
