@@ -4,6 +4,7 @@ import { COLORS, fontNormal } from "shared-ui";
 export const StyledFooter = styled.footer`
   background: ${COLORS.DARK_BLUE};
   border-top: 1px solid ${COLORS.LIGHT_YELLOW}33;
+  overflow: hidden;
 `;
 
 export const InnerContainer = styled.div`
