@@ -21,9 +21,11 @@ export const LandingHero = () => (
     </Typography>
     <Typography text={COPY.LANDING_HERO.SUBTITLE} type="body1" />
     <ReserveHandleContainer>
-      <HandleInput contentEditable spellCheck={false}>
-        {COPY.LANDING_HERO.RESERVE_TAL.PLACEHOLDER}
-      </HandleInput>
+      <HandleInput
+        contentEditable
+        spellCheck={false}
+        placeholder={COPY.LANDING_HERO.RESERVE_TAL.PLACEHOLDER}
+      />
       <TokenSuffix>{COPY.LANDING_HERO.RESERVE_TAL.TOKEN}</TokenSuffix>
       <ButtonContainer>
         <ReserveHandleButton>

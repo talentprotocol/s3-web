@@ -28,7 +28,9 @@ export const ReserveHandleContainer = styled.div`
   transform: translate(-38px, 0);
 `;
 
-export const HandleInput = styled.span`
+export const HandleInput = styled.span<{ placeholder: string }>`
+  max-width: 170px;
+  white-space: nowrap;
   ${fontNormal}
   background: none;
   outline: none;
@@ -36,10 +38,20 @@ export const HandleInput = styled.span`
   font-weight: 400;
   font-size: 16px;
   line-height: 165%;
+  overflow: hidden;
+
+  :empty:before {
+    content: "${({ placeholder }) => placeholder}";
+  }
+
+  :not:empty:focus::before {
+    content: "";
+  }
 `;
 
 export const TokenSuffix = styled.span`
   ${fontNormal}
+  min-width: 154px;
   display: flex;
   justify-content: flex-start;
   flex-grow: 1;
