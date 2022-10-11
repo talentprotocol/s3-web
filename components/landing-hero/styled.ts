@@ -42,6 +42,7 @@ export const HandleInput = styled.span<{ placeholder: string }>`
 
   :empty:before {
     content: "${({ placeholder }) => placeholder}";
+    color: ${COLORS.LIGHT_GREY};
   }
 
   :not:empty:focus::before {

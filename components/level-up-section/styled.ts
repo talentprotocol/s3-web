@@ -18,6 +18,7 @@ export const ContentArea = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
   gap: 24px;
 `;
 
