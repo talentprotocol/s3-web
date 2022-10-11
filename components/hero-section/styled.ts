@@ -6,4 +6,5 @@ export const Container = styled.section`
   display: flex;
   flex-direction: column;
   background-color: ${COLORS.WHITE};
+  overflow-x: hidden;
 `;
