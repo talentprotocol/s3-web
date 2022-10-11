@@ -56,13 +56,20 @@ export const Quotes = styled.div`
   font-size: 88px;
   line-height: 100%;
   margin-right: 16px;
+  position: absolute;
+  left: 0;
+  transform: translate(0, -40px);
 `;
 
 export const ContentRow = styled.div`
   display: flex;
+  align-items: center;
   flex-grow: 1;
   margin-top: 146px;
   width: 100%;
+  gap: 74px;
+  position: relative;
+  padding-left: 56px;
 `;
 
 export const DisclaimerColumn = styled.article`
@@ -72,4 +79,10 @@ export const DisclaimerColumn = styled.article`
   max-width: 564px;
   text-align: left;
   gap: 40px;
+`;
+
+export const ImageHolder = styled.div`
+  flex-grow: 1;
+  width: 328px;
+  position: relative;
 `;

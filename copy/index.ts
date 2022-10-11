@@ -101,6 +101,9 @@ export const COPY = {
       }
     ]
   },
+  PARTNERS_BANNER: {
+    TITLE: "Partners that believe in us."
+  },
   TAKE_THE_LEAP_BANNER: {
     TITLE_BLACK1: "Take the",
     TITLE_PURPLE1: "leap to web3.",

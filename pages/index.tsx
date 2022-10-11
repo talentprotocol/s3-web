@@ -15,6 +15,7 @@ import { TrustSection } from "components/trust-section";
 import { TakeTheLeapBanner } from "components/take-the-leap-banner";
 import { OpenSourceBanner } from "components/open-source-banner";
 import { Footer } from "components/footer";
+import { PartnersBanner } from "components/partners-banner";
 
 const Home: NextPage = () => {
   return (
@@ -42,6 +43,7 @@ const Home: NextPage = () => {
         <HeroSection>
           <TrustSection />
         </HeroSection>
+        <PartnersBanner />
         <TakeTheLeapBanner />
         <OpenSourceBanner />
       </main>
