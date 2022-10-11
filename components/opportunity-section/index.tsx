@@ -40,7 +40,7 @@ export const OpportunitySection = () => (
         </ActionArea>
       </ContentArea>
       <ImageHolder>
-        <Image src={opportunitiesImage} alt="opportunities"/>
+        <Image src={opportunitiesImage} alt="opportunities" />
       </ImageHolder>
     </InnerContainer>
   </Container>

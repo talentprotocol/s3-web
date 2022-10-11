@@ -7,6 +7,11 @@ export const COPY = {
     TITLE_BLACK_2: ".",
     SUBTITLE:
       "Create a beautiful web3 resume, make meaningful connections and access exciting web3 opportunities.",
+    RESERVE_TAL: {
+      PLACEHOLDER: "yournamehere",
+      TOKEN: ".tal",
+      BUTTON: "Reserve handle",
+    },
   },
   TAB_HERO: {
     TABS: [

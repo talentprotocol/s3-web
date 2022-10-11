@@ -15,7 +15,7 @@ export const CareerCircleSection = () => (
   <Container>
     <InnerContainer>
       <ImageHolder>
-        <Image src={communityImage} alt="community"/>
+        <Image src={communityImage} alt="community" />
       </ImageHolder>
       <ContentArea>
         <LabelTag

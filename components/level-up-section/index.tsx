@@ -37,7 +37,7 @@ export const LevelUpSection = () => (
         </ActionArea>
       </ContentArea>
       <ImageHolder>
-        <Image src={mentorshipImage} alt="mentorship"/>
+        <Image src={mentorshipImage} alt="mentorship" />
       </ImageHolder>
     </InnerContainer>
   </Container>
