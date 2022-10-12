@@ -18,5 +18,5 @@ export const COLORS: Record<AvailableColors, string> = {
   YELLOW: "#BBED55",
   LIGHT_YELLOW: "#EAFFD9",
   ORANGE: "#FD9A00",
-  LIGHT_GREY: "#697F8F"
+  LIGHT_GREY: "#697F8F",
 };

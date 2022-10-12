@@ -11,6 +11,7 @@ export const Container = styled.div`
   max-width: 962px;
   margin: auto;
   gap: 32px;
+  padding: 0 24px;
 `;
 
 export const PurpleText = styled.span`
@@ -18,14 +19,18 @@ export const PurpleText = styled.span`
 `;
 
 export const ReserveHandleContainer = styled.div`
-  width: 370px;
+  width: 328px;
   margin-top: 8px;
-  padding: 12px 24px;
-  border-radius: 56px;
   border: 1px solid ${COLORS.DARK_BLUE};
   display: flex;
+  padding: 12px 24px;
   gap: 4px;
-  transform: translate(-38px, 0);
+  border-radius: 56px;
+  transform: translate(-6px, 0);
+
+  @media (min-width: 768px) {
+    width: 370px;
+  }
 `;
 
 export const HandleInput = styled.span<{ placeholder: string }>`
@@ -72,7 +77,7 @@ export const ReserveHandleButton = styled.button`
   position: absolute;
   padding: 13px 32px;
   top: -13px;
-  left: -20px;
+  left: -24px;
   transform: translate(-50%, 0);
   border-radius: 32px;
   background: ${COLORS.BLACK};

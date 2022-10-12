@@ -22,7 +22,7 @@ export const PartnersBanner = () => {
   );
   return (
     <Container>
-        <Typography type="h2" text={COPY.PARTNERS_BANNER.TITLE}/>
+      <Typography type="h2" text={COPY.PARTNERS_BANNER.TITLE} />
       <SliderContainer>
         <Slider>{sliderContent}</Slider>
       </SliderContainer>

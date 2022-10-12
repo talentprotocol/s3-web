@@ -1,13 +1,17 @@
+import { HeroSection } from "components/hero-section";
 import styled from "styled-components";
 
-export const Container = styled.div`
-  height: 100%;
+export const Container = styled(HeroSection)`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 120px 0 140px;
+  padding: 80px 24px;
   overflow-x: hidden;
+
+  @media (min-width: 768px) {
+    padding: 120px 0 140px;
+  }
 `;
 
 export const TitleContainer = styled.div`
@@ -20,8 +24,14 @@ export const DoorsRow = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   gap: 25px;
-  padding: 104px 0 122px;
+  padding: 48px 0;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    padding: 104px 0 122px;
+  }
 `;
 
 export const FooterRow = styled.div`

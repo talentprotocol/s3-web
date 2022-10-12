@@ -3,7 +3,7 @@ export enum TagTypeEnum {
   HIGHLIGHTED = "highlighted",
   SECONDARY = "secondary",
   TERTIARY = "tertiary",
-  QUATERNARY = "quaternary"
+  QUATERNARY = "quaternary",
 }
 
 export type TagType =

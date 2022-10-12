@@ -2,7 +2,15 @@ import Image from "next/image";
 import { LabelTag, Typography, CompanyTag } from "shared-ui";
 import { COPY } from "copy";
 import tolgaImage from "./assets/Tolga.png";
-import { Container, ContentRow, DisclaimerColumn, ImageHolder, Quotes, TagContainer, TitleWrapper } from "./styled";
+import {
+  Container,
+  ContentRow,
+  DisclaimerColumn,
+  ImageHolder,
+  Quotes,
+  TagContainer,
+  TitleWrapper,
+} from "./styled";
 
 export const TrustSection = () => (
   <Container>
@@ -19,11 +27,17 @@ export const TrustSection = () => (
     <ContentRow>
       <Quotes>“</Quotes>
       <DisclaimerColumn>
-        <Typography type="body1" text={COPY.TRUST_SECTION.TESTIMONIALS[0].TEXT} />
-        <LabelTag text={COPY.TRUST_SECTION.TESTIMONIALS[0].AUTHOR} type="quaternary" />
+        <Typography
+          type="body1"
+          text={COPY.TRUST_SECTION.TESTIMONIALS[0].TEXT}
+        />
+        <LabelTag
+          text={COPY.TRUST_SECTION.TESTIMONIALS[0].AUTHOR}
+          type="quaternary"
+        />
       </DisclaimerColumn>
       <ImageHolder>
-          <Image src={tolgaImage} alt="avatar" />
+        <Image src={tolgaImage} alt="avatar" />
       </ImageHolder>
     </ContentRow>
   </Container>

@@ -7,8 +7,12 @@ export const Container = styled(HeroSection)`
   background-color: ${COLORS.LIGHT_PURPLE};
   display: flex;
   flex-direction: column;
-  padding: 88px 140px 122px;
   overflow-x: hidden;
+  padding: 80px 24px;
+
+  @media (min-width: 768px) {
+    padding: 88px 140px 122px;
+  }
 `;
 
 export const Tabs = styled.div`
@@ -26,6 +30,7 @@ export const TabElement = styled.span<TabElementProps>`
   line-height: 24px;
   padding: 8px 32px;
   cursor: pointer;
+
   ${({ active }) =>
     active &&
     css`
@@ -40,30 +45,45 @@ export const ContentPane = styled.div`
   height: 100%;
   margin: auto;
   display: flex;
-  justify-content: center;
-  padding-top: 122px;
-  gap: 122px;
+  justify-content: flex-start;
+  flex-direction: column-reverse;
+  gap: 48px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    padding-top: 122px;
+  }
 `;
 
 export const ContentArea = styled.article`
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: column;
   flex-basis: 372px;
   min-width: 372px;
   gap: 24px;
+
+  @media (min-width: 768px) {
+    justify-content: center;
+  }
 `;
 
 export const ImageHolder = styled.div`
-  flex-grow: 1;
-  width: 100%;
-  height: 100%;
   position: relative;
+  flex-basis: 100%;
+
+  @media (min-width: 768px) {
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    padding-top: 122px;
+  }
 `;
 
 export const ImagePositioner = styled.div`
   position: absolute;
   top: 50%;
+  height: 100%;
   transform: translate(0, -50%);
 
   @media (min-width: 768px) {

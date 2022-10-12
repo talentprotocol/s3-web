@@ -11,6 +11,7 @@ export const COPY = {
       PLACEHOLDER: "yournamehere",
       TOKEN: ".tal",
       BUTTON: "Reserve handle",
+      BUTTON_MOBILE: "Claim"
     },
   },
   TAB_HERO: {
@@ -97,12 +98,12 @@ export const COPY = {
     TESTIMONIALS: [
       {
         TEXT: "Self-starter and go-getter fuelled by a curiousity for technology and social change. She currently works in the crypto team at Revolut, a UK-based fintech startup.",
-        AUTHOR: "Si Jia Wen, Crypto @ Revolut"
-      }
-    ]
+        AUTHOR: "Si Jia Wen, Crypto @ Revolut",
+      },
+    ],
   },
   PARTNERS_BANNER: {
-    TITLE: "Partners that believe in us."
+    TITLE: "Partners that believe in us.",
   },
   TAKE_THE_LEAP_BANNER: {
     TITLE_BLACK1: "Take the",
