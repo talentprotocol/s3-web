@@ -13,6 +13,7 @@ export enum VariantTypeEnum {
   PENTANARY = "pentanary",
   HEXANARY = "hexanary",
   SEPTENARY = "septenary",
+  OCTONARY = "octonary"
 }
 
 export type VariantType =
@@ -22,10 +23,11 @@ export type VariantType =
   | "quaternary"
   | "pentanary"
   | "hexanary"
-  | "septenary";
+  | "septenary"
+  | "octonary";
 
 export interface Props {
-  text: string;
+  text?: string;
   type: ButtonType;
   variant: VariantType;
   href?: string;

@@ -16,8 +16,11 @@ import { TakeTheLeapBanner } from "components/take-the-leap-banner";
 import { OpenSourceBanner } from "components/open-source-banner";
 import { Footer } from "components/footer";
 import { PartnersBanner } from "components/partners-banner";
+import { Sidebar } from "components/sidebar";
+import { useSidebar } from "components/sidebar/useSidebar";
 
 const Home: NextPage = () => {
+  const { isClosing, toggleSidebar, isSidebarVisible } = useSidebar();
   return (
     <>
       <Head>
@@ -30,8 +33,15 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+        {isSidebarVisible && <Sidebar
+          isSidebarVisible={isSidebarVisible}
+          isClosing={isClosing}
+          toggleSidebar={toggleSidebar}
+        />}
         <HeroSection>
-          <Header />
+          <Header 
+          isSidebarVisible={isSidebarVisible}
+          toggleSidebar={toggleSidebar}/>
           <LandingHero />
           <Mosaic />
         </HeroSection>

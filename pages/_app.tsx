@@ -1,4 +1,5 @@
 import type { AppProps } from "next/app";
+import "animate.css";
 import { GlobalStyles } from "global-styles";
 
 function MyApp({ Component, pageProps }: AppProps) {

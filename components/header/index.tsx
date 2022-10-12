@@ -1,9 +1,17 @@
 import { COPY } from "copy";
 import { useMediaQuery } from "hooks/use-media-query";
+import { useCallback, useState } from "react";
 import { Button, Logo } from "shared-ui";
-import { Container, LogoArea, NavArea } from "./styled";
+import {
+  Container,
+  LogoArea,
+  MobileMenu,
+  MobileMenuWrapper,
+  NavArea,
+} from "./styled";
+import { Props } from "./types";
 
-export const Header = () => {
+export const Header = ({toggleSidebar, isSidebarVisible}: Props) => {
   const isMobile = useMediaQuery("(max-width: 768px)");
   return (
     <Container>
@@ -25,6 +33,14 @@ export const Header = () => {
             href="/"
           />
         </NavArea>
+      )}
+      {isMobile && (
+        <MobileMenuWrapper>
+          <MobileMenu
+            onClick={toggleSidebar}
+            isSidebarVisible={isSidebarVisible}
+          />
+        </MobileMenuWrapper>
       )}
     </Container>
   );
