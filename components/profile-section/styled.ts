@@ -7,7 +7,7 @@ export const Container = styled(HeroSection)`
 `;
 
 export const InnerContainer = styled.div`
-  max-width: 1024px;
+  max-width: 1240px;
   margin: auto;
   display: flex;
   flex-direction: column-reverse;
@@ -21,6 +21,7 @@ export const InnerContainer = styled.div`
 `;
 
 export const ContentArea = styled.div`
+  width: 100%;
   flex-basis: 468px;
   display: flex;
   flex-direction: column;

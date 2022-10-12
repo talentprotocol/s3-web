@@ -26,6 +26,12 @@ export const LandingHero = () => {
       <ReserveHandleContainer>
         <HandleInput
           contentEditable
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              e.preventDefault();
+              e.stopPropagation();
+            }
+          }}
           spellCheck={false}
           placeholder={COPY.LANDING_HERO.RESERVE_TAL.PLACEHOLDER}
         />

@@ -44,6 +44,7 @@ export const HandleInput = styled.span<{ placeholder: string }>`
   font-size: 16px;
   line-height: 165%;
   overflow: hidden;
+  text-align: left;
 
   :empty:before {
     content: "${({ placeholder }) => placeholder}";
@@ -52,6 +53,10 @@ export const HandleInput = styled.span<{ placeholder: string }>`
 
   :not:empty:focus::before {
     content: "";
+  }
+
+  br {
+    display: none;
   }
 `;
 

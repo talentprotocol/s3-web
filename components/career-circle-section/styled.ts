@@ -7,7 +7,7 @@ export const Container = styled(HeroSection)`
 `;
 
 export const InnerContainer = styled.div`
-  max-width: 1024px;
+  max-width: 1240px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -43,7 +43,7 @@ export const ButtonIcon = styled.span`
 `;
 
 export const ImageHolder = styled.div`
-  flex-basis: 60%;
+  flex-basis: 70%;
   display: flex;
   align-items: center;
 `;
