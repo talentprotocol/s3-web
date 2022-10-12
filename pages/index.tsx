@@ -33,15 +33,18 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        {isSidebarVisible && <Sidebar
-          isSidebarVisible={isSidebarVisible}
-          isClosing={isClosing}
-          toggleSidebar={toggleSidebar}
-        />}
+        {isSidebarVisible && (
+          <Sidebar
+            isSidebarVisible={isSidebarVisible}
+            isClosing={isClosing}
+            toggleSidebar={toggleSidebar}
+          />
+        )}
         <HeroSection>
-          <Header 
-          isSidebarVisible={isSidebarVisible}
-          toggleSidebar={toggleSidebar}/>
+          <Header
+            isSidebarVisible={isSidebarVisible}
+            toggleSidebar={toggleSidebar}
+          />
           <LandingHero />
           <Mosaic />
         </HeroSection>

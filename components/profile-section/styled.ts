@@ -44,7 +44,7 @@ export const ButtonIcon = styled.span`
 `;
 
 export const ImageHolder = styled.div`
-  flex-basis: 60%;
+  flex-basis: 50%;
   display: flex;
   align-items: center;
 `;

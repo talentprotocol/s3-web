@@ -41,6 +41,19 @@ export const ActionArea = styled.div`
   }
 `;
 
+export const LogosArea = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 24px;
+`;
+
+export const MoreComingLabel = styled.span`
+  ${fontNormal}
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 165%;
+`;
+
 export const ButtonIcon = styled.span`
   ${fontNormal}
   margin-left: 8px;
@@ -54,4 +67,8 @@ export const ImageHolder = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (min-width: 768px) {
+    margin-left: 100px;
+  }
 `;

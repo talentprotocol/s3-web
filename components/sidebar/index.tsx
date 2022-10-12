@@ -47,12 +47,11 @@ export const Sidebar = ({
       onClick={toggleSidebar}
     >
       <LinkList>
-      <LinkTitle>
-      {COPY.MOBILE_MENU.TITLE}
-      </LinkTitle>
-      {memoizedAnchors}</LinkList>
+        <LinkTitle>{COPY.MOBILE_MENU.TITLE}</LinkTitle>
+        {memoizedAnchors}
+      </LinkList>
       <ActionArea>
-        <Button type="link"variant="octonary" >
+        <Button type="link" variant="octonary">
           <ButtonContentWrapper>Log in</ButtonContentWrapper>
         </Button>
         <Button type="link" variant="primary">

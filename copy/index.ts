@@ -3,7 +3,7 @@ export const COPY = {
     TITLE: "Follow us",
     LINKS: ["Twitter", "Discord", "Github", "Telegram"],
     LOGIN_BUTTON: "Log in",
-    SIGNUP_BUTTON: "Sing up"
+    SIGNUP_BUTTON: "Sing up",
   },
   LANDING_HERO: {
     HEADER_LOGIN: "Login",
@@ -80,6 +80,7 @@ export const COPY = {
     TITLE: "Start a career circle, your token-gated community.",
     TEXT: "A Career Circle is your personal community of supporters. You can token-gate it with NFTs or a Social Token. Give away your tokens to people that helped you in the past and sell them to new supporters.",
     BUTTON: "Apply for a Token",
+    MORE_COMING: "More coming",
   },
   OPPORTUNITY_SECTION: {
     TAG: "Opportunities",

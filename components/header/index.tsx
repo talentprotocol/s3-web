@@ -11,10 +11,13 @@ import {
 } from "./styled";
 import { Props } from "./types";
 
-export const Header = ({toggleSidebar, isSidebarVisible}: Props) => {
+export const Header = ({
+  toggleSidebar,
+  isSidebarVisible,
+}: Props) => {
   const isMobile = useMediaQuery("(max-width: 768px)");
   return (
-    <Container>
+    <Container isMobile={isMobile}>
       <LogoArea>
         <Logo />
       </LogoArea>

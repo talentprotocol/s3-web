@@ -1,12 +1,12 @@
 import { COLORS } from "shared-ui";
-import styled from "styled-components";
-import { MobileMenuProps } from "./types";
+import styled, { css } from "styled-components";
+import { ContainerProps, MobileMenuProps } from "./types";
 
-export const Container = styled.header`
+export const Container = styled.header<ContainerProps>`
   display: flex;
   align-items: center;
   padding: 24px;
-  border-bottom: 1px solid ${COLORS.GREY};
+  ${({ isMobile }) => isMobile && css`border-bottom: 1px solid ${COLORS.GREY};`}
 `;
 
 export const LogoArea = styled.div`

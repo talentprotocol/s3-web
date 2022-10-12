@@ -52,6 +52,7 @@ export const ContentPane = styled.div`
   @media (min-width: 768px) {
     flex-direction: row;
     padding-top: 122px;
+    gap: 122px;
   }
 `;
 

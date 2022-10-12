@@ -1,5 +1,11 @@
-import { COPY } from "copy";
 import Image from "next/image";
+import { COPY } from "copy";
+import celoImage from "./assets/celo.svg";
+import polygonImage from "./assets/polygon.svg";
+import {
+  LogosArea,
+  MoreComingLabel,
+} from "components/talent-house-section/styled";
 import { Button, LabelTag, Typography } from "shared-ui";
 import communityImage from "./assets/community.png";
 import {
@@ -32,6 +38,13 @@ export const CareerCircleSection = () => (
           text={COPY.CAREER_CIRCLE_SECTION.TEXT}
           color="BLACK"
         />
+        <LogosArea>
+          <Image src={celoImage} alt="celo" />
+          <Image src={polygonImage} alt="polygon" />
+          <MoreComingLabel>
+            {COPY.CAREER_CIRCLE_SECTION.MORE_COMING}
+          </MoreComingLabel>
+        </LogosArea>
         <ActionArea>
           <Button
             text={COPY.CAREER_CIRCLE_SECTION.BUTTON}

@@ -13,7 +13,7 @@ export enum VariantTypeEnum {
   PENTANARY = "pentanary",
   HEXANARY = "hexanary",
   SEPTENARY = "septenary",
-  OCTONARY = "octonary"
+  OCTONARY = "octonary",
 }
 
 export type VariantType =

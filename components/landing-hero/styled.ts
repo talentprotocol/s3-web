@@ -12,6 +12,7 @@ export const Container = styled.div`
   margin: auto;
   gap: 32px;
   padding: 0 24px;
+  margin: 104px auto;
 `;
 
 export const PurpleText = styled.span`

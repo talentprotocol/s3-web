@@ -30,7 +30,8 @@ export const LinkListItem = styled.li`
 
 export const LinkTitle = styled.span`
   ${fontNormal}
-  display: block;font-weight: 500;
+  display: block;
+  font-weight: 500;
   font-size: 14px;
   line-height: 165%;
   color: ${COLORS.LIGHT_PURPLE};
