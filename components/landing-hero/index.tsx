@@ -8,6 +8,7 @@ import {
   PurpleText,
   ReserveHandleButton,
   ReserveHandleContainer,
+  SubTitleWrapper,
   TokenSuffix,
 } from "./styled";
 
@@ -22,7 +23,9 @@ export const LandingHero = () => {
           {COPY.LANDING_HERO.TITLE_BLACK_2}
         </>
       </Typography>
-      <Typography text={COPY.LANDING_HERO.SUBTITLE} type="body1" />
+      <SubTitleWrapper>
+        <Typography text={COPY.LANDING_HERO.SUBTITLE} type="body1" />
+      </SubTitleWrapper>
       <ReserveHandleContainer>
         <HandleInput
           contentEditable

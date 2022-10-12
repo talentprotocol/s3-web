@@ -8,11 +8,15 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
-  max-width: 962px;
+  max-width: 1000px;
   margin: auto;
   gap: 32px;
   padding: 0 24px;
   margin: 104px auto;
+`;
+
+export const SubTitleWrapper = styled.div`
+  max-width: 766px;
 `;
 
 export const PurpleText = styled.span`
