@@ -1,4 +1,5 @@
 import { useEffect, useMemo } from "react";
+import { COPY } from "copy";
 import { Button } from "shared-ui";
 import {
   ActionArea,
@@ -6,6 +7,7 @@ import {
   Container,
   LinkList,
   LinkListItem,
+  LinkTitle,
   StyledLink,
 } from "./styled";
 
@@ -28,7 +30,7 @@ export const Sidebar = ({
   }, [isSidebarVisible]);
   const memoizedAnchors = useMemo(
     () =>
-      [].map((link) => (
+      COPY.MOBILE_MENU.LINKS.map((link) => (
         <LinkListItem key={1}>
           <StyledLink href={link} target="blank">
             {link}
@@ -44,7 +46,11 @@ export const Sidebar = ({
       }`}
       onClick={toggleSidebar}
     >
-      <LinkList>{memoizedAnchors}</LinkList>
+      <LinkList>
+      <LinkTitle>
+      {COPY.MOBILE_MENU.TITLE}
+      </LinkTitle>
+      {memoizedAnchors}</LinkList>
       <ActionArea>
         <Button type="link"variant="octonary" >
           <ButtonContentWrapper>Log in</ButtonContentWrapper>

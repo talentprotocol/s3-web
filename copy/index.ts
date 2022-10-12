@@ -1,4 +1,10 @@
 export const COPY = {
+  MOBILE_MENU: {
+    TITLE: "Follow us",
+    LINKS: ["Twitter", "Discord", "Github", "Telegram"],
+    LOGIN_BUTTON: "Log in",
+    SIGNUP_BUTTON: "Sing up"
+  },
   LANDING_HERO: {
     HEADER_LOGIN: "Login",
     HEADER_SIGN_UP: "Sign up",
