@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import { Button, COLORS, fontNormal } from "shared-ui";
+import { COLORS, fontNormal } from "shared-ui";
 
 export const Container = styled.section`
   background: ${COLORS.LIGHT_YELLOW};

@@ -6,5 +6,10 @@ export const Container = styled.section`
   display: flex;
   flex-direction: column;
   background-color: ${COLORS.WHITE};
-  overflow-x: hidden;
+  overflow: hidden;
+
+  @media (min-height: 950px) {
+    max-height: 950px;
+    min-height: 950px;
+  }
 `;
