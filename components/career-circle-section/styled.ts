@@ -10,7 +10,14 @@ export const InnerContainer = styled.div`
   max-width: 1024px;
   margin: auto;
   display: flex;
-  gap: 128px;
+  flex-direction: column;
+  padding: 80px 24px;
+  gap: 48px;
+
+  @media (min-width: 768px) {
+    gap: 128px;
+    flex-direction: row;
+  }
 `;
 
 export const ContentArea = styled.div`
