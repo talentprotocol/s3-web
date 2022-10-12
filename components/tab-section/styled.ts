@@ -57,7 +57,6 @@ export const ContentPane = styled.div`
 
 export const ContentArea = styled.article`
   display: flex;
-  justify-content: flex-end;
   flex-direction: column;
   flex-basis: 372px;
   min-width: 372px;
@@ -82,19 +81,11 @@ export const ImageHolder = styled.div`
 
 export const ImagePositioner = styled.div`
   position: absolute;
-  top: 50%;
   height: 100%;
-  transform: translate(0, -50%);
 
   @media (min-width: 768px) {
     width: 760px;
-  }
-
-  @media (min-width: 1024px) {
-    width: 850px;
-  }
-
-  @media (min-width: 1240px) {
-    width: 900px;
+    top: 50%;
+    transform: translate(0, -100%);
   }
 `;
