@@ -9,7 +9,7 @@ export const Container = styled.section`
   overflow: hidden;
 
   @media (min-height: 950px) {
-    max-height: 950px;
-    min-height: 950px;
+    max-height: 1220px;
+    min-height: 1220px;
   }
 `;

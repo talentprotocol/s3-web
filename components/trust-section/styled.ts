@@ -1,8 +1,7 @@
-import { HeroSection } from "components/hero-section";
 import { fontNormal } from "shared-ui";
 import styled from "styled-components";
 
-export const Container = styled(HeroSection)`
+export const Container = styled.div`
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -14,6 +13,8 @@ export const Container = styled(HeroSection)`
 
   @media (min-width: 768px) {
     padding: 246px 0;
+    min-height: 1200px;
+    max-height: 1200px;
   }
 `;
 
@@ -66,8 +67,7 @@ export const Quotes = styled.div`
   transform: translate(0, -124px);
 
   @media (min-width: 768px) {
-    left: 0;
-    transform: translate(0, -40px);
+    transform: translate(0, 0);
   }
 `;
 
@@ -75,17 +75,15 @@ export const ContentRow = styled.div`
   display: flex;
   align-items: center;
   flex-grow: 1;
-  width: 100%;
+  width: 100%;  
   gap: 74px;
-  position: relative;
-  padding-left: 56px;
   flex-direction: column-reverse;
   padding: 124px 24px;
   gap: 48px;
 
   @media (min-width: 768px) {
     margin-top: 146px;
-    padding: 80px 24px;
+    padding: 0;
     gap: 74px;
     flex-direction: row;
   }
@@ -99,14 +97,41 @@ export const DisclaimerColumn = styled.article`
   text-align: left;
   gap: 40px;
   padding-left: 40px;
+  position: relative;
 
   @media (min-width: 768px) {
-    padding-left: 0;
+    padding-left: 80px;
   }
 `;
 
 export const ImageHolder = styled.div`
-  flex-grow: 1;
   width: 328px;
+  flex-grow: 1;
   position: relative;
+  display: flex;
+  align-self: flex-start;
+  z-index: 1;
+`;
+
+export const ImageWrapper = styled.div`
+  position: absolute;
+  transition-duration: 1s;
+  :first-child {
+    z-index: 4;
+  }
+
+  :nth-child(2) {
+    z-index: 3;
+    transform: translate(40px, 0);
+  }
+
+  :nth-child(3) {
+    z-index: 2;
+    transform: translate(80px, 0);
+  }
+
+  :nth-child(4) {
+    z-index: 1;
+    transform: translate(120px, 0);
+  }
 `;

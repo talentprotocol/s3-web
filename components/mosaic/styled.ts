@@ -1,6 +1,6 @@
 import styled, { css, keyframes } from "styled-components";
 import { COLORS, fontNormal } from "shared-ui";
-import { HorizontalShapeProps, ShapeProps } from "./types";
+import { ColumnProps, HorizontalShapeProps, ShapeProps } from "./types";
 
 /*
 const sliderRotation = keyframes`
@@ -27,9 +27,10 @@ export const Container = styled.div`
   }
 `;
 
-export const Column = styled.div`
+export const Column = styled.div<ColumnProps>`
   display: flex;
   flex-direction: column;
+  ${({ movedUp}) => movedUp && css`transform: translate(0, -30%);`}
 `;
 
 export const OvalShape = styled.div<ShapeProps>`

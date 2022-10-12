@@ -35,6 +35,15 @@ export const PartnersBanner = () => {
       )),
     []
   );
+  const sliderLeftContent = useMemo(
+    () =>
+      AMOUNT_OF_SLIDER_ENTRIES.flat().reverse().map((img, index) => (
+        <SliderEntryContainer key={`silder-entry-${index}`}>
+          <Image src={img} />
+        </SliderEntryContainer>
+      )),
+    []
+  );
   return (
     <Container>
       <Typography type="h3" text={COPY.PARTNERS_BANNER.TITLE} />
@@ -43,7 +52,7 @@ export const PartnersBanner = () => {
       </SliderContainer>
       {isMobile && (
         <SliderContainer>
-          <Slider isReversed>{sliderContent}</Slider>
+          <Slider isReversed>{sliderLeftContent}</Slider>
         </SliderContainer>
       )}
     </Container>

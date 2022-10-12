@@ -1,5 +1,9 @@
 import { AvailableColors } from "shared-ui";
 
+export interface ColumnProps {
+  movedUp?: boolean;
+}
+
 export interface ShapeProps {
   backrgound?: AvailableColors;
   color?: AvailableColors;

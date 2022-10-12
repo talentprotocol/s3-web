@@ -6,7 +6,7 @@ export const DefaultContainer = styled.span`
   ${fontNormal}
   display: flex;
   justify-content: center;
-  padding: 6px 10px;
+  padding: 6px 16px;
   font-weight: 700;
   font-size: 14px;
   line-height: 165%;
@@ -19,7 +19,7 @@ export const HighlightedContainer = styled.span`{
     ${fontNormal}
     display: flex;
     justify-content: center;
-    padding: 6px 10px;
+    padding: 6px 16px;
     font-weight: 700;
     font-size: 14px;
     line-height: 165%;
@@ -32,7 +32,7 @@ export const SecondaryContainer = styled.span`{
   ${fontNormal}
   display: flex;
   justify-content: center;
-  padding: 6px 10px;
+  padding: 6px 16px;
   font-weight: 700;
   font-size: 14px;
   line-height: 165%;
@@ -45,7 +45,7 @@ export const TertiaryContainer = styled.span`{
   ${fontNormal}
   display: flex;
   justify-content: center;
-  padding: 6px 10px;
+  padding: 6px 16px;
   font-weight: 700;
   font-size: 14px;
   line-height: 165%;
@@ -58,7 +58,7 @@ export const QuaternaryContainer = styled.span`{
   ${fontNormal}
   display: flex;
   justify-content: center;
-  padding: 6px 10px;
+  padding: 6px 16px;
   font-weight: 700;
   font-size: 14px;
   line-height: 165%;

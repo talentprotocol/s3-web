@@ -11,9 +11,9 @@ import {
 
 export const Mosaic = () => (
   <Container>
-  <Column>
+  <Column movedUp>
+    <OvalShape backrgound="LIGHT_PURPLE" />
     <OvalShape backrgound="LIGHT_YELLOW" />
-    <OvalShape backrgound="DARK_BLUE" />
   </Column>
   <Column>
     <ImageOvalShape image="https://picsum.photos/id/237/536/354" />
@@ -47,7 +47,7 @@ export const Mosaic = () => (
       noora.tal
     </HorizontalOvalShape>
   </Column>
-  <Column>
+  <Column movedUp>
     <OvalShape backrgound="LIGHT_PURPLE" />
     <OvalShape backrgound="YELLOW" />
   </Column>
@@ -83,7 +83,7 @@ export const Mosaic = () => (
     </HorizontalOvalShape>
     <ImageOvalShape image="https://picsum.photos/id/237/536/354" />
   </Column>
-  <Column>
+  <Column movedUp>
     <OvalShape backrgound="YELLOW" />
     <OvalShape backrgound="ORANGE" />
   </Column>
