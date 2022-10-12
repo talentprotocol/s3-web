@@ -122,16 +122,16 @@ export const ImageWrapper = styled.div`
 
   :nth-child(2) {
     z-index: 3;
-    transform: translate(40px, 0);
+    transform: translate(24px, 0);
   }
 
   :nth-child(3) {
     z-index: 2;
-    transform: translate(80px, 0);
+    transform: translate(48px, 0);
   }
 
   :nth-child(4) {
     z-index: 1;
-    transform: translate(120px, 0);
+    transform: translate(72px, 0);
   }
 `;

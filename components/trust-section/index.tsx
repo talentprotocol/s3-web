@@ -37,7 +37,7 @@ export const TrustSection = () => {
         }
         setForceUpdate(Date.now());
       }, 1000);
-    }, 3000);
+    }, 6000);
     return () => clearInterval(intervalId);
   }, []);
   return (
@@ -67,7 +67,7 @@ export const TrustSection = () => {
         <ImageHolder>
           {images.map((img, index) => (
             // @ts-ignore
-            <ImageWrapper key={img.name} id={`image-to-animate-${index}`} ref={refArray[index]} className={index === 0 ? "animate__animated animate__fadeOutLeft animate__delay-2s" : "animate__animated animate__fadeIn"}>
+            <ImageWrapper key={img.name} id={`image-to-animate-${index}`} ref={refArray[index]} className={index === 0 ? "animate__animated animate__fadeOutLeft animate__delay-6s" : "animate__animated animate__fadeIn"}>
               <Image src={img.src} alt="avatar" />
             </ImageWrapper>
           ))}
