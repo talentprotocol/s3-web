@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import { Button, COLORS, fontNormal } from "shared-ui";
+import { COLORS } from "shared-ui";
 
 export const Container = styled.section`
   background: ${COLORS.WHITE};
@@ -8,7 +8,11 @@ export const Container = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 126px;
+  gap: 24px;
+  text-align: center;
+
+  @media (min-width: 768px) {
+  }
 `;
 
 const sliderRotation = keyframes`
@@ -17,6 +21,15 @@ const sliderRotation = keyframes`
     }
     to {
         left: -10%;
+    }
+`;
+
+const sliderRotationLeft = keyframes`
+    from {
+        left: -10%;
+    }
+    to {
+        left: -150%;
     }
 `;
 
@@ -38,12 +51,14 @@ export const SliderContainer = styled.section`
   height: 174px;
 `;
 
-export const Slider = styled.div`
+export const Slider = styled.div<{ isReversed?: boolean }>`
   position: absolute;
   display: flex;
   gap: 12px;
   overflow-x: scroll;
   overflow: auto;
   white-space: nowrap;
-  animation: ${sliderRotation} 60s linear infinite;
+  animation: ${({ isReversed }) =>
+      isReversed ? sliderRotationLeft : sliderRotation}
+    60s linear infinite;
 `;

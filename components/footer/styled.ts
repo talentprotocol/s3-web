@@ -5,6 +5,11 @@ export const StyledFooter = styled.footer`
   background: ${COLORS.DARK_BLUE};
   border-top: 1px solid ${COLORS.LIGHT_YELLOW}33;
   overflow: hidden;
+  padding: 0 24px;
+
+  @media (min-width: 768px) {
+    padding: 0;
+  }
 `;
 
 export const InnerContainer = styled.div`
@@ -17,6 +22,11 @@ export const InnerContainer = styled.div`
 export const FooterRow = styled.div`
   padding: 56px 0;
   display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 `;
 
 export const PresentationColumn = styled.div`
@@ -35,7 +45,15 @@ export const NavigationArea = styled.nav`
   display: flex;
   justify-content: flex-end;
   flex-grow: 1;
-  gap: 102px;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 40px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    margin-top: 0px;
+    gap: 102px;
+  }
 `;
 
 export const NavList = styled.ul`
@@ -64,6 +82,11 @@ export const Copyright = styled.section`
   padding: 22px 0;
   display: flex;
   gap: 24px;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 `;
 
 export const CopyrightTypography = styled.span`

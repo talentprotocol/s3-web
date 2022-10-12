@@ -3,7 +3,7 @@ import { Button, COLORS, fontNormal } from "shared-ui";
 
 export const Container = styled.section`
   background: ${COLORS.LIGHT_YELLOW};
-  padding: 160px 0;
+  padding: 160px 24px;
 `;
 
 export const InnerContainer = styled.div`
@@ -88,10 +88,13 @@ export const SliderEntryContainer = styled.div`
 export const SliderContainer = styled.section`
   position: relative;
   background: ${COLORS.YELLOW};
-  height: 96px;
-  overflow-x: hidden;
+  overflow: hidden;
   border: 2px solid ${COLORS.DARK_BLUE};
-  overflow-y: hidden;
+  height: 78px;
+
+  @media (min-width: 768px) {
+    height: 96px;
+  }
 `;
 
 export const Slider = styled.div`

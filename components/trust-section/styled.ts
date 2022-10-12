@@ -100,7 +100,6 @@ export const DisclaimerColumn = styled.article`
   gap: 40px;
   padding-left: 40px;
 
-
   @media (min-width: 768px) {
     padding-left: 0;
   }

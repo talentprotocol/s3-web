@@ -29,13 +29,17 @@ export const LandingHero = () => {
           spellCheck={false}
           placeholder={COPY.LANDING_HERO.RESERVE_TAL.PLACEHOLDER}
         />
-        <TokenSuffix>{COPY.LANDING_HERO.RESERVE_TAL.TOKEN}</TokenSuffix>
+        <TokenSuffix>
+          {COPY.LANDING_HERO.RESERVE_TAL.TOKEN}
+        </TokenSuffix>
         <ButtonContainer>
           <ReserveHandleButton>
-            {isMobile ? COPY.LANDING_HERO.RESERVE_TAL.BUTTON_MOBILE : COPY.LANDING_HERO.RESERVE_TAL.BUTTON}
+            {isMobile
+              ? COPY.LANDING_HERO.RESERVE_TAL.BUTTON_MOBILE
+              : COPY.LANDING_HERO.RESERVE_TAL.BUTTON}
           </ReserveHandleButton>
         </ButtonContainer>
       </ReserveHandleContainer>
     </Container>
   );
-}
+};

@@ -3,7 +3,7 @@ import { COLORS } from "shared-ui";
 
 export const Container = styled.section`
   background: ${COLORS.DARK_BLUE};
-  padding: 160px 0;
+  padding: 160px 24px;
 `;
 
 export const InnerContainer = styled.div`

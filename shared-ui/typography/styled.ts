@@ -12,7 +12,7 @@ export const H1 = styled.h1<StyledTypographyProps>`
   ${({ color }) =>
     css`
       color: ${COLORS[color || "BLACK"]};
-  `}
+    `}
 
   @media (min-width: 768px) {
     font-weight: 700;
@@ -57,7 +57,7 @@ export const BODY1 = styled.p<StyledTypographyProps>`
   ${({ color }) =>
     css`
       color: ${COLORS[color || "BLACK"]};
-  `}
+    `}
 
   @media (min-width: 768px) {
     font-weight: 500;

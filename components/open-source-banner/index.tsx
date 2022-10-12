@@ -10,7 +10,7 @@ import {
 export const OpenSourceBanner = () => (
   <Container>
     <InnerContainer>
-      <Typography type="h2" color="LIGHT_YELLOW">
+      <Typography type="h3" color="LIGHT_YELLOW">
         <>
           {COPY.OPEN_SOURCE_BANNER.TITLE_LIGHT_YELLOW}
           <br />
