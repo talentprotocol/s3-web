@@ -7,7 +7,7 @@ import {
 } from "./styled";
 import { Props, TagTypeEnum } from "./types";
 
-export const LabelTag = ({ text, type }: Props) => {
+export const LabelTag = ({ text, type, color }: Props) => {
   switch (type) {
     case TagTypeEnum.HIGHLIGHTED:
       return <HighlightedContainer>{text}</HighlightedContainer>;
@@ -19,6 +19,8 @@ export const LabelTag = ({ text, type }: Props) => {
       return <QuaternaryContainer>{text}</QuaternaryContainer>;
     case TagTypeEnum.DEFAULT:
     default:
-      return <DefaultContainer>{text}</DefaultContainer>;
+      return (
+        <DefaultContainer color={color}>{text}</DefaultContainer>
+      );
   }
 };

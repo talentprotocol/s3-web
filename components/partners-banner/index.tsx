@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import { useMemo } from "react";
 import { useMediaQuery } from "hooks/use-media-query";
@@ -20,9 +19,20 @@ import {
   SliderEntryContainer,
 } from "./styled";
 
-const SLIDER_ENTRIES = [allianceImage, blu3Dao, celo, floriImage, herLatamImage, kernelImage, launchHouse, polygonImage, protocolLabsImage];
-const AMOUNT_OF_SLIDER_ENTRIES = new Array(100).fill([...SLIDER_ENTRIES]);
-
+const SLIDER_ENTRIES = [
+  allianceImage,
+  blu3Dao,
+  celo,
+  floriImage,
+  herLatamImage,
+  kernelImage,
+  launchHouse,
+  polygonImage,
+  protocolLabsImage,
+];
+const AMOUNT_OF_SLIDER_ENTRIES = new Array(100).fill([
+  ...SLIDER_ENTRIES,
+]);
 
 export const PartnersBanner = () => {
   const isMobile = useMediaQuery("(max-width: 768px)");
@@ -37,11 +47,13 @@ export const PartnersBanner = () => {
   );
   const sliderLeftContent = useMemo(
     () =>
-      AMOUNT_OF_SLIDER_ENTRIES.flat().reverse().map((img, index) => (
-        <SliderEntryContainer key={`silder-entry-${index}`}>
-          <Image src={img} />
-        </SliderEntryContainer>
-      )),
+      AMOUNT_OF_SLIDER_ENTRIES.flat()
+        .reverse()
+        .map((img, index) => (
+          <SliderEntryContainer key={`silder-entry-${index}`}>
+            <Image src={img} />
+          </SliderEntryContainer>
+        )),
     []
   );
   return (

@@ -1,8 +1,9 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { COLORS } from "../colors";
 import { fontNormal } from "../typography";
+import { StyledLabelProps } from "./types";
 
-export const DefaultContainer = styled.span`
+export const DefaultContainer = styled.span<StyledLabelProps>`
   ${fontNormal}
   display: flex;
   justify-content: center;
@@ -13,19 +14,24 @@ export const DefaultContainer = styled.span`
   border: 1px solid ${COLORS.BLACK};
   color: ${COLORS.BLACK};
   border-radius: 48px;
+  ${({ color }) =>
+    color &&
+    css`
+      background: ${COLORS[color]};
+    `}
 `;
 
 export const HighlightedContainer = styled.span`{
-    ${fontNormal}
-    display: flex;
-    justify-content: center;
-    padding: 6px 16px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 165%;
-    border: 1px solid ${COLORS.YELLOW};
-    color: ${COLORS.YELLOW};
-    border-radius: 48px;
+  ${fontNormal}
+  display: flex;
+  justify-content: center;
+  padding: 6px 16px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 165%;
+  border: 1px solid ${COLORS.YELLOW};
+  color: ${COLORS.YELLOW};
+  border-radius: 48px;
 `;
 
 export const SecondaryContainer = styled.span`{

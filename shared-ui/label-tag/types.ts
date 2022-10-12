@@ -1,3 +1,5 @@
+import { AvailableColors } from "shared-ui";
+
 export enum TagTypeEnum {
   DEFAULT = "default",
   HIGHLIGHTED = "highlighted",
@@ -16,4 +18,9 @@ export type TagType =
 export interface Props {
   type: TagType;
   text: string;
+  color?: AvailableColors;
+}
+
+export interface StyledLabelProps {
+  color?: AvailableColors;
 }

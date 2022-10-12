@@ -1,6 +1,10 @@
 import styled, { css, keyframes } from "styled-components";
 import { COLORS, fontNormal } from "shared-ui";
-import { ColumnProps, HorizontalShapeProps, ShapeProps } from "./types";
+import {
+  ColumnProps,
+  HorizontalShapeProps,
+  ShapeProps,
+} from "./types";
 
 /*
 const sliderRotation = keyframes`
@@ -30,7 +34,11 @@ export const Container = styled.div`
 export const Column = styled.div<ColumnProps>`
   display: flex;
   flex-direction: column;
-  ${({ movedUp}) => movedUp && css`transform: translate(0, -30%);`}
+  ${({ movedUp }) =>
+    movedUp &&
+    css`
+      transform: translate(0, -30%);
+    `}
 `;
 
 export const OvalShape = styled.div<ShapeProps>`
@@ -68,14 +76,25 @@ export const HorizontalOvalShape = styled.div<HorizontalShapeProps>`
   justify-content: center;
   align-items: center;
   ${({ backrgound }) =>
-    backrgound && css`background: ${COLORS[backrgound]};`};
-  ${({ color }) => color && css`color: ${COLORS[color]};`};
-  ${({ isBig }) => isBig && css`
-    min-width: 286px;
-    max-width: 286px;
-  `};
-  ${({ isMedium }) => isMedium && css`
-    min-width: 234px;
-    max-width: 234px;
-  `};
+    backrgound &&
+    css`
+      background: ${COLORS[backrgound]};
+    `};
+  ${({ color }) =>
+    color &&
+    css`
+      color: ${COLORS[color]};
+    `};
+  ${({ isBig }) =>
+    isBig &&
+    css`
+      min-width: 286px;
+      max-width: 286px;
+    `};
+  ${({ isMedium }) =>
+    isMedium &&
+    css`
+      min-width: 234px;
+      max-width: 234px;
+    `};
 `;

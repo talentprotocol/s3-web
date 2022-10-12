@@ -102,10 +102,19 @@ export const COPY = {
   },
   TRUST_SECTION: {
     TITLE: "Trusted by builders worldwide.",
+
     TESTIMONIALS: [
       {
-        TEXT: "Self-starter and go-getter fuelled by a curiousity for technology and social change. She currently works in the crypto team at Revolut, a UK-based fintech startup.",
-        AUTHOR: "Si Jia Wen, Crypto @ Revolut",
+        TEXT: "Talent Protocol has consistently shown the power of betting on young builders in web3 through giving them opportunities, scholarships, and resources; they are at the forefront of the new era of digital presence.",
+        AUTHOR: "Matthew Espinoza, CEO @ Agora Labs",
+      },
+      {
+        TEXT: "Talent Protocol welcomed me into the world of web3 with open arms. I built a community of mentors and supporters that helped me gain the confidence to collaborate in many web3 projects.",
+        AUTHOR: "Giulia Camargo, Marketing @ Decipad",
+      },
+      {
+        TEXT: "Thanks to Talent Protocol's scholarship, I attended my first web3 conference in Barcelona. Since thenI got to meet the team and join many other web3 events, which helped me settle down in the new city and build up my network.",
+        AUTHOR: "Camellia Yang, Independent content creator",
       },
     ],
   },

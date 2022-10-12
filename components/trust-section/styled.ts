@@ -75,7 +75,7 @@ export const ContentRow = styled.div`
   display: flex;
   align-items: center;
   flex-grow: 1;
-  width: 100%;  
+  width: 100%;
   gap: 74px;
   flex-direction: column-reverse;
   padding: 124px 24px;
