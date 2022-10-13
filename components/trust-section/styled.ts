@@ -27,32 +27,57 @@ export const TagContainer = styled.div`
 
   div:nth-child(1) {
     position: absolute;
-    left: -340px;
-    top: 60px;
+    left: -180px;
+    top: 180px;
+
+    @media (min-width: 768px) {
+      left: -340px;
+      top: 60px;
+    }
   }
 
   div:nth-child(2) {
     position: absolute;
-    left: -200px;
+    left: -140px;
     top: -60px;
+
+    @media (min-width: 768px) {
+      left: -200px;
+      top: -60px;
+    }
   }
 
   div:nth-child(3) {
     position: absolute;
-    left: -120px;
-    top: 150px;
+    left: -50px;
+    top: 210px;
+
+    @media (min-width: 768px) {
+      left: -120px;
+      top: 150px;
+    }
   }
 
   div:nth-child(4) {
     position: absolute;
-    left: 180px;
-    top: -50px;
+    left: 90px;
+    top: 180px;
+
+    @media (min-width: 768px) {
+      left: 180px;
+      top: -50px;
+    }
   }
 
   div:nth-child(5) {
     position: absolute;
-    left: 220px;
-    top: 80px;
+    left: 50px;
+    top: -50px;
+
+    @media (min-width: 768px) {
+      left: 220px;
+      top: 80px;
+    }
   }
 `;
 
@@ -64,7 +89,6 @@ export const Quotes = styled.div`
   margin-right: 16px;
   position: absolute;
   left: 20px;
-  transform: translate(0, -124px);
 
   @media (min-width: 768px) {
     transform: translate(0, 0);
@@ -96,7 +120,6 @@ export const DisclaimerColumn = styled.article`
   max-width: 564px;
   text-align: left;
   gap: 40px;
-  padding-left: 40px;
   position: relative;
 
   @media (min-width: 768px) {
@@ -106,11 +129,18 @@ export const DisclaimerColumn = styled.article`
 
 export const ImageHolder = styled.div`
   width: 328px;
+  min-height: 446px;
   flex-grow: 1;
   position: relative;
   display: flex;
   align-self: flex-start;
   z-index: 1;
+
+
+  @media (min-width: 768px) {
+    min-height: auto;
+  }
+
 `;
 
 export const ImageWrapper = styled.div`
