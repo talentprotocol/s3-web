@@ -62,8 +62,8 @@ export const TrustSection = () => {
           currentIndex += 1;
         }
         // @ts-ignore
-        setCurrentTestimonial(tempTestimonial);
-      }, 1000);
+      }, 1500);
+      setCurrentTestimonial(testimonials[0]);
     }, 6000);
     return () => clearInterval(intervalId);
   }, []);
@@ -81,12 +81,12 @@ export const TrustSection = () => {
       </TitleWrapper>
       <ContentRow>
         {
-          <DisclaimerColumn className="">
+          <DisclaimerColumn key={currentTestimonial.name} id={currentTestimonial.name} className="animate__animated animate__fadeIn">
             <Typography type="body1" text={currentTestimonial.text} />
             <LabelTag
               text={currentTestimonial.label}
               type="default"
-              color={currentTestimonial.color as AvailableColors}
+              color={currentTestimonial.color}
             />
             <Quotes>“</Quotes>
           </DisclaimerColumn>
@@ -96,7 +96,7 @@ export const TrustSection = () => {
             // @ts-ignore
             <ImageWrapper
               key={img.name}
-              id={`image-to-animate-${index}`}
+              id={`image-to-animate-${img.name}`}
               className={
                 index === 0
                   ? "animate__animated animate__fadeOutLeft animate__delay-6s"
