@@ -149,15 +149,19 @@ export const COPY = {
       LINKS: [
         {
           NAME: "About",
+          TARGET: "/"
         },
         {
           NAME: "Blog",
+          TARGET: "/"
         },
         {
           NAME: "Bounties",
+          TARGET: "/"
         },
         {
           NAME: "Ambassadors",
+          TARGET: "/"
         },
       ],
     },
@@ -166,12 +170,15 @@ export const COPY = {
       LINKS: [
         {
           NAME: "FAQ",
+          TARGET: "/"
         },
         {
           NAME: "Terms of Service ",
+          TARGET: "/"
         },
         {
           NAME: "Privacy Policy",
+          TARGET: "/"
         },
       ],
     },
@@ -180,15 +187,19 @@ export const COPY = {
       LINKS: [
         {
           NAME: "Twitter",
+          TARGET: "/"
         },
         {
           NAME: "Discord",
+          TARGET: "/"
         },
         {
           NAME: "Github",
+          TARGET: "/"
         },
         {
           NAME: "Telegram",
+          TARGET: "/"
         },
       ],
     },
