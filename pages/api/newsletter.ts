@@ -19,7 +19,9 @@ export default function handler(req, res) {
               "https://api.mailerlite.com/api/v2/subscribers",
               {
                 email: req.query.email,
-                fields: {},
+                fields: {
+                  receive_community_newsletter: 1
+                },
               },
               {
                 headers: {
