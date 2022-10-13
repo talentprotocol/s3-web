@@ -49,6 +49,7 @@ export const TabElement = styled.span<TabElementProps>`
   border-radius: 32px;
   white-space: nowrap;
   transition-duration: 0.25s;
+  outline: none;
 
   ${({ active }) =>
     active &&
@@ -69,10 +70,14 @@ export const ContentArea = styled.article`
   min-width: 372px;
   text-align: center;
   gap: 24px;
+  min-height: 190px;
+  max-height: 190px;
 
   @media (min-width: 768px) {
     justify-content: center;
     text-align: center;
+    min-height: 204px;
+    max-height: 204px;
   }
 `;
 

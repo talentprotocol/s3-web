@@ -7,7 +7,7 @@ export interface ColumnProps {
 export interface ShapeProps {
   backrgound?: AvailableColors;
   color?: AvailableColors;
-  image?: string;
+  image?: any;
 }
 
 export interface HorizontalShapeProps extends ShapeProps {

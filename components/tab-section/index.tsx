@@ -2,7 +2,11 @@ import { useMemo, useState } from "react";
 import Image from "next/image";
 import { Typography } from "shared-ui";
 import { COPY } from "copy";
-import profileImage from "./assets/about/profile.png";
+import aboutImage from "./assets/about.png";
+import careerCircleImage from "./assets/career-circle.png";
+import credentialsImage from "./assets/credentials.png";
+import journyImage from "./assets/journey.png";
+import perksImage from "./assets/perks.png";
 import {
   Container,
   ContentArea,
@@ -13,6 +17,8 @@ import {
   Tabs,
   TitleWrapper,
 } from "./styled";
+
+const images = [aboutImage, journyImage, credentialsImage, perksImage, careerCircleImage];
 
 export const TabSection = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -52,7 +58,7 @@ export const TabSection = () => {
         </ContentArea>
         <Tabs>{memoedTabs}</Tabs>
         <ImageHolder>
-          <Image priority src={profileImage} alt="webpage" />
+          <Image priority src={images[activeTab]} alt="webpage" />
         </ImageHolder>
       </InnerContainer>
     </Container>

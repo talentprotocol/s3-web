@@ -23,7 +23,6 @@ export const Container = styled.div`
   max-height: 320px;
   overflow: hidden;
   display: flex;
-  transform: translate(-86px, 0);
 
   @media (min-width: 768px) {
     min-height: 374px;
@@ -57,7 +56,7 @@ export const ImageOvalShape = styled.div<ShapeProps>`
   max-width: 196px;
   max-height: 286px;
   border-radius: 216px;
-  background-image: url("${({ image }) => image}");
+  background-image: url("${({ image }) => image.src}");
   background-position: center;
   background-size: cover;
 `;
