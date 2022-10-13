@@ -1,5 +1,6 @@
 import { COPY } from "copy";
 import { useMediaQuery } from "hooks/use-media-query";
+import { useCallback, useRef } from "react";
 import { Typography } from "shared-ui";
 import {
   ButtonContainer,
@@ -13,7 +14,12 @@ import {
 } from "./styled";
 
 export const LandingHero = () => {
+  const talRef = useRef<HTMLSpanElement>(null);
   const isMobile = useMediaQuery("(max-width: 768px)");
+  const handleReverveButtonClick = useCallback(() => {
+    if (!talRef.current?.innerText) return;
+    window.open(`https://beta.talentprotocol.com/join?handle=${talRef.current?.innerText}`);
+  }, [talRef.current]); 
   return (
     <Container>
       <Typography type="h1">
@@ -28,6 +34,7 @@ export const LandingHero = () => {
       </SubTitleWrapper>
       <ReserveHandleContainer>
         <HandleInput
+          ref={talRef}
           contentEditable
           onKeyDown={(e) => {
             if (e.key === "Enter") {
@@ -42,7 +49,7 @@ export const LandingHero = () => {
           {COPY.LANDING_HERO.RESERVE_TAL.TOKEN}
         </TokenSuffix>
         <ButtonContainer>
-          <ReserveHandleButton>
+          <ReserveHandleButton onClick={handleReverveButtonClick}>
             {isMobile
               ? COPY.LANDING_HERO.RESERVE_TAL.BUTTON_MOBILE
               : COPY.LANDING_HERO.RESERVE_TAL.BUTTON}
