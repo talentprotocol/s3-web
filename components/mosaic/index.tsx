@@ -4,6 +4,7 @@ import cameliaImage from "./assets/camelia.png";
 import giuliaImage from "./assets/giulia.png";
 import matthewImage from "./assets/matthew.svg";
 import tolgaImage from "./assets/tolga.svg";
+import mosaicImage from "./assets/mosaic.png";
 import { useMediaQuery } from "hooks/use-media-query";
 import {
   Column,
@@ -15,7 +16,7 @@ import {
 
 export const Mosaic = () => {
   const isMobile = useMediaQuery("(max-width: 768px)");
-  return !isMobile && (
+  return !isMobile ? (
     <Container>
     <Column>
       <ImageOvalShape image={cameliaImage} />
@@ -170,6 +171,10 @@ export const Mosaic = () => {
         <OvalShape backrgound="LIGHT_PURPLE" />
         <OvalShape backrgound="LIGHT_YELLOW" />
       </Column>
+    </Container>
+  ) : (
+    <Container>
+      <Image src={mosaicImage} layout="responsive" objectFit="cover" />
     </Container>
   );
 };
