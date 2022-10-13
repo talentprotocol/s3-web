@@ -86,6 +86,7 @@ export const NavLink = styled.a`
   line-height: 165%;
   letter-spacing: 0.02em;
   cursor: pointer;
+  text-decoration: none;
 
   :hover {
     font-weight: 500;
