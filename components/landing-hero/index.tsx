@@ -1,6 +1,6 @@
 import { COPY } from "copy";
 import { useMediaQuery } from "hooks/use-media-query";
-import { useCallback, useRef } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { Typography } from "shared-ui";
 import {
   ButtonContainer,
@@ -14,6 +14,10 @@ import {
 } from "./styled";
 
 export const LandingHero = () => {
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+      setMounted(true)
+  }, []);
   const talRef = useRef<HTMLSpanElement>(null);
   const isMobile = useMediaQuery("(max-width: 768px)");
   const handleReverveButtonClick = useCallback(() => {
@@ -51,7 +55,7 @@ export const LandingHero = () => {
         </TokenSuffix>
         <ButtonContainer>
           <ReserveHandleButton onClick={handleReverveButtonClick}>
-            {isMobile
+            {mounted && isMobile
               ? COPY.LANDING_HERO.RESERVE_TAL.BUTTON_MOBILE
               : COPY.LANDING_HERO.RESERVE_TAL.BUTTON}
           </ReserveHandleButton>

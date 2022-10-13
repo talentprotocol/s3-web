@@ -28,7 +28,7 @@ export const COPY = {
       PLACEHOLDER: "yournamehere",
       TOKEN: ".tal",
       BUTTON: "Reserve handle",
-      BUTTON_MOBILE: "Claim",
+      BUTTON_MOBILE: "Reserve handle",
     },
   },
   TAB_HERO: {
@@ -197,11 +197,11 @@ export const COPY = {
         },
         {
           NAME: "Terms of Service ",
-          TARGET: "https://drive.google.com/file/d/1Pcf_sa6fvUItxVMiUzuOt41aCbRRFVrh/view",
+          TARGET: "https://www.notion.so/talentprotocol/Terms-Conditions-ec060cb6c06e49a98f17d235d0835773",
         },
         {
           NAME: "Privacy Policy",
-          TARGET: "https://drive.google.com/file/d/1Cts7FcmstLa_IISHFeO6vizy8Um5rKZE/view",
+          TARGET: "https://www.notion.so/talentprotocol/Privacy-Policy-cc2b297006b54b3db1a008592302ccf5",
         },
       ],
     },

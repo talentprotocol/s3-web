@@ -1,5 +1,6 @@
 import { COPY } from "copy";
 import { useMediaQuery } from "hooks/use-media-query";
+import { useEffect, useState } from "react";
 import { Button, Logo } from "shared-ui";
 import {
   Container,
@@ -14,29 +15,33 @@ export const Header = ({
   toggleSidebar,
   isSidebarVisible,
 }: Props) => {
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+      setMounted(true)
+  }, []);
   const isMobile = useMediaQuery("(max-width: 768px)");
   return (
-    <Container isMobile={isMobile}>
+    <Container isMobile={mounted && isMobile}>
       <LogoArea>
         <Logo />
       </LogoArea>
-      {!isMobile && (
+      {mounted && !isMobile && (
         <NavArea>
           <Button
             text={COPY.LANDING_HERO.HEADER_LOGIN}
             type="link"
             variant="secondary"
-            href="https://beta.talentprotocol.com/"
+            href="/"
           />
           <Button
             text={COPY.LANDING_HERO.HEADER_SIGN_UP}
             type="link"
             variant="primary"
-            href="https://beta.talentprotocol.com/join"
+            href="/"
           />
         </NavArea>
       )}
-      {isMobile && (
+      {mounted && isMobile && (
         <MobileMenuWrapper>
           <MobileMenu
             onClick={toggleSidebar}
