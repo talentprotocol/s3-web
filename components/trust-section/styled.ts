@@ -136,11 +136,9 @@ export const ImageHolder = styled.div`
   align-self: flex-start;
   z-index: 1;
 
-
   @media (min-width: 768px) {
     min-height: auto;
   }
-
 `;
 
 export const ImageWrapper = styled.div`

@@ -49,7 +49,9 @@ const testimonials = [
 let currentIndex = 0;
 
 export const TrustSection = () => {
-  const [currentTestimonial, setCurrentTestimonial] = useState(testimonials[0]);
+  const [currentTestimonial, setCurrentTestimonial] = useState(
+    testimonials[0]
+  );
   useEffect(() => {
     const intervalId = setInterval(() => {
       const tempTestimonial = testimonials.shift();
@@ -81,7 +83,11 @@ export const TrustSection = () => {
       </TitleWrapper>
       <ContentRow>
         {
-          <DisclaimerColumn key={currentTestimonial.name} id={currentTestimonial.name} className="animate__animated animate__fadeIn">
+          <DisclaimerColumn
+            key={currentTestimonial.name}
+            id={currentTestimonial.name}
+            className="animate__animated animate__fadeIn"
+          >
             <Typography type="body1" text={currentTestimonial.text} />
             <LabelTag
               text={currentTestimonial.label}

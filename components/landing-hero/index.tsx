@@ -18,8 +18,10 @@ export const LandingHero = () => {
   const isMobile = useMediaQuery("(max-width: 768px)");
   const handleReverveButtonClick = useCallback(() => {
     if (!talRef.current?.innerText) return;
-    window.open(`https://beta.talentprotocol.com/join?handle=${talRef.current?.innerText}`);
-  }, [talRef.current]); 
+    window.open(
+      `https://beta.talentprotocol.com/join?handle=${talRef.current?.innerText}`
+    );
+  }, [talRef.current]);
   return (
     <Container>
       <Typography type="h1">

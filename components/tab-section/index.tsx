@@ -52,9 +52,9 @@ export const TabSection = () => {
         </ContentArea>
         <Tabs>{memoedTabs}</Tabs>
         <ImageHolder>
-            <Image priority src={profileImage} alt="webpage" />
+          <Image priority src={profileImage} alt="webpage" />
         </ImageHolder>
-        </InnerContainer>
+      </InnerContainer>
     </Container>
   );
 };

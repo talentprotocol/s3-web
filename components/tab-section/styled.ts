@@ -27,8 +27,8 @@ export const Tabs = styled.div`
 
   -ms-overflow-style: none;
   scrollbar-width: none;
-  ::-webkit-scrollbar { 
-      display: none; 
+  ::-webkit-scrollbar {
+    display: none;
   }
 
   @media (min-width: 768px) {
