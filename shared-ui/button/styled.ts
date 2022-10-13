@@ -53,6 +53,10 @@ const pentanaryStyles = css`
   color: ${COLORS.BLACK};
   padding: 14px 32px;
   border-radius: 32px;
+
+  :hover {
+    background-color: ${COLORS.SUPER_LIGHT_YELLOW};
+  }
 `;
 
 const hexanaryStyles = css`
