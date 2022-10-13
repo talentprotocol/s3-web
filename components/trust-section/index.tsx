@@ -86,7 +86,7 @@ export const TrustSection = () => {
           <DisclaimerColumn
             key={currentTestimonial.name}
             id={currentTestimonial.name}
-            className="animate__animated animate__fadeIn"
+            className="animate__animated animate__fadeIn-2s"
           >
             <Typography type="body1" text={currentTestimonial.text} />
             <LabelTag
@@ -105,8 +105,8 @@ export const TrustSection = () => {
               id={`image-to-animate-${img.name}`}
               className={
                 index === 0
-                  ? "animate__animated animate__fadeOut animate__delay-6s"
-                  : "animate__animated animate__fadeIn"
+                  ? ""
+                  : ""
               }
             >
               <Image src={img.src} alt="avatar" />

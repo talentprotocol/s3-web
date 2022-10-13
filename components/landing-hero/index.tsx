@@ -17,7 +17,6 @@ export const LandingHero = () => {
   const talRef = useRef<HTMLSpanElement>(null);
   const isMobile = useMediaQuery("(max-width: 768px)");
   const handleReverveButtonClick = useCallback(() => {
-    if (!talRef.current?.innerText) return;
     window.open(
       `https://beta.talentprotocol.com/join?handle=${talRef.current?.innerText}`
     );
