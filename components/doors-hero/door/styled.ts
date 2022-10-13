@@ -49,11 +49,23 @@ export const DoorButton = styled.button<StyledDoorProps>`
   color: ${COLORS.WHITE};
   border: none;
   cursor: pointer;
+  transition-duration: 0.25s;
+  outline: none;
+
+  :hover {
+    background-color: ${COLORS.LIGHT_BLACK};
+  }
+
+
 
   ${({ isHighlighted }) =>
     isHighlighted &&
     css`
       background: ${COLORS.YELLOW};
       color: ${COLORS.BLACK};
+
+      :hover {
+        background-color: ${COLORS.LIGHTER_YELLOW};
+      }
     `}
 `;

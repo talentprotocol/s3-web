@@ -17,18 +17,46 @@ import {
   Slider,
   SliderContainer,
   SliderEntryContainer,
+  SliderEntryInnerContainer,
 } from "./styled";
 
 const SLIDER_ENTRIES = [
-  allianceImage,
-  blu3Dao,
-  celo,
-  floriImage,
-  herLatamImage,
-  kernelImage,
-  launchHouse,
-  polygonImage,
-  protocolLabsImage,
+  {
+    image: allianceImage,
+    width: "139px"
+  },
+  {
+    image: blu3Dao,
+    width: "77px"
+  },
+  {
+    image: celo,
+    width: "136px"
+  },
+  {
+    image: floriImage,
+    width: "130px"
+  },
+  {
+    image: herLatamImage,
+    width: "94px"
+  },
+  {
+    image: kernelImage,
+    width: "110px"
+  },
+  {
+    image: launchHouse,
+    width: "103px"
+  },
+  {
+    image: polygonImage,
+    width: "117px"
+  },
+  {
+    image: protocolLabsImage,
+    width: "155px"
+  }
 ];
 const AMOUNT_OF_SLIDER_ENTRIES = new Array(100).fill([
   ...SLIDER_ENTRIES,
@@ -38,9 +66,11 @@ export const PartnersBanner = () => {
   const isMobile = useMediaQuery("(max-width: 768px)");
   const sliderContent = useMemo(
     () =>
-      AMOUNT_OF_SLIDER_ENTRIES.flat().map((img, index) => (
+      AMOUNT_OF_SLIDER_ENTRIES.flat().map((el, index) => (
         <SliderEntryContainer key={`silder-entry-${index}`}>
-          <Image src={img} />
+          <SliderEntryInnerContainer width={el.width}>
+            <Image src={el.image} />
+          </SliderEntryInnerContainer>
         </SliderEntryContainer>
       )),
     []
@@ -49,9 +79,11 @@ export const PartnersBanner = () => {
     () =>
       AMOUNT_OF_SLIDER_ENTRIES.flat()
         .reverse()
-        .map((img, index) => (
+        .map((el, index) => (
           <SliderEntryContainer key={`silder-entry-${index}`}>
-            <Image src={img} />
+          <SliderEntryInnerContainer width={el.width}>
+            <Image src={el.image} />
+          </SliderEntryInnerContainer>
           </SliderEntryContainer>
         )),
     []

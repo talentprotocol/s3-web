@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 import { COLORS } from "shared-ui";
 
 export const Container = styled.section`
@@ -42,6 +42,10 @@ export const SliderEntryContainer = styled.div`
   border: 2px solid ${COLORS.DARK_BLUE};
   gap: 12px;
   border-radius: 24px;
+`;
+
+export const SliderEntryInnerContainer = styled.div<{width?: string}>`
+  ${({ width }) => width && css`width: ${width};`}
 `;
 
 export const SliderContainer = styled.section`

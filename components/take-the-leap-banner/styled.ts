@@ -107,4 +107,5 @@ export const Slider = styled.div`
   overflow: auto;
   white-space: nowrap;
   animation: ${sliderRotation} 60s linear infinite;
+  cursor: pointer;
 `;

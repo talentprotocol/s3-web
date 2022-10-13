@@ -4,9 +4,9 @@ import {
   LabelTag,
   Typography,
   CompanyTag,
-  COLORS,
   AvailableColors,
 } from "shared-ui";
+import { useMediaQuery } from "hooks/use-media-query";
 import { COPY } from "copy";
 import camelliaImage from "./assets/camellia-avatar.png";
 import giulia from "./assets/giulia-avatar.png";
@@ -21,7 +21,6 @@ import {
   TagContainer,
   TitleWrapper,
 } from "./styled";
-
 const testimonials = [
   {
     src: matthewImage,
@@ -49,6 +48,7 @@ const testimonials = [
 let currentIndex = 0;
 
 export const TrustSection = () => {
+  const isMobile = useMediaQuery("(max-width: 768px)");
   const [currentTestimonial, setCurrentTestimonial] = useState(
     testimonials[0]
   );
@@ -94,7 +94,7 @@ export const TrustSection = () => {
               type="default"
               color={currentTestimonial.color}
             />
-            <Quotes>“</Quotes>
+            {!isMobile && <Quotes>“</Quotes>}
           </DisclaimerColumn>
         }
         <ImageHolder>

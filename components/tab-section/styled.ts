@@ -48,6 +48,7 @@ export const TabElement = styled.span<TabElementProps>`
   border: 1px solid ${COLORS.WHITE};
   border-radius: 32px;
   white-space: nowrap;
+  transition-duration: 0.25s;
 
   ${({ active }) =>
     active &&
@@ -55,6 +56,11 @@ export const TabElement = styled.span<TabElementProps>`
       background: ${COLORS.WHITE};
       color: ${COLORS.BLACK};
     `}
+
+  :hover {
+    color: ${COLORS.BLACK};
+    background-color: ${COLORS.WHITE};
+  }
 `;
 
 export const ContentArea = styled.article`

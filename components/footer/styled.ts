@@ -61,12 +61,14 @@ export const NavList = styled.ul`
   flex-direction: column;
   gap: 8px;
   ${fontNormal}
-  * {
+  li {
     color: ${COLORS.WHITE};
     font-weight: 400;
     font-size: 14px;
     line-height: 165%;
     letter-spacing: 0.02em;
+    cursor: pointer;
+    
     :first-child {
       color: ${COLORS.LIGHT_YELLOW};
       font-weight: 500;
@@ -74,6 +76,20 @@ export const NavList = styled.ul`
       line-height: 165%;
       letter-spacing: 0.02em;
     }
+  }
+`;
+
+export const NavLink = styled.a`
+  color: ${COLORS.WHITE};
+  font-weight: 400 !important;
+  font-size: 14px;
+  line-height: 165%;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+
+  :hover {
+    font-weight: 500;
+    text-decoration: underline;
   }
 `;
 

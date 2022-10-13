@@ -1,5 +1,6 @@
 import { useCallback, useMemo, useRef } from "react";
 import axios from "axios";
+import { toast } from 'react-toastify';
 import { COPY } from "copy";
 import { Typography } from "shared-ui";
 import {
@@ -27,11 +28,11 @@ export const TakeTheLeapBanner = () => {
         email: emailRef.current.value
       }).
         then(() => {
-          // show toast success
+          toast("You've successfully subscribed to our newsletter", {type: "success"});
         })
-        .catch(err => {
-          // show toast error
-        })
+        .catch(() => {
+          toast("Please enter a valid email address", {type: "error"});
+        });
     }
   }, [emailRef.current]);
   const sliderContent = useMemo(
@@ -88,7 +89,7 @@ export const TakeTheLeapBanner = () => {
         </InnerContainer>
       </Container>
       <SliderContainer>
-        <Slider>{sliderContent}</Slider>
+        <Slider onClick={() => window.open("https://beta.talentprotocol.com/join")}>{sliderContent}</Slider>
       </SliderContainer>
     </>
   );

@@ -8,12 +8,22 @@ const primaryStyles = css`
   color: ${COLORS.WHITE};
   padding: 14px 32px;
   border-radius: 32px;
+
+  :hover {
+    background-color: ${COLORS.LIGHTER_PURPLE};
+  }
 `;
 
 const secondaryStyles = css`
+  color: ${COLORS.BLACK};
   padding: 14px 32px;
   display: flex;
   align-items: center;
+  border-radius: 32px;
+
+  :hover {
+    background-color: ${COLORS.LIGHTER_GREY};
+  }
 `;
 
 const tertiaryStyles = css`
@@ -21,6 +31,10 @@ const tertiaryStyles = css`
   color: ${COLORS.BLACK};
   padding: 14px 32px;
   border-radius: 32px;
+
+  :hover {
+    background-color: ${COLORS.LIGHTER_GREY};
+  }
 `;
 
 const quaternaryStyles = css`
@@ -28,6 +42,10 @@ const quaternaryStyles = css`
   color: ${COLORS.WHITE};
   padding: 14px 32px;
   border-radius: 32px;
+
+  :hover {
+    background-color: ${COLORS.LIGHT_BLACK};
+  }
 `;
 
 const pentanaryStyles = css`
@@ -42,6 +60,11 @@ const hexanaryStyles = css`
   padding: 14px 32px;
   display: flex;
   align-items: center;
+  border-radius: 32px;
+
+  :hover {
+    background-color: ${COLORS.LIGHT_BLACK};
+  }
 `;
 
 const septenaryStyles = css`
@@ -71,6 +94,9 @@ export const ButtonLinkContainer = styled.a<StyledButtonProps>`
   text-decoration: none;
   cursor: pointer;
   display: flex;
+  transition-duration: 0.25s;
+  outline: none;
+
   ${({ variant }) => {
     switch (variant) {
       case VariantTypeEnum.SECONDARY:

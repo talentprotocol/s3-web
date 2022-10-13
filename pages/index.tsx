@@ -1,5 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { Header } from "components/header";
 import { HeroSection } from "components/hero-section";
 import { LandingHero } from "components/landing-hero";
@@ -65,6 +67,7 @@ const Home: NextPage = () => {
         <OpenSourceBanner />
       </main>
       <Footer />
+      <ToastContainer />
     </>
   );
 };
