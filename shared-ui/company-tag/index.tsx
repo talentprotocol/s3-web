@@ -1,32 +1,32 @@
 import { useMemo } from "react";
 import Image from "next/image";
 import metamaskIcon from "./assets/metamask.svg";
-import amazonIcon from "./assets/amazon.svg";
+import binanceIcon from "./assets/binance.svg";
 import revolutIcon from "./assets/revolut.svg";
-import spotifyIcon from "./assets/spotify.svg";
-import facebookIcon from "./assets/facebook.svg";
+import uniswapIcon from "./assets/uniswap.svg";
+import appleIcon from "./assets/apple.svg";
 import { Container, ImageWrapper, LabelWrapper } from "./styled";
 import { CompanyEnum, Props } from "./types";
 
 export const CompanyTag = ({ type }: Props) => {
   const tag = useMemo(() => {
     switch (type) {
-      case CompanyEnum.AMAZON:
+      case CompanyEnum.BINANCE:
         return (
           <>
             <ImageWrapper>
-              <Image src={amazonIcon} />
+              <Image src={binanceIcon} />
             </ImageWrapper>
-            <LabelWrapper>Amazon</LabelWrapper>
+            <LabelWrapper>Binance</LabelWrapper>
           </>
         );
-      case CompanyEnum.FACEBOOK:
+      case CompanyEnum.APPLE:
         return (
           <>
             <ImageWrapper>
-              <Image src={facebookIcon} />
+              <Image src={appleIcon} />
             </ImageWrapper>
-            <LabelWrapper>Facebook</LabelWrapper>
+            <LabelWrapper>Apple</LabelWrapper>
           </>
         );
       case CompanyEnum.REVOLUT:
@@ -38,13 +38,13 @@ export const CompanyTag = ({ type }: Props) => {
             <LabelWrapper>Revolut</LabelWrapper>
           </>
         );
-      case CompanyEnum.SPOTIFY:
+      case CompanyEnum.UNISWAP:
         return (
           <>
             <ImageWrapper>
-              <Image src={spotifyIcon} />
+              <Image src={uniswapIcon} />
             </ImageWrapper>
-            <LabelWrapper>Spotify</LabelWrapper>
+            <LabelWrapper>Uniswap</LabelWrapper>
           </>
         );
       case CompanyEnum.METAMASK:

@@ -1,15 +1,15 @@
 export type CompanyEnumType =
-  | "facebook"
-  | "spotify"
+  | "apple"
+  | "uniswap"
   | "revolut"
-  | "amazon"
+  | "binance"
   | "metamask";
 
 export enum CompanyEnum {
-  FACEBOOK = "facebook",
+  APPLE = "apple",
   REVOLUT = "revolut",
-  SPOTIFY = "spotify",
-  AMAZON = "amazon",
+  UNISWAP = "uniswap",
+  BINANCE = "binance",
   METAMASK = "metamask",
 }
 

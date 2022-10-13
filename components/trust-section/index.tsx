@@ -72,13 +72,13 @@ export const TrustSection = () => {
   return (
     <Container>
       <TagContainer>
-        <CompanyTag type="facebook" />
-        <CompanyTag type="spotify" />
-        <CompanyTag type="amazon" />
+        <CompanyTag type="apple" />
+        <CompanyTag type="binance" />
+        <CompanyTag type="uniswap" />
         <CompanyTag type="revolut" />
         <CompanyTag type="metamask" />
       </TagContainer>
-      <TitleWrapper>
+      <TitleWrapper key="title">
         <Typography type="h2" text={COPY.TRUST_SECTION.TITLE} />
       </TitleWrapper>
       <ContentRow>
@@ -86,7 +86,7 @@ export const TrustSection = () => {
           <DisclaimerColumn
             key={currentTestimonial.name}
             id={currentTestimonial.name}
-            className="animate__animated animate__fadeIn-2s"
+            className=""
           >
             <Typography type="body1" text={currentTestimonial.text} />
             <LabelTag
