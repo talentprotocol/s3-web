@@ -12,6 +12,7 @@ export const useSidebar = () => {
         setIsClosing(false);
       }, 250);
     } else {
+      window.scrollTo(0, 0);
       setSidebarStatus(true);
       setIsClosing(false);
     }

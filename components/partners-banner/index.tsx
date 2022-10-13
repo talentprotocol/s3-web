@@ -23,40 +23,40 @@ import {
 const SLIDER_ENTRIES = [
   {
     image: allianceImage,
-    width: "139px"
+    width: "139px",
   },
   {
     image: blu3Dao,
-    width: "77px"
+    width: "77px",
   },
   {
     image: celo,
-    width: "136px"
+    width: "136px",
   },
   {
     image: floriImage,
-    width: "130px"
+    width: "130px",
   },
   {
     image: herLatamImage,
-    width: "94px"
+    width: "94px",
   },
   {
     image: kernelImage,
-    width: "110px"
+    width: "110px",
   },
   {
     image: launchHouse,
-    width: "103px"
+    width: "103px",
   },
   {
     image: polygonImage,
-    width: "117px"
+    width: "117px",
   },
   {
     image: protocolLabsImage,
-    width: "155px"
-  }
+    width: "155px",
+  },
 ];
 const AMOUNT_OF_SLIDER_ENTRIES = new Array(100).fill([
   ...SLIDER_ENTRIES,
@@ -81,9 +81,9 @@ export const PartnersBanner = () => {
         .reverse()
         .map((el, index) => (
           <SliderEntryContainer key={`silder-entry-${index}`}>
-          <SliderEntryInnerContainer width={el.width}>
-            <Image src={el.image} />
-          </SliderEntryInnerContainer>
+            <SliderEntryInnerContainer width={el.width}>
+              <Image src={el.image} />
+            </SliderEntryInnerContainer>
           </SliderEntryContainer>
         )),
     []

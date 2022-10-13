@@ -1,6 +1,6 @@
 import { useCallback, useMemo, useRef } from "react";
 import axios from "axios";
-import { toast } from 'react-toastify';
+import { toast } from "react-toastify";
 import { COPY } from "copy";
 import { Typography } from "shared-ui";
 import {
@@ -24,14 +24,19 @@ export const TakeTheLeapBanner = () => {
   const emailRef = useRef<HTMLInputElement>(null);
   const subscribeToNewsLetter = useCallback(() => {
     if (emailRef.current) {
-      axios.post("/api/newsletter", {
-        email: emailRef.current.value
-      }).
-        then(() => {
-          toast("You've successfully subscribed to our newsletter", {type: "success"});
+      axios
+        .post("/api/newsletter", {
+          email: emailRef.current.value,
+        })
+        .then(() => {
+          toast("You've successfully subscribed to our newsletter", {
+            type: "success",
+          });
         })
         .catch(() => {
-          toast("Please enter a valid email address", {type: "error"});
+          toast("Please enter a valid email address", {
+            type: "error",
+          });
         });
     }
   }, [emailRef.current]);
@@ -81,7 +86,9 @@ export const TakeTheLeapBanner = () => {
               />
               <ButtonWrapper>
                 <StyledButtonWrapper>
-                  <StyledButton onClick={subscribeToNewsLetter}>--E</StyledButton>
+                  <StyledButton onClick={subscribeToNewsLetter}>
+                    --E
+                  </StyledButton>
                 </StyledButtonWrapper>
               </ButtonWrapper>
             </StyledWrapper>
@@ -89,7 +96,13 @@ export const TakeTheLeapBanner = () => {
         </InnerContainer>
       </Container>
       <SliderContainer>
-        <Slider onClick={() => window.open("https://beta.talentprotocol.com/join")}>{sliderContent}</Slider>
+        <Slider
+          onClick={() =>
+            window.open("https://beta.talentprotocol.com/join")
+          }
+        >
+          {sliderContent}
+        </Slider>
       </SliderContainer>
     </>
   );

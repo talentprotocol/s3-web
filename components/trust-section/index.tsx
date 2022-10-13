@@ -103,11 +103,7 @@ export const TrustSection = () => {
             <ImageWrapper
               key={img.name}
               id={`image-to-animate-${img.name}`}
-              className={
-                index === 0
-                  ? ""
-                  : ""
-              }
+              className={index === 0 ? "" : ""}
             >
               <Image src={img.src} alt="avatar" />
             </ImageWrapper>

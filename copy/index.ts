@@ -32,22 +32,26 @@ export const COPY = {
       {
         TITLE: "Journey",
         CONTENT_HEADER: "More than a list of past work and schools.",
-        CONTENT_DESCRIPTION: "Add future goals to your career journey. Drive is as important as experience. Add images and videos to prove what you’re capable of. What you did says more than where you did it. Tag collaborators who contributed to your success. Work is collaborative."
+        CONTENT_DESCRIPTION:
+          "Add future goals to your career journey. Drive is as important as experience. Add images and videos to prove what you’re capable of. What you did says more than where you did it. Tag collaborators who contributed to your success. Work is collaborative.",
       },
       {
         TITLE: "Credentials",
         CONTENT_HEADER: "Show your on-chain credentials.",
-        CONTENT_DESCRIPTION: "A digital resume that combines on-chain and off-chain data. From formal, super curated resumes to more authentic and verifiable expressions of uniqueness. Made for web3 builders and designed for the future of work."
+        CONTENT_DESCRIPTION:
+          "A digital resume that combines on-chain and off-chain data. From formal, super curated resumes to more authentic and verifiable expressions of uniqueness. Made for web3 builders and designed for the future of work.",
       },
       {
         TITLE: "Perks",
         CONTENT_HEADER: "Connect with like-minded builders. ",
-        CONTENT_DESCRIPTION: "Start building the support network you need to succeed. Launch a token to let other people invest in your career or discover inspiring talent that you can support. Success is collective."
+        CONTENT_DESCRIPTION:
+          "Start building the support network you need to succeed. Launch a token to let other people invest in your career or discover inspiring talent that you can support. Success is collective.",
       },
       {
         TITLE: "Career Circle",
         CONTENT_HEADER: "Offer Perks to your supporters.",
-        CONTENT_DESCRIPTION: "Create exclusive perks that can be claimed by anyone that owns your social token or NFT. Perks can be anything from IRL experiences to digital content. Your circle, your choice."
+        CONTENT_DESCRIPTION:
+          "Create exclusive perks that can be claimed by anyone that owns your social token or NFT. Perks can be anything from IRL experiences to digital content. Your circle, your choice.",
       },
     ],
   },
@@ -157,19 +161,19 @@ export const COPY = {
       LINKS: [
         {
           NAME: "About",
-          TARGET: "/"
+          TARGET: "/",
         },
         {
           NAME: "Blog",
-          TARGET: "/"
+          TARGET: "/",
         },
         {
           NAME: "Bounties",
-          TARGET: "/"
+          TARGET: "/",
         },
         {
           NAME: "Ambassadors",
-          TARGET: "/"
+          TARGET: "/",
         },
       ],
     },
@@ -178,15 +182,15 @@ export const COPY = {
       LINKS: [
         {
           NAME: "FAQ",
-          TARGET: "/"
+          TARGET: "/",
         },
         {
           NAME: "Terms of Service ",
-          TARGET: "/"
+          TARGET: "/",
         },
         {
           NAME: "Privacy Policy",
-          TARGET: "/"
+          TARGET: "/",
         },
       ],
     },
@@ -195,19 +199,19 @@ export const COPY = {
       LINKS: [
         {
           NAME: "Twitter",
-          TARGET: "/"
+          TARGET: "/",
         },
         {
           NAME: "Discord",
-          TARGET: "/"
+          TARGET: "/",
         },
         {
           NAME: "Github",
-          TARGET: "/"
+          TARGET: "/",
         },
         {
           NAME: "Telegram",
-          TARGET: "/"
+          TARGET: "/",
         },
       ],
     },

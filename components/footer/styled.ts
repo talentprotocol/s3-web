@@ -68,7 +68,7 @@ export const NavList = styled.ul`
     line-height: 165%;
     letter-spacing: 0.02em;
     cursor: pointer;
-    
+
     :first-child {
       color: ${COLORS.LIGHT_YELLOW};
       font-weight: 500;

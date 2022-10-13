@@ -44,8 +44,14 @@ export const SliderEntryContainer = styled.div`
   border-radius: 24px;
 `;
 
-export const SliderEntryInnerContainer = styled.div<{width?: string}>`
-  ${({ width }) => width && css`width: ${width};`}
+export const SliderEntryInnerContainer = styled.div<{
+  width?: string;
+}>`
+  ${({ width }) =>
+    width &&
+    css`
+      width: ${width};
+    `}
 `;
 
 export const SliderContainer = styled.section`

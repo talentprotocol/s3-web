@@ -18,7 +18,13 @@ import {
   TitleWrapper,
 } from "./styled";
 
-const images = [aboutImage, journyImage, credentialsImage, perksImage, careerCircleImage];
+const images = [
+  aboutImage,
+  journyImage,
+  credentialsImage,
+  perksImage,
+  careerCircleImage,
+];
 
 export const TabSection = () => {
   const [activeTab, setActiveTab] = useState(0);

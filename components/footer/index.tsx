@@ -36,7 +36,9 @@ export const Footer = () => {
               <li>{COPY.FOOTER.PROJECT.TITLE}</li>
               {COPY.FOOTER.PROJECT.LINKS.map((el) => (
                 <li key={el.NAME}>
-                  <NavLink href={el.TARGET} target="_blank">{el.NAME}</NavLink>
+                  <NavLink href={el.TARGET} target="_blank">
+                    {el.NAME}
+                  </NavLink>
                 </li>
               ))}
             </NavList>
@@ -44,7 +46,9 @@ export const Footer = () => {
               <li>{COPY.FOOTER.HELP.TITLE}</li>
               {COPY.FOOTER.HELP.LINKS.map((el) => (
                 <li key={el.NAME}>
-                  <NavLink href={el.TARGET} target="_blank">{el.NAME}</NavLink>
+                  <NavLink href={el.TARGET} target="_blank">
+                    {el.NAME}
+                  </NavLink>
                 </li>
               ))}
             </NavList>
@@ -52,7 +56,9 @@ export const Footer = () => {
               <li>{COPY.FOOTER.SOCIALS.TITLE}</li>
               {COPY.FOOTER.SOCIALS.LINKS.map((el) => (
                 <li key={el.NAME}>
-                  <NavLink href={el.TARGET} target="_blank">{el.NAME}</NavLink>
+                  <NavLink href={el.TARGET} target="_blank">
+                    {el.NAME}
+                  </NavLink>
                 </li>
               ))}
             </NavList>

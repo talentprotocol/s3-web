@@ -5,7 +5,7 @@ import { TabElementProps } from "./types";
 export const Container = styled.section`
   background-color: ${COLORS.LIGHT_PURPLE};
   overflow-x: hidden;
-  padding: 86px 24px 0;
+  padding: 86px 0 0;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -20,8 +20,8 @@ export const InnerContainer = styled.div`
 
 export const Tabs = styled.div`
   display: flex;
-  gap: 40px;
-  padding: 88px 0 16px;
+  gap: 8px;
+  padding: 88px 24px 16px;
   overflow: scroll;
   margin-bottom: 32px;
 
@@ -69,7 +69,6 @@ export const ContentArea = styled.article`
   flex-direction: column;
   min-width: 372px;
   text-align: center;
-  gap: 24px;
   min-height: 190px;
   max-height: 190px;
 
@@ -79,16 +78,21 @@ export const ContentArea = styled.article`
     min-height: 204px;
     max-height: 204px;
   }
+
+  :nth-child(2) {
+  }
 `;
 
 export const TitleWrapper = styled.div`
   max-width: 570px;
   margin: auto;
+  padding: 0 24px;
 `;
 
 export const SubTitleWrapper = styled.div`
   max-width: 765px;
   margin: auto;
+  padding: 0 24px;
 `;
 
 export const ImageHolder = styled.div`
@@ -96,6 +100,7 @@ export const ImageHolder = styled.div`
   align-items: flex-end;
   max-width: 765px;
   margin: 0 auto;
+  padding: 0 24px;
 
   * {
     transform: translate(0, 8%);

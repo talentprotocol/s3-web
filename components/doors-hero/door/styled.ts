@@ -56,8 +56,6 @@ export const DoorButton = styled.button<StyledDoorProps>`
     background-color: ${COLORS.LIGHT_BLACK};
   }
 
-
-
   ${({ isHighlighted }) =>
     isHighlighted &&
     css`
