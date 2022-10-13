@@ -23,12 +23,12 @@ export const Footer = () => {
       <InnerContainer>
         <FooterRow>
           <PresentationColumn>
-            <Image src={logoImage} alt="logo" />
+            <Image priority src={logoImage} alt="logo" />
             <CopyrightTypography>
               {COPY.FOOTER.DESCRIPTION}
             </CopyrightTypography>
             <AwardContainer>
-              <Image src={awardImage} alt="smoothie award" />
+              <Image priority src={awardImage} alt="smoothie award" />
             </AwardContainer>
           </PresentationColumn>
           <NavigationArea>

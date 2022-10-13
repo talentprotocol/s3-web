@@ -15,7 +15,7 @@ export const TalentHouseSection = () => (
   <Container>
     <InnerContainer>
       <ImageHolder>
-        <Image src={scholarshipImage} alt="scholarship" />
+        <Image priority src={scholarshipImage} alt="scholarship" />
       </ImageHolder>
       <ContentArea>
         <LabelTag

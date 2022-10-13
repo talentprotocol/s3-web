@@ -21,7 +21,7 @@ export const CareerCircleSection = () => (
   <Container>
     <InnerContainer>
       <ImageHolder>
-        <Image src={communityImage} alt="community" />
+        <Image priority src={communityImage} alt="community" />
       </ImageHolder>
       <ContentArea>
         <LabelTag
@@ -39,8 +39,8 @@ export const CareerCircleSection = () => (
           color="BLACK"
         />
         <LogosArea>
-          <Image src={celoImage} alt="celo" />
-          <Image src={polygonImage} alt="polygon" />
+          <Image priority src={celoImage} alt="celo" />
+          <Image priority src={polygonImage} alt="polygon" />
           <MoreComingLabel>
             {COPY.CAREER_CIRCLE_SECTION.MORE_COMING}
           </MoreComingLabel>

@@ -37,7 +37,7 @@ export const ProfileSection = () => (
         </ActionArea>
       </ContentArea>
       <ImageHolder>
-        <Image src={ownershipImage} alt="ownership" />
+        <Image priority src={ownershipImage} alt="ownership" />
       </ImageHolder>
     </InnerContainer>
   </Container>
