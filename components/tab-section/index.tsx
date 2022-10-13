@@ -6,11 +6,12 @@ import profileImage from "./assets/about/profile.png";
 import {
   Container,
   ContentArea,
-  ContentPane,
   ImageHolder,
-  ImagePositioner,
+  InnerContainer,
+  SubTitleWrapper,
   TabElement,
   Tabs,
+  TitleWrapper,
 } from "./styled";
 
 export const TabSection = () => {
@@ -32,26 +33,28 @@ export const TabSection = () => {
   );
   return (
     <Container>
-      <Tabs>{memoedTabs}</Tabs>
-      <ContentPane>
+      <InnerContainer>
         <ContentArea>
-          <Typography
-            type="h3"
-            text={COPY.TAB_HERO.TABS[activeTab].CONTENT_HEADER}
-            color="WHITE"
-          />
-          <Typography
-            type="body1"
-            text={COPY.TAB_HERO.TABS[activeTab].CONTENT_DESCRIPTION}
-            color="WHITE"
-          />
+          <TitleWrapper>
+            <Typography
+              type="h3"
+              text={COPY.TAB_HERO.TABS[activeTab].CONTENT_HEADER}
+              color="WHITE"
+            />
+          </TitleWrapper>
+          <SubTitleWrapper>
+            <Typography
+              type="body1"
+              text={COPY.TAB_HERO.TABS[activeTab].CONTENT_DESCRIPTION}
+              color="WHITE"
+            />
+          </SubTitleWrapper>
         </ContentArea>
+        <Tabs>{memoedTabs}</Tabs>
         <ImageHolder>
-          <ImagePositioner>
             <Image priority src={profileImage} alt="webpage" />
-          </ImagePositioner>
         </ImageHolder>
-      </ContentPane>
+        </InnerContainer>
     </Container>
   );
 };

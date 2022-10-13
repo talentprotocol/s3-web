@@ -1,24 +1,39 @@
 import styled, { css } from "styled-components";
-import { HeroSection } from "components/hero-section";
 import { COLORS, fontNormal } from "shared-ui";
 import { TabElementProps } from "./types";
 
-export const Container = styled(HeroSection)`
+export const Container = styled.section`
   background-color: ${COLORS.LIGHT_PURPLE};
+  overflow-x: hidden;
+  padding: 86px 24px 0;
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
-  padding: 80px 24px;
+  overflow: hidden;
+`;
 
-  @media (min-width: 768px) {
-    padding: 88px 140px 122px;
-  }
+export const InnerContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 `;
 
 export const Tabs = styled.div`
   display: flex;
-  justify-content: center;
   gap: 40px;
+  padding: 88px 0 16px;
+  overflow: scroll;
+  margin-bottom: 32px;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  ::-webkit-scrollbar { 
+      display: none; 
+  }
+
+  @media (min-width: 768px) {
+    justify-content: center;
+  }
 `;
 
 export const TabElement = styled.span<TabElementProps>`
@@ -30,63 +45,48 @@ export const TabElement = styled.span<TabElementProps>`
   line-height: 24px;
   padding: 8px 32px;
   cursor: pointer;
+  border: 1px solid ${COLORS.WHITE};
+  border-radius: 32px;
+  white-space: nowrap;
 
   ${({ active }) =>
     active &&
     css`
       background: ${COLORS.WHITE};
       color: ${COLORS.BLACK};
-      border-radius: 32px;
     `}
-`;
-
-export const ContentPane = styled.div`
-  max-width: 1240px;
-  height: 100%;
-  margin: auto;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column-reverse;
-  gap: 48px;
-
-  @media (min-width: 768px) {
-    flex-direction: row;
-    padding-top: 122px;
-    gap: 122px;
-  }
 `;
 
 export const ContentArea = styled.article`
   display: flex;
   flex-direction: column;
-  flex-basis: 372px;
   min-width: 372px;
+  text-align: center;
   gap: 24px;
 
   @media (min-width: 768px) {
     justify-content: center;
+    text-align: center;
   }
+`;
+
+export const TitleWrapper = styled.div`
+  max-width: 570px;
+  margin: auto;
+`;
+
+export const SubTitleWrapper = styled.div`
+  max-width: 765px;
+  margin: auto;
 `;
 
 export const ImageHolder = styled.div`
-  position: relative;
-  flex-basis: 100%;
+  display: flex;
+  align-items: flex-end;
+  max-width: 765px;
+  margin: 0 auto;
 
-  @media (min-width: 768px) {
-    height: 100%;
-    width: 100%;
-    flex-direction: row;
-    padding-top: 122px;
-  }
-`;
-
-export const ImagePositioner = styled.div`
-  position: absolute;
-  height: 100%;
-
-  @media (min-width: 768px) {
-    width: 760px;
-    top: 50%;
-    transform: translate(0, -100%);
+  * {
+    transform: translate(0, 8%);
   }
 `;
