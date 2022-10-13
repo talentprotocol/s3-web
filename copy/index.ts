@@ -1,7 +1,18 @@
 export const COPY = {
   MOBILE_MENU: {
     TITLE: "Follow us",
-    LINKS: ["Twitter", "Discord", "Github", "Telegram"],
+    LINKS: [
+      {
+        LABEL: "Twitter",
+        HREF: "https://twitter.com/talentprotocol",
+      },
+      {
+        LABEL: "Discord",
+        HREF: "https://discord.com/invite/talentprotocol",
+      },
+      { LABEL: "Github", HREF: "https://github.com/talentprotocol" },
+      { LABEL: "Telegram", HREF: "https://t.me/talentprotocol" },
+    ],
     LOGIN_BUTTON: "Log in",
     SIGNUP_BUTTON: "Sing up",
   },
@@ -161,19 +172,19 @@ export const COPY = {
       LINKS: [
         {
           NAME: "About",
-          TARGET: "/",
+          TARGET: "https://talentprotocol.notion.site/Talent-Protocol-101-26a6c4b9f8284e5e8f55603a38629e76",
         },
         {
           NAME: "Blog",
-          TARGET: "/",
+          TARGET: "https://blog.talentprotocol.com/",
         },
         {
           NAME: "Bounties",
-          TARGET: "/",
+          TARGET: "https://talentprotocol.notion.site/Contribute-74c27972ac554ce0b9702e8a9131cfa7",
         },
         {
           NAME: "Ambassadors",
-          TARGET: "/",
+          TARGET: "https://talentprotocol.notion.site/Ambassadors-Program-194c5580446a45d6b2c510bd8052e91c",
         },
       ],
     },
@@ -182,15 +193,15 @@ export const COPY = {
       LINKS: [
         {
           NAME: "FAQ",
-          TARGET: "/",
+          TARGET: "https://help.talentprotocol.com/",
         },
         {
           NAME: "Terms of Service ",
-          TARGET: "/",
+          TARGET: "https://drive.google.com/file/d/1Pcf_sa6fvUItxVMiUzuOt41aCbRRFVrh/view",
         },
         {
           NAME: "Privacy Policy",
-          TARGET: "/",
+          TARGET: "https://drive.google.com/file/d/1Cts7FcmstLa_IISHFeO6vizy8Um5rKZE/view",
         },
       ],
     },
@@ -199,19 +210,19 @@ export const COPY = {
       LINKS: [
         {
           NAME: "Twitter",
-          TARGET: "/",
+          TARGET: "https://twitter.com/talentprotocol",
         },
         {
           NAME: "Discord",
-          TARGET: "/",
+          TARGET: "https://discord.com/invite/talentprotocol",
         },
         {
           NAME: "Github",
-          TARGET: "/",
+          TARGET: "https://github.com/talentprotocol",
         },
         {
           NAME: "Telegram",
-          TARGET: "/",
+          TARGET: "https://t.me/talentprotocol",
         },
       ],
     },

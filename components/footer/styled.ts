@@ -67,7 +67,6 @@ export const NavList = styled.ul`
     font-size: 14px;
     line-height: 165%;
     letter-spacing: 0.02em;
-    cursor: pointer;
 
     :first-child {
       color: ${COLORS.LIGHT_YELLOW};
@@ -82,6 +81,7 @@ export const NavList = styled.ul`
 export const NavLink = styled.a`
   color: ${COLORS.WHITE};
   font-weight: 400 !important;
+  cursor: pointer;
   font-size: 14px;
   line-height: 165%;
   letter-spacing: 0.02em;

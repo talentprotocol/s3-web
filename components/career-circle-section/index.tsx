@@ -50,6 +50,7 @@ export const CareerCircleSection = () => (
             text={COPY.CAREER_CIRCLE_SECTION.BUTTON}
             type="link"
             variant="quaternary"
+            href="https://beta.talentprotocol.com/join"
           >
             <ButtonIcon>--E</ButtonIcon>
           </Button>

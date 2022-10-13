@@ -31,6 +31,7 @@ export const ProfileSection = () => (
             text={COPY.PROFILE_HERO.BUTTON}
             type="link"
             variant="tertiary"
+            href="https://beta.talentprotocol.com/join"
           >
             <ButtonIcon>--E</ButtonIcon>
           </Button>

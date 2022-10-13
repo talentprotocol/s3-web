@@ -12,7 +12,7 @@ export const Button = ({
   switch (type) {
     case ButtonTypeEnum.LINK:
       return (
-        <Link href={href}>
+        <Link href={href} passHref>
           <ButtonLinkContainer variant={variant}>
             {text}
             {children}

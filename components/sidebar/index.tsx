@@ -32,8 +32,8 @@ export const Sidebar = ({
     () =>
       COPY.MOBILE_MENU.LINKS.map((link) => (
         <LinkListItem key={1}>
-          <StyledLink href={link} target="blank">
-            {link}
+          <StyledLink href={link.HREF} target="_blank">
+            {link.LABEL}
           </StyledLink>
         </LinkListItem>
       )),
@@ -52,10 +52,22 @@ export const Sidebar = ({
       </LinkList>
       <ActionArea>
         <Button type="link" variant="octonary">
-          <ButtonContentWrapper>Log in</ButtonContentWrapper>
+          <ButtonContentWrapper
+            onClick={() =>
+              window.open("https://beta.talentprotocol.com")
+            }
+          >
+            Log in
+          </ButtonContentWrapper>
         </Button>
         <Button type="link" variant="primary">
-          <ButtonContentWrapper>Sign up</ButtonContentWrapper>
+          <ButtonContentWrapper
+            onClick={() =>
+              window.open("https://beta.talentprotocol.com/join")
+            }
+          >
+            Sign up
+          </ButtonContentWrapper>
         </Button>
       </ActionArea>
     </Container>

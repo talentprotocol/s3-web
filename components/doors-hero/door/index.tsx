@@ -29,7 +29,7 @@ export const Door = ({
         <Typography type="body2" text={subTitle} color={textColor} />
       </DescriptionContainer>
       <DoorFooter>
-        <DoorButton isHighlighted={isHighlighted}>
+        <DoorButton onClick={() => window.location.href = "https://beta.talentprotocol.com/join"} isHighlighted={isHighlighted}>
           {buttonText}
         </DoorButton>
       </DoorFooter>

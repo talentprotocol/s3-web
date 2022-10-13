@@ -37,6 +37,7 @@ export const TalentHouseSection = () => (
             text={COPY.TALENT_HOUSE_SECTION.BUTTONS[0]}
             type="link"
             variant="pentanary"
+            href="https://talenthouse.talentprotocol.com/"
           >
             <ButtonIcon>--E</ButtonIcon>
           </Button>
@@ -44,6 +45,7 @@ export const TalentHouseSection = () => (
             text={COPY.TALENT_HOUSE_SECTION.BUTTONS[1]}
             type="link"
             variant="hexanary"
+            href="https://www.youtube.com/c/TalentProtocol/featured"
           >
             <ButtonIcon>--E</ButtonIcon>
           </Button>
