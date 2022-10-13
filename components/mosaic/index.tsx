@@ -4,7 +4,7 @@ import cameliaImage from "./assets/camelia.png";
 import giuliaImage from "./assets/giulia.png";
 import matthewImage from "./assets/matthew.svg";
 import tolgaImage from "./assets/tolga.svg";
-//import mosaicImage from "./assets/mosaic.png";
+// import mosaicImage from "./assets/mosaic.png";
 import { useMediaQuery } from "hooks/use-media-query";
 import {
   Column,

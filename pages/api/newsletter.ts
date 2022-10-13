@@ -18,9 +18,9 @@ export default function handler(req, res) {
             .post(
               "https://api.mailerlite.com/api/v2/subscribers",
               {
-                email: req.query.email,
+                email: req.body.email,
                 fields: {
-                  receive_community_newsletter: 1
+                  receive_community_newsletter: 1,
                 },
               },
               {
@@ -40,7 +40,31 @@ export default function handler(req, res) {
                 .json({ error: "Internal server error" });
             });
         } else {
-          res.status(200).json({ message: "Subscription created" });
+          axios
+            .put(
+              `https://api.mailerlite.com/api/v2/subscribers/${req.body.email}`,
+              {
+                email: req.body.email,
+                fields: {
+                  receive_community_newsletter: 1,
+                },
+              },
+              {
+                headers: {
+                  "X-MailerLite-ApiKey": process.env.MAILERLITE_KEY,
+                },
+              }
+            )
+            .then(() => {
+              res
+                .status(200)
+                .json({ message: "Subscription created" });
+            })
+            .catch(() => {
+              res
+                .status(500)
+                .json({ error: "Internal server error" });
+            });
         }
       })
       .catch(() => {
