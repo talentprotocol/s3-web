@@ -105,7 +105,7 @@ export const TrustSection = () => {
               id={`image-to-animate-${img.name}`}
               className={
                 index === 0
-                  ? "animate__animated animate__fadeOutLeft animate__delay-6s"
+                  ? "animate__animated animate__fadeOut animate__delay-6s"
                   : "animate__animated animate__fadeIn"
               }
             >
