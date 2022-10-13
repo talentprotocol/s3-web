@@ -1,4 +1,5 @@
-import { useMemo, useRef } from "react";
+import { useCallback, useMemo, useRef } from "react";
+import axios from "axios";
 import { COPY } from "copy";
 import { Typography } from "shared-ui";
 import {
@@ -20,6 +21,19 @@ const AMOUNT_OF_SLIDER_ENTRIES = new Array(100).fill(undefined);
 
 export const TakeTheLeapBanner = () => {
   const emailRef = useRef<HTMLInputElement>(null);
+  const subscribeToNewsLetter = useCallback(() => {
+    if (emailRef.current) {
+      axios.post("/api/newsletter", {
+        email: emailRef.current.value
+      }).
+        then(() => {
+          // show toast success
+        })
+        .catch(err => {
+          // show toast error
+        })
+    }
+  }, [emailRef.current]);
   const sliderContent = useMemo(
     () =>
       AMOUNT_OF_SLIDER_ENTRIES.map((_, index) => (
@@ -66,7 +80,7 @@ export const TakeTheLeapBanner = () => {
               />
               <ButtonWrapper>
                 <StyledButtonWrapper>
-                  <StyledButton>--E</StyledButton>
+                  <StyledButton onClick={subscribeToNewsLetter}>--E</StyledButton>
                 </StyledButtonWrapper>
               </ButtonWrapper>
             </StyledWrapper>

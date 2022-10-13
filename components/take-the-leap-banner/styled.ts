@@ -69,6 +69,7 @@ export const StyledButton = styled.button`
   color: ${COLORS.LIGHT_YELLOW};
   border-radius: 60%;
   border: none;
+  cursor: pointer;
 `;
 
 const sliderRotation = keyframes`
