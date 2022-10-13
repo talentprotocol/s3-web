@@ -29,6 +29,7 @@ export const OpenSourceBanner = () => (
           type="link"
           variant="septenary"
           text={COPY.OPEN_SOURCE_BANNER.BUTTON}
+          href="https://talentprotocol.notion.site/Talent-Protocol-101-26a6c4b9f8284e5e8f55603a38629e76"
         />
       </ButtonWrapper>
     </InnerContainer>
