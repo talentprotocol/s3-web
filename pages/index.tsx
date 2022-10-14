@@ -54,7 +54,7 @@ const Home: NextPage<Props> = (props) => {
             toggleSidebar={toggleSidebar}
           />
           <LandingHero isMobile={props.isMobile} />
-          <Mosaic isMobile={isMobile} />
+          <Mosaic isMobile={props.isMobile} />
         </HeroSection>
         <TabSection />
         <HeroSection>
