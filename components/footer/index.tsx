@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { useMediaQuery } from "hooks/use-media-query";
 import { COPY } from "copy";
 import logoImage from "./assets/logo.svg";
 import awardImage from "./assets/award.svg";
@@ -15,9 +14,9 @@ import {
   PresentationColumn,
   StyledFooter,
 } from "./styled";
+import { Props } from "./types";
 
-export const Footer = () => {
-  const isMobile = useMediaQuery("(max-width: 768px)");
+export const Footer = ({ isMobile }: Props) => {
   return (
     <StyledFooter>
       <InnerContainer>

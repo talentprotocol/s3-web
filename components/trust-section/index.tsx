@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 import {
-  LabelTag,
   Typography,
   CompanyTag,
   AvailableColors,
 } from "shared-ui";
-import { useMediaQuery } from "hooks/use-media-query";
 import { COPY } from "copy";
 import camelliaImage from "./assets/camellia-avatar.png";
 import giulia from "./assets/giulia-avatar.png";
@@ -21,6 +20,7 @@ import {
   TagContainer,
   TitleWrapper,
 } from "./styled";
+import { Props } from "./types";
 const testimonials = [
   {
     src: matthewImage,
@@ -47,8 +47,13 @@ const testimonials = [
 
 let currentIndex = 0;
 
-export const TrustSection = () => {
-  const isMobile = useMediaQuery("(max-width: 768px)");
+const LabelTag = dynamic(
+  // @ts-ignore
+  () => import("shared-ui/label-tag"),
+  { ssr: false }
+);
+
+export const TrustSection = ({ isMobile }: Props) => {
   const [currentTestimonial, setCurrentTestimonial] = useState(
     testimonials[0]
   );

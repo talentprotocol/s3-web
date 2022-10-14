@@ -66,13 +66,13 @@ const Home: NextPage<Props> = (props) => {
         <TalentHouseSection />
         <LevelUpSection />
         <HeroSection>
-          <TrustSection />
+          <TrustSection isMobile={props.isMobile}/>
         </HeroSection>
-        <PartnersBanner />
+        <PartnersBanner isMobile={props.isMobile}/>
         <TakeTheLeapBanner />
         <OpenSourceBanner />
       </main>
-      <Footer />
+      <Footer isMobile={props.isMobile} />
       <ToastContainer />
     </>
   );

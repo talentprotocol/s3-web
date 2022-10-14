@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { useMemo } from "react";
-import { useMediaQuery } from "hooks/use-media-query";
 import { COPY } from "copy";
 import allianceImage from "./assets/alliance.png";
 import blu3Dao from "./assets/blu3-dao.png";
@@ -19,6 +18,7 @@ import {
   SliderEntryContainer,
   SliderEntryInnerContainer,
 } from "./styled";
+import { Props } from "./types";
 
 const SLIDER_ENTRIES = [
   {
@@ -62,8 +62,7 @@ const AMOUNT_OF_SLIDER_ENTRIES = new Array(100).fill([
   ...SLIDER_ENTRIES,
 ]);
 
-export const PartnersBanner = () => {
-  const isMobile = useMediaQuery("(max-width: 768px)");
+export const PartnersBanner = ({ isMobile }: Props) => {
   const sliderContent = useMemo(
     () =>
       AMOUNT_OF_SLIDER_ENTRIES.flat().map((el, index) => (

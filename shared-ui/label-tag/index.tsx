@@ -24,3 +24,5 @@ export const LabelTag = ({ text, type, color }: Props) => {
       );
   }
 };
+
+export default LabelTag;
