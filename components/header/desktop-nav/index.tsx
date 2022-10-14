@@ -1,11 +1,9 @@
 import { COPY } from "copy";
-import { useMediaQuery } from "hooks/use-media-query";
 import { Button } from "shared-ui";
 import { NavArea } from "./styled";
 
 export const DesktopNav = () => {
-  const isMobile = useMediaQuery("(max-width: 768px)");
-  return !isMobile ? (
+  return (
     <NavArea>
       <Button
         text={COPY.LANDING_HERO.HEADER_LOGIN}
@@ -20,9 +18,5 @@ export const DesktopNav = () => {
         href="/"
       />
     </NavArea>
-  ) : (
-    <></>
-  );
+  )
 };
-
-export default DesktopNav;

@@ -1,6 +1,6 @@
 import { COLORS } from "shared-ui";
 import styled, { css } from "styled-components";
-import { ContainerProps, MobileMenuProps } from "./types";
+import { ContainerProps } from "./types";
 
 export const Container = styled.header<ContainerProps>`
   display: flex;

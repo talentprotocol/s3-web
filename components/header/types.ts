@@ -5,4 +5,5 @@ export interface ContainerProps {
 export interface Props {
   isSidebarVisible: boolean;
   toggleSidebar: () => void;
+  isMobile: boolean;
 }

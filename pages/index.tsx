@@ -1,4 +1,4 @@
-import type { NextPage } from "next";
+import type { NextPage, NextPageContext } from "next";
 import Head from "next/head";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -20,8 +20,13 @@ import { Footer } from "components/footer";
 import { PartnersBanner } from "components/partners-banner";
 import { Sidebar } from "components/sidebar";
 import { useSidebar } from "components/sidebar/useSidebar";
+import { isMobile } from "utils/is-mobile";
 
-const Home: NextPage = () => {
+interface Props {
+  isMobile: boolean
+}
+
+const Home: NextPage<Props> = (props) => {
   const { isClosing, toggleSidebar, isSidebarVisible } = useSidebar();
   return (
     <>
@@ -44,6 +49,7 @@ const Home: NextPage = () => {
         )}
         <HeroSection>
           <Header
+            isMobile={props.isMobile}
             isSidebarVisible={isSidebarVisible}
             toggleSidebar={toggleSidebar}
           />
@@ -71,5 +77,7 @@ const Home: NextPage = () => {
     </>
   );
 };
+
+Home.getInitialProps = (ctx: NextPageContext) => ({isMobile: isMobile(ctx.req?.headers["user-agent"] || "")});
 
 export default Home;
