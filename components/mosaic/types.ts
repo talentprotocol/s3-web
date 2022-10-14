@@ -1,5 +1,9 @@
 import { AvailableColors } from "shared-ui";
 
+export interface Props{
+  isMobile: boolean;
+}
+
 export interface ColumnProps {
   movedUp?: boolean;
 }

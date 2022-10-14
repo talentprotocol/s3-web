@@ -4,7 +4,6 @@ import giuliaImage from "./assets/giulia.png";
 import matthewImage from "./assets/matthew.svg";
 import tolgaImage from "./assets/tolga.svg";
 // import mosaicImage from "./assets/mosaic.png";
-import { useMediaQuery } from "hooks/use-media-query";
 import {
   Column,
   Container,
@@ -12,9 +11,9 @@ import {
   ImageOvalShape,
   OvalShape,
 } from "./styled";
+import { Props } from "./types";
 
-export const Mosaic = () => {
-  const isMobile = useMediaQuery("(max-width: 768px)");
+export const Mosaic = ({ isMobile }: Props) => {
   return !isMobile ? (
     <Container>
       <Column>

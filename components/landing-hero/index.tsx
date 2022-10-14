@@ -1,7 +1,7 @@
 import { COPY } from "copy";
-import dynamic from "next/dynamic";
 import { useCallback, useRef } from "react";
 import { Typography } from "shared-ui";
+import ReserveHandleButton from "./reserve-handle-button";
 import {
   Container,
   HandleInput,
@@ -10,14 +10,9 @@ import {
   SubTitleWrapper,
   TokenSuffix,
 } from "./styled";
+import { Props } from "./types";
 
-const ReserveHandleButton = dynamic(
-  // @ts-ignore
-  () => import("./reserve-handle-button"),
-  { ssr: false }
-);
-
-export const LandingHero = () => {
+export const LandingHero = ({ isMobile }: Props) => {
   const talRef = useRef<HTMLSpanElement>(null);
   const handleReverveButtonClick = useCallback(() => {
     window.open(
@@ -52,7 +47,7 @@ export const LandingHero = () => {
         <TokenSuffix>
           {COPY.LANDING_HERO.RESERVE_TAL.TOKEN}
         </TokenSuffix>
-        <ReserveHandleButton callback={handleReverveButtonClick} />
+        <ReserveHandleButton callback={handleReverveButtonClick} isMobile={isMobile} />
       </ReserveHandleContainer>
     </Container>
   );
