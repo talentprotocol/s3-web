@@ -1,54 +1,36 @@
-import { COPY } from "copy";
+import dynamic from "next/dynamic";
 import { useMediaQuery } from "hooks/use-media-query";
-import { useEffect, useState } from "react";
-import { Button, Logo } from "shared-ui";
+import { Logo } from "shared-ui";
 import {
   Container,
   LogoArea,
-  MobileMenu,
-  MobileMenuWrapper,
-  NavArea,
 } from "./styled";
 import { Props } from "./types";
+
+const DesktopNav = dynamic(
+  // @ts-ignore
+  () => import("./desktop-nav"),
+  { ssr: false }
+);
+
+const MobileNav = dynamic(
+  // @ts-ignore
+  () => import("./mobile-nav"),
+  { ssr: false }
+);
 
 export const Header = ({
   toggleSidebar,
   isSidebarVisible,
 }: Props) => {
-  const [mounted, setMounted] = useState(false);
-  useEffect(() => {
-      setMounted(true)
-  }, []);
   const isMobile = useMediaQuery("(max-width: 768px)");
   return (
-    <Container isMobile={mounted && isMobile}>
+    <Container isMobile={isMobile}>
       <LogoArea>
         <Logo />
       </LogoArea>
-      {mounted && !isMobile && (
-        <NavArea>
-          <Button
-            text={COPY.LANDING_HERO.HEADER_LOGIN}
-            type="link"
-            variant="secondary"
-            href="/"
-          />
-          <Button
-            text={COPY.LANDING_HERO.HEADER_SIGN_UP}
-            type="link"
-            variant="primary"
-            href="/"
-          />
-        </NavArea>
-      )}
-      {mounted && isMobile && (
-        <MobileMenuWrapper>
-          <MobileMenu
-            onClick={toggleSidebar}
-            isSidebarVisible={isSidebarVisible}
-          />
-        </MobileMenuWrapper>
-      )}
+      <DesktopNav />
+      <MobileNav isSidebarVisible={isSidebarVisible} toggleSidebar={toggleSidebar}/>
     </Container>
   );
 };

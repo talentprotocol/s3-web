@@ -78,25 +78,3 @@ export const TokenSuffix = styled.span`
   font-size: 16px;
   line-height: 165%;
 `;
-
-export const ButtonContainer = styled.div`
-  position: relative;
-`;
-
-export const ReserveHandleButton = styled.button`
-  position: absolute;
-  padding: 13px 32px;
-  top: -13px;
-  left: -24px;
-  transform: translate(-50%, 0);
-  border-radius: 32px;
-  background: ${COLORS.BLACK};
-  color: ${COLORS.WHITE};
-  border: 1px solid ${COLORS.DARK_BLUE};
-  cursor: pointer;
-  ${fontNormal}
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
-  white-space: nowrap;
-`;

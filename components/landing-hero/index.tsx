@@ -1,25 +1,24 @@
 import { COPY } from "copy";
-import { useMediaQuery } from "hooks/use-media-query";
-import { useCallback, useEffect, useRef, useState } from "react";
+import dynamic from "next/dynamic";
+import { useCallback, useRef } from "react";
 import { Typography } from "shared-ui";
 import {
-  ButtonContainer,
   Container,
   HandleInput,
   PurpleText,
-  ReserveHandleButton,
   ReserveHandleContainer,
   SubTitleWrapper,
   TokenSuffix,
 } from "./styled";
 
+const ReserveHandleButton = dynamic(
+  // @ts-ignore
+  () => import("./reserve-handle-button"),
+  { ssr: false }
+);
+
 export const LandingHero = () => {
-  const [mounted, setMounted] = useState(false);
-  useEffect(() => {
-      setMounted(true)
-  }, []);
   const talRef = useRef<HTMLSpanElement>(null);
-  const isMobile = useMediaQuery("(max-width: 768px)");
   const handleReverveButtonClick = useCallback(() => {
     window.open(
       `https://beta.talentprotocol.com/join?handle=${talRef.current?.innerText}`
@@ -53,13 +52,7 @@ export const LandingHero = () => {
         <TokenSuffix>
           {COPY.LANDING_HERO.RESERVE_TAL.TOKEN}
         </TokenSuffix>
-        <ButtonContainer>
-          <ReserveHandleButton onClick={handleReverveButtonClick}>
-            {mounted && isMobile
-              ? COPY.LANDING_HERO.RESERVE_TAL.BUTTON_MOBILE
-              : COPY.LANDING_HERO.RESERVE_TAL.BUTTON}
-          </ReserveHandleButton>
-        </ButtonContainer>
+        <ReserveHandleButton callback={handleReverveButtonClick} />
       </ReserveHandleContainer>
     </Container>
   );

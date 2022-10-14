@@ -172,7 +172,8 @@ export const COPY = {
       LINKS: [
         {
           NAME: "About",
-          TARGET: "https://talentprotocol.notion.site/Talent-Protocol-101-26a6c4b9f8284e5e8f55603a38629e76",
+          TARGET:
+            "https://talentprotocol.notion.site/Talent-Protocol-101-26a6c4b9f8284e5e8f55603a38629e76",
         },
         {
           NAME: "Blog",
@@ -180,11 +181,13 @@ export const COPY = {
         },
         {
           NAME: "Bounties",
-          TARGET: "https://talentprotocol.notion.site/Contribute-74c27972ac554ce0b9702e8a9131cfa7",
+          TARGET:
+            "https://talentprotocol.notion.site/Contribute-74c27972ac554ce0b9702e8a9131cfa7",
         },
         {
           NAME: "Ambassadors",
-          TARGET: "https://talentprotocol.notion.site/Ambassadors-Program-194c5580446a45d6b2c510bd8052e91c",
+          TARGET:
+            "https://talentprotocol.notion.site/Ambassadors-Program-194c5580446a45d6b2c510bd8052e91c",
         },
       ],
     },
@@ -197,11 +200,13 @@ export const COPY = {
         },
         {
           NAME: "Terms of Service ",
-          TARGET: "https://www.notion.so/talentprotocol/Terms-Conditions-ec060cb6c06e49a98f17d235d0835773",
+          TARGET:
+            "https://www.notion.so/talentprotocol/Terms-Conditions-ec060cb6c06e49a98f17d235d0835773",
         },
         {
           NAME: "Privacy Policy",
-          TARGET: "https://www.notion.so/talentprotocol/Privacy-Policy-cc2b297006b54b3db1a008592302ccf5",
+          TARGET:
+            "https://www.notion.so/talentprotocol/Privacy-Policy-cc2b297006b54b3db1a008592302ccf5",
         },
       ],
     },
