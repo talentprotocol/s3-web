@@ -1,4 +1,4 @@
-import { fontNormal } from "shared-ui";
+import { COLORS, fontNormal } from "shared-ui";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -12,7 +12,7 @@ export const Container = styled.div`
   padding: 166px 0;
 
   @media (min-width: 768px) {
-    padding: 246px 0;
+    padding: 246px 0 76px;
     min-height: 1200px;
     max-height: 1200px;
   }
@@ -117,13 +117,26 @@ export const DisclaimerColumn = styled.article`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 564px;
+  max-width: 568px;
   text-align: left;
   gap: 40px;
   position: relative;
 
   @media (min-width: 768px) {
     padding-left: 80px;
+  }
+`;
+
+export const DisclaimerText = styled.p`
+  ${fontNormal}
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  color: ${COLORS.DARK_BLUE};
+
+  @media (min-width: 768px) {
+    font-size: 32px;
+    line-height: 120%;
   }
 `;
 
@@ -135,31 +148,30 @@ export const ImageHolder = styled.div`
   display: flex;
   align-self: flex-start;
   z-index: 1;
-
-  @media (min-width: 768px) {
-    min-height: auto;
-  }
 `;
 
 export const ImageWrapper = styled.div`
   position: absolute;
   transition-duration: 1s;
+  top: 30%;
+
   :first-child {
     z-index: 4;
+    transform: translate(0, -50px);
   }
 
   :nth-child(2) {
     z-index: 3;
-    transform: translate(24px, 0);
+    transform: translate(24px, -50px);
   }
 
   :nth-child(3) {
     z-index: 2;
-    transform: translate(48px, 0);
+    transform: translate(48px, -50px);
   }
 
   :nth-child(4) {
     z-index: 1;
-    transform: translate(72px, 0);
+    transform: translate(72px, -50px);
   }
 `;

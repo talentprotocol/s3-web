@@ -23,7 +23,7 @@ import { useSidebar } from "components/sidebar/useSidebar";
 import { isMobile } from "utils/is-mobile";
 
 interface Props {
-  isMobile: boolean
+  isMobile: boolean;
 }
 
 const Home: NextPage<Props> = (props) => {
@@ -66,9 +66,9 @@ const Home: NextPage<Props> = (props) => {
         <TalentHouseSection />
         <LevelUpSection />
         <HeroSection>
-          <TrustSection isMobile={props.isMobile}/>
+          <TrustSection isMobile={props.isMobile} />
         </HeroSection>
-        <PartnersBanner isMobile={props.isMobile}/>
+        <PartnersBanner isMobile={props.isMobile} />
         <TakeTheLeapBanner />
         <OpenSourceBanner />
       </main>
@@ -78,6 +78,8 @@ const Home: NextPage<Props> = (props) => {
   );
 };
 
-Home.getInitialProps = (ctx: NextPageContext) => ({isMobile: isMobile(ctx.req?.headers["user-agent"] || "")});
+Home.getInitialProps = (ctx: NextPageContext) => ({
+  isMobile: isMobile(ctx.req?.headers["user-agent"] || ""),
+});
 
 export default Home;

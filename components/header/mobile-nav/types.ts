@@ -1,8 +1,8 @@
 export interface MobileMenuProps {
-    isSidebarVisible: boolean;
+  isSidebarVisible: boolean;
 }
 
 export interface Props {
-    isSidebarVisible: boolean;
-    toggleSidebar: () => void;
+  isSidebarVisible: boolean;
+  toggleSidebar: () => void;
 }

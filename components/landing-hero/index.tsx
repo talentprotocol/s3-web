@@ -47,7 +47,10 @@ export const LandingHero = ({ isMobile }: Props) => {
         <TokenSuffix>
           {COPY.LANDING_HERO.RESERVE_TAL.TOKEN}
         </TokenSuffix>
-        <ReserveHandleButton callback={handleReverveButtonClick} isMobile={isMobile} />
+        <ReserveHandleButton
+          callback={handleReverveButtonClick}
+          isMobile={isMobile}
+        />
       </ReserveHandleContainer>
     </Container>
   );

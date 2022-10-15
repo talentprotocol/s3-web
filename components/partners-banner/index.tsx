@@ -58,14 +58,15 @@ const SLIDER_ENTRIES = [
     width: "155px",
   },
 ];
-const AMOUNT_OF_SLIDER_ENTRIES = new Array(18).fill([
-  ...SLIDER_ENTRIES,
-]);
 
 export const PartnersBanner = ({ isMobile }: Props) => {
+  const sliderEntries = useMemo(
+    () => new Array(isMobile ? 9 : 18).fill([...SLIDER_ENTRIES]),
+    []
+  );
   const sliderContent = useMemo(
     () =>
-      AMOUNT_OF_SLIDER_ENTRIES.flat().map((el, index) => (
+      sliderEntries.flat().map((el, index) => (
         <SliderEntryContainer key={`silder-entry-${index}`}>
           <SliderEntryInnerContainer width={el.width}>
             <Image src={el.image} />
@@ -76,7 +77,8 @@ export const PartnersBanner = ({ isMobile }: Props) => {
   );
   const sliderLeftContent = useMemo(
     () =>
-      AMOUNT_OF_SLIDER_ENTRIES.flat()
+      sliderEntries
+        .flat()
         .reverse()
         .map((el, index) => (
           <SliderEntryContainer key={`silder-entry-${index}`}>

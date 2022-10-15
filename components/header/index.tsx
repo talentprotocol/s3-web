@@ -1,16 +1,13 @@
 import { Logo } from "shared-ui";
 import { DesktopNav } from "./desktop-nav";
 import { MobileNav } from "./mobile-nav";
-import {
-  Container,
-  LogoArea,
-} from "./styled";
+import { Container, LogoArea } from "./styled";
 import { Props } from "./types";
 
 export const Header = ({
   toggleSidebar,
   isSidebarVisible,
-  isMobile
+  isMobile,
 }: Props) => {
   return (
     <Container isMobile={isMobile}>
@@ -18,7 +15,12 @@ export const Header = ({
         <Logo />
       </LogoArea>
       {!isMobile && <DesktopNav />}
-      {isMobile && <MobileNav isSidebarVisible={isSidebarVisible} toggleSidebar={toggleSidebar}/>}
+      {isMobile && (
+        <MobileNav
+          isSidebarVisible={isSidebarVisible}
+          toggleSidebar={toggleSidebar}
+        />
+      )}
     </Container>
   );
 };

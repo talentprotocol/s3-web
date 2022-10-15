@@ -77,6 +77,10 @@ const septenaryStyles = css`
   padding: 14px 32px;
   display: flex;
   border-radius: 32px;
+
+  :hover {
+    background-color: ${COLORS.LIGHTER_YELLOW};
+  }
 `;
 
 const octonaryStyles = css`

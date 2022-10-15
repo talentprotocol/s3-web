@@ -63,13 +63,19 @@ export const StyledButton = styled.button`
   overflow: hidden;
   font-weight: 400;
   font-size: 30px;
-  line-height: 24px;
+  line-height: 24px;X
   padding: 12px;
   background: ${COLORS.DARK_BLUE};
   color: ${COLORS.LIGHT_YELLOW};
   border-radius: 60%;
   border: none;
   cursor: pointer;
+  transition-duration: 0.25s;
+
+  :hover {
+    background: ${COLORS.LIGHT_BLACK};
+    color: ${COLORS.WHITE};
+  }
 `;
 
 const sliderRotation = keyframes`

@@ -21,4 +21,9 @@ export const StyledReserveHandleButton = styled.button`
   font-size: 16px;
   line-height: 24px;
   white-space: nowrap;
+  transition-duration: 0.25s;
+
+  :hover {
+    background: ${COLORS.LIGHT_BLACK};
+  }
 `;

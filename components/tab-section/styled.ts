@@ -71,15 +71,13 @@ export const ContentArea = styled.article`
   text-align: center;
   min-height: 190px;
   max-height: 190px;
+  gap: 24px;
 
   @media (min-width: 768px) {
     justify-content: center;
     text-align: center;
     min-height: 204px;
     max-height: 204px;
-  }
-
-  :nth-child(2) {
   }
 `;
 

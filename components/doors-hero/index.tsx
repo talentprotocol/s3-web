@@ -2,9 +2,11 @@ import { COPY } from "copy";
 import { Typography } from "shared-ui";
 import { Door } from "./door";
 import {
+  ArrowLabel,
   Container,
   DoorsRow,
   FooterRow,
+  SeeAllBenefitsLabel,
   TitleContainer,
 } from "./styled";
 
@@ -38,8 +40,10 @@ export const DoorsSection = () => (
       />
     </DoorsRow>
     <FooterRow>
-      <Typography type="body2" text={COPY.DOOS_HERO.FOOTER} />
-      <Typography type="body1" text="--S" />
+      <SeeAllBenefitsLabel>
+        {COPY.DOOS_HERO.FOOTER}
+      </SeeAllBenefitsLabel>
+      <ArrowLabel>--S</ArrowLabel>
     </FooterRow>
   </Container>
 );

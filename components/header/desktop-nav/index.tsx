@@ -18,5 +18,5 @@ export const DesktopNav = () => {
         href="/"
       />
     </NavArea>
-  )
+  );
 };

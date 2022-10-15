@@ -3,7 +3,7 @@ import { COLORS } from "shared-ui";
 
 export const Container = styled.section`
   background: ${COLORS.WHITE};
-  padding: 160px 0;
+  padding: 160px 0 246px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,6 +12,7 @@ export const Container = styled.section`
   text-align: center;
 
   @media (min-width: 768px) {
+    gap: 80px;
   }
 `;
 

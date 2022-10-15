@@ -1,4 +1,5 @@
 import { HeroSection } from "components/hero-section";
+import { fontNormal } from "shared-ui";
 import styled from "styled-components";
 
 export const Container = styled(HeroSection)`
@@ -35,9 +36,26 @@ export const DoorsRow = styled.div`
 `;
 
 export const FooterRow = styled.div`
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 16px;
   text-align: center;
+`;
+
+export const SeeAllBenefitsLabel = styled.span`
+  ${fontNormal}
+  display: block;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+`;
+
+export const ArrowLabel = styled.span`
+  ${fontNormal}
+  display: block;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 24px;
 `;

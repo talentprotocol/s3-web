@@ -2,7 +2,10 @@ import { COPY } from "copy";
 import { ButtonContainer, StyledReserveHandleButton } from "./styled";
 import { Props } from "./types";
 
-export const ReserveHandleButton = ({ callback, isMobile }: Props) => (
+export const ReserveHandleButton = ({
+  callback,
+  isMobile,
+}: Props) => (
   <ButtonContainer>
     <StyledReserveHandleButton onClick={callback}>
       {isMobile

@@ -1,11 +1,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import dynamic from "next/dynamic";
-import {
-  Typography,
-  CompanyTag,
-  AvailableColors,
-} from "shared-ui";
+import { Typography, CompanyTag, AvailableColors } from "shared-ui";
 import { COPY } from "copy";
 import camelliaImage from "./assets/camellia-avatar.png";
 import giulia from "./assets/giulia-avatar.png";
@@ -14,6 +10,7 @@ import {
   Container,
   ContentRow,
   DisclaimerColumn,
+  DisclaimerText,
   ImageHolder,
   ImageWrapper,
   Quotes,
@@ -93,7 +90,7 @@ export const TrustSection = ({ isMobile }: Props) => {
             id={currentTestimonial.name}
             className=""
           >
-            <Typography type="body1" text={currentTestimonial.text} />
+            <DisclaimerText>{currentTestimonial.text}</DisclaimerText>
             <LabelTag
               text={currentTestimonial.label}
               type="default"

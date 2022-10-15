@@ -1,6 +1,6 @@
 import { AvailableColors } from "shared-ui";
 
-export interface Props{
+export interface Props {
   isMobile: boolean;
 }
 
