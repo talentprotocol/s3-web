@@ -58,7 +58,7 @@ const SLIDER_ENTRIES = [
     width: "155px",
   },
 ];
-const AMOUNT_OF_SLIDER_ENTRIES = new Array(100).fill([
+const AMOUNT_OF_SLIDER_ENTRIES = new Array(18).fill([
   ...SLIDER_ENTRIES,
 ]);
 
