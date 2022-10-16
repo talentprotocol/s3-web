@@ -11,7 +11,10 @@ export const Container = styled(HeroSection)`
   overflow-x: hidden;
 
   @media (min-width: 768px) {
-    padding: 120px 0 140px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+    padding: 0 24px;
   }
 `;
 
@@ -20,8 +23,20 @@ export const TitleContainer = styled.div`
   text-align: center;
 `;
 
+export const Title = styled.h2`
+  ${fontNormal}
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 120%;
+
+  @media (min-width: 768px) {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+  }
+`;
+
 export const DoorsRow = styled.div`
-  flex-grow: 1;
   display: flex;
   justify-content: center;
   align-items: center;

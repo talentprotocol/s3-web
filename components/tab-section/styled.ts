@@ -71,6 +71,7 @@ export const ContentArea = styled.article`
   text-align: center;
   min-height: 190px;
   max-height: 190px;
+  text-align: left;
   gap: 24px;
 
   @media (min-width: 768px) {

@@ -57,9 +57,7 @@ const Home: NextPage<Props> = (props) => {
           <Mosaic isMobile={props.isMobile} />
         </HeroSection>
         <TabSection />
-        <HeroSection>
-          <DoorsSection />
-        </HeroSection>
+        <DoorsSection />
         <ProfileSection />
         <CareerCircleSection />
         <OpportunitySection />

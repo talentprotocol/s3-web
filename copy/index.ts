@@ -28,7 +28,7 @@ export const COPY = {
       PLACEHOLDER: "yournamehere",
       TOKEN: ".tal",
       BUTTON: "Reserve handle",
-      BUTTON_MOBILE: "Claim",
+      BUTTON_MOBILE: "Reserve handle",
     },
   },
   TAB_HERO: {

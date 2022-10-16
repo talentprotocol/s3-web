@@ -31,7 +31,7 @@ export const ReserveHandleContainer = styled.div`
   padding: 12px 24px;
   gap: 4px;
   border-radius: 56px;
-  transform: translate(-6px, 0);
+  transform: translate(-21px, 0);
 
   @media (min-width: 768px) {
     width: 370px;
