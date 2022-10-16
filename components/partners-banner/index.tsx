@@ -69,7 +69,7 @@ export const PartnersBanner = ({ isMobile }: Props) => {
       sliderEntries.flat().map((el, index) => (
         <SliderEntryContainer key={`silder-entry-${index}`}>
           <SliderEntryInnerContainer width={el.width}>
-            <Image src={el.image} alt="partner-logo"/>
+            <Image src={el.image} alt="partner-logo" />
           </SliderEntryInnerContainer>
         </SliderEntryContainer>
       )),
@@ -83,7 +83,7 @@ export const PartnersBanner = ({ isMobile }: Props) => {
         .map((el, index) => (
           <SliderEntryContainer key={`silder-entry-${index}`}>
             <SliderEntryInnerContainer width={el.width}>
-              <Image src={el.image} alt="partner-logo"/>
+              <Image src={el.image} alt="partner-logo" />
             </SliderEntryInnerContainer>
           </SliderEntryContainer>
         )),

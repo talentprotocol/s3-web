@@ -108,7 +108,7 @@ export const TrustSection = ({ isMobile }: Props) => {
               id={`image-to-animate-${img.name}`}
               className={index === 0 ? "" : ""}
             >
-              <Image src={img.src} alt="avatar"/>
+              <Image src={img.src} alt="avatar" />
             </ImageWrapper>
           ))}
         </ImageHolder>

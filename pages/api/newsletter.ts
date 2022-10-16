@@ -3,6 +3,7 @@ import axios from "axios";
 // @ts-ignore
 export default function handler(req, res) {
   if (req.method === "POST") {
+    console.info("received /api/newsletter post request");
     axios
       .get(
         `https://api.mailerlite.com/api/v2/subscribers/search?query=${req.body.email}`,
@@ -14,6 +15,9 @@ export default function handler(req, res) {
       )
       .then(({ data }) => {
         if (!data.length) {
+          console.info(
+            "user does not exist, adding him to the newsletter subscription"
+          );
           axios
             .post(
               "https://api.mailerlite.com/api/v2/subscribers",
@@ -30,16 +34,26 @@ export default function handler(req, res) {
               }
             )
             .then(() => {
+              console.info(
+                "succssfully added user to the newsletter subscription"
+              );
               res
                 .status(200)
                 .json({ message: "Subscription created" });
             })
-            .catch(() => {
+            .catch((err) => {
+              console.error(
+                "error adding user to the newsletter subscription"
+              );
+              console.error(err);
               res
                 .status(500)
                 .json({ error: "Internal server error" });
             });
         } else {
+          console.info(
+            "user already exists, updating his newsletter subscription status"
+          );
           axios
             .put(
               `https://api.mailerlite.com/api/v2/subscribers/${req.body.email}`,
@@ -56,11 +70,18 @@ export default function handler(req, res) {
               }
             )
             .then(() => {
+              console.info(
+                "succssfully updated users subscription status"
+              );
               res
                 .status(200)
                 .json({ message: "Subscription created" });
             })
-            .catch(() => {
+            .catch((err) => {
+              console.error(
+                "error updating users subscription status"
+              );
+              console.error(err);
               res
                 .status(500)
                 .json({ error: "Internal server error" });

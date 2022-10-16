@@ -161,11 +161,11 @@ export const ImageHolder = styled.div`
   z-index: 1;
 
   @media (min-width: 768px) {
-   width: 320px;
-   height: 446px;
-   flex-grow: 1;
-   position: relative;
-   display: flex;
+    width: 320px;
+    height: 446px;
+    flex-grow: 1;
+    position: relative;
+    display: flex;
   }
 `;
 
@@ -179,8 +179,8 @@ export const ImageWrapper = styled.div`
     transform: translate(-50%, 0);
 
     @media (min-width: 768px) {
-     width: 320px;
-     height: 446px;
+      width: 320px;
+      height: 446px;
     }
   }
 
@@ -192,7 +192,7 @@ export const ImageWrapper = styled.div`
       width: 320px;
       height: 446px;
       transform: translate(calc(-50% + 24px), -0);
-     }
+    }
   }
 
   :nth-child(3) {
@@ -203,7 +203,7 @@ export const ImageWrapper = styled.div`
       width: 320px;
       height: 446px;
       transform: translate(calc(-50% + 48px), -0);
-     }
+    }
   }
 
   :nth-child(4) {
@@ -214,6 +214,6 @@ export const ImageWrapper = styled.div`
       width: 320px;
       height: 446px;
       transform: translate(calc(-50% + 72px), -0);
-     }
+    }
   }
 `;
