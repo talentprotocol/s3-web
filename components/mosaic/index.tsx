@@ -40,7 +40,7 @@ export const Mosaic = ({ isMobile }: Props) => {
         <OvalShape backrgound="ORANGE" />
       </Column>
       <Column>
-        <Image src={matthewImage} />
+        <Image src={matthewImage} alt="mosaic-piece" />
         <HorizontalOvalShape
           backrgound="DARK_BLUE"
           color="LIGHT_PURPLE"
@@ -61,7 +61,7 @@ export const Mosaic = ({ isMobile }: Props) => {
         >
           tolga.tal
         </HorizontalOvalShape>
-        <Image src={tolgaImage} />
+        <Image src={tolgaImage} alt="mosaic-piece" />
       </Column>
       <Column>
         <OvalShape backrgound="LIGHT_PURPLE" />
@@ -91,7 +91,7 @@ export const Mosaic = ({ isMobile }: Props) => {
         <OvalShape backrgound="ORANGE" />
       </Column>
       <Column>
-        <Image src={matthewImage} />
+        <Image src={matthewImage} alt="mosaic-piece" />
         <HorizontalOvalShape
           backrgound="DARK_BLUE"
           color="LIGHT_PURPLE"
@@ -112,7 +112,7 @@ export const Mosaic = ({ isMobile }: Props) => {
         >
           tolga.tal
         </HorizontalOvalShape>
-        <Image src={tolgaImage} />
+        <Image src={tolgaImage} alt="mosaic-piece" />
       </Column>
       <Column>
         <OvalShape backrgound="LIGHT_PURPLE" />
@@ -142,7 +142,7 @@ export const Mosaic = ({ isMobile }: Props) => {
         <OvalShape backrgound="ORANGE" />
       </Column>
       <Column>
-        <Image src={matthewImage} />
+        <Image src={matthewImage} alt="mosaic-piece" />
         <HorizontalOvalShape
           backrgound="DARK_BLUE"
           color="LIGHT_PURPLE"
@@ -163,7 +163,7 @@ export const Mosaic = ({ isMobile }: Props) => {
         >
           tolga.tal
         </HorizontalOvalShape>
-        <Image src={tolgaImage} />
+        <Image src={tolgaImage} alt="mosaic-piece" />
       </Column>
       <Column>
         <OvalShape backrgound="LIGHT_PURPLE" />

@@ -18,7 +18,7 @@ export const LandingHero = ({ isMobile }: Props) => {
     window.open(
       `https://beta.talentprotocol.com/join?handle=${talRef.current?.innerText}`
     );
-  }, [talRef.current]);
+  }, []);
   return (
     <Container>
       <Typography type="h1">

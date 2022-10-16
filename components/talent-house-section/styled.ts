@@ -29,6 +29,22 @@ export const ContentArea = styled.div`
   gap: 24px;
 `;
 
+export const Title = styled.h2`
+  ${fontNormal}
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 120%;
+  color: ${COLORS.LIGHT_YELLOW};
+  white-space: pre-line;
+
+  @media (min-width: 768px) {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+  }
+`;
+
+
 export const ActionArea = styled.div`
   margin-top: 30px;
   align-items: flex-start;

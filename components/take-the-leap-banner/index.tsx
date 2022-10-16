@@ -39,7 +39,7 @@ export const TakeTheLeapBanner = () => {
           });
         });
     }
-  }, [emailRef.current]);
+  }, []);
   const sliderContent = useMemo(
     () =>
       AMOUNT_OF_SLIDER_ENTRIES.map((_, index) => (

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import dynamic from "next/dynamic";
-import { Typography, CompanyTag, AvailableColors } from "shared-ui";
+import { CompanyTag, AvailableColors } from "shared-ui";
 import { COPY } from "copy";
 import camelliaImage from "./assets/camellia-avatar.png";
 import giulia from "./assets/giulia-avatar.png";
@@ -15,6 +15,7 @@ import {
   ImageWrapper,
   Quotes,
   TagContainer,
+  Title,
   TitleWrapper,
 } from "./styled";
 import { Props } from "./types";
@@ -81,7 +82,7 @@ export const TrustSection = ({ isMobile }: Props) => {
         <CompanyTag type="metamask" />
       </TagContainer>
       <TitleWrapper key="title">
-        <Typography type="h2" text={COPY.TRUST_SECTION.TITLE} />
+        <Title>{COPY.TRUST_SECTION.TITLE}</Title>
       </TitleWrapper>
       <ContentRow>
         {

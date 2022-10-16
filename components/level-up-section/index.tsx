@@ -9,6 +9,7 @@ import {
   ContentArea,
   ImageHolder,
   InnerContainer,
+  Title,
 } from "./styled";
 
 export const LevelUpSection = () => (
@@ -16,11 +17,7 @@ export const LevelUpSection = () => (
     <InnerContainer>
       <ContentArea>
         <LabelTag text={COPY.LEVEL_UP_SECTION.TAG} type="secondary" />
-        <Typography
-          type="h2"
-          text={COPY.LEVEL_UP_SECTION.TITLE}
-          color="WHITE"
-        />
+        <Title>{COPY.LEVEL_UP_SECTION.TITLE}</Title>
         <Typography
           type="body2"
           text={COPY.LEVEL_UP_SECTION.TEXT}

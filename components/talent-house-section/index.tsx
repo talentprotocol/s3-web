@@ -9,6 +9,7 @@ import {
   ContentArea,
   ImageHolder,
   InnerContainer,
+  Title,
 } from "./styled";
 
 export const TalentHouseSection = () => (
@@ -22,11 +23,7 @@ export const TalentHouseSection = () => (
           text={COPY.TALENT_HOUSE_SECTION.TAG}
           type="tertiary"
         />
-        <Typography
-          type="h2"
-          text={COPY.TALENT_HOUSE_SECTION.TITLE}
-          color="LIGHT_YELLOW"
-        />
+        <Title>{COPY.TALENT_HOUSE_SECTION.TITLE}</Title>
         <Typography
           type="body2"
           text={COPY.TALENT_HOUSE_SECTION.TEXT}

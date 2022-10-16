@@ -94,7 +94,7 @@ export const COPY = {
   },
   PROFILE_HERO: {
     TAG: "Ownership",
-    TITLE: "Own your profile, control your future.",
+    TITLE: "Own your profile,\ncontrol your future.",
     TEXT: "Claim ownership of your profile. Your career data and your social graph, stored as an NFT. You decide where and how to use it. You’re in control.",
     BUTTON: "Create your profile",
   },
@@ -107,7 +107,7 @@ export const COPY = {
   },
   OPPORTUNITY_SECTION: {
     TAG: "Opportunities",
-    TITLE: "There’s a web3 opportunity waiting for you.",
+    TITLE: "There’s a Web3\nopportunity waiting\nfor you.",
     TEXT: "Access a curated list of fresh opportunities. Work on exciting web3 projects, meet a co-founder, partner on side projects & more.",
     BUTTON: "Discover opportunities",
   },

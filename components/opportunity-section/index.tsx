@@ -9,6 +9,7 @@ import {
   ContentArea,
   ImageHolder,
   InnerContainer,
+  Title,
 } from "./styled";
 
 export const OpportunitySection = () => (
@@ -19,11 +20,7 @@ export const OpportunitySection = () => (
           text={COPY.OPPORTUNITY_SECTION.TAG}
           type="default"
         />
-        <Typography
-          type="h2"
-          text={COPY.OPPORTUNITY_SECTION.TITLE}
-          color="BLACK"
-        />
+        <Title>{COPY.OPPORTUNITY_SECTION.TITLE}</Title>
         <Typography
           type="body2"
           text={COPY.OPPORTUNITY_SECTION.TEXT}

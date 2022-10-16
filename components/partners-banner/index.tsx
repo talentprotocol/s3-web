@@ -62,18 +62,18 @@ const SLIDER_ENTRIES = [
 export const PartnersBanner = ({ isMobile }: Props) => {
   const sliderEntries = useMemo(
     () => new Array(isMobile ? 9 : 18).fill([...SLIDER_ENTRIES]),
-    []
+    [isMobile]
   );
   const sliderContent = useMemo(
     () =>
       sliderEntries.flat().map((el, index) => (
         <SliderEntryContainer key={`silder-entry-${index}`}>
           <SliderEntryInnerContainer width={el.width}>
-            <Image src={el.image} />
+            <Image src={el.image} alt="partner-logo"/>
           </SliderEntryInnerContainer>
         </SliderEntryContainer>
       )),
-    []
+    [sliderEntries]
   );
   const sliderLeftContent = useMemo(
     () =>
@@ -83,11 +83,11 @@ export const PartnersBanner = ({ isMobile }: Props) => {
         .map((el, index) => (
           <SliderEntryContainer key={`silder-entry-${index}`}>
             <SliderEntryInnerContainer width={el.width}>
-              <Image src={el.image} />
+              <Image src={el.image} alt="partner-logo"/>
             </SliderEntryInnerContainer>
           </SliderEntryContainer>
         )),
-    []
+    [sliderEntries]
   );
   return (
     <Container>

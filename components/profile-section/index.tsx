@@ -9,6 +9,7 @@ import {
   ContentArea,
   ImageHolder,
   InnerContainer,
+  Title,
 } from "./styled";
 
 export const ProfileSection = () => (
@@ -16,11 +17,7 @@ export const ProfileSection = () => (
     <InnerContainer>
       <ContentArea>
         <LabelTag text={COPY.PROFILE_HERO.TAG} type="secondary" />
-        <Typography
-          type="h2"
-          text={COPY.PROFILE_HERO.TITLE}
-          color="WHITE"
-        />
+        <Title>{COPY.PROFILE_HERO.TITLE}</Title>
         <Typography
           type="body2"
           text={COPY.PROFILE_HERO.TEXT}

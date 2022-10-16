@@ -44,6 +44,8 @@ export const StyledInput = styled.input`
   height: 100%;
   width: 80%;
   border: none;
+  display: flex;
+  align-items: center;
 `;
 
 export const ButtonWrapper = styled.div`
