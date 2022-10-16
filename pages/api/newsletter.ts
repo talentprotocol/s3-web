@@ -4,6 +4,7 @@ import axios from "axios";
 export default function handler(req, res) {
   if (req.method === "POST") {
     console.info("received /api/newsletter post request");
+    console.info("checking if user already exists");
     axios
       .get(
         `https://api.mailerlite.com/api/v2/subscribers/search?query=${req.body.email}`,
@@ -88,7 +89,9 @@ export default function handler(req, res) {
             });
         }
       })
-      .catch(() => {
+      .catch((err) => {
+        console.error("error checking if user already exists");
+        console.error(err);
         res.status(500).json({ error: "Internal server error" });
       });
   } else {
