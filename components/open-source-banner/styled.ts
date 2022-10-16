@@ -1,9 +1,13 @@
 import styled from "styled-components";
-import { COLORS } from "shared-ui";
+import { COLORS, fontNormal } from "shared-ui";
 
 export const Container = styled.section`
   background: ${COLORS.DARK_BLUE};
-  padding: 160px 24px;
+  padding: 80px 24px;
+
+  @media (min-width: 768px) {
+    padding: 160px 24px;
+  }
 `;
 
 export const InnerContainer = styled.div`
@@ -13,6 +17,21 @@ export const InnerContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 24px;
+`;
+
+export const Title = styled.h2`
+  ${fontNormal}
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 120%;
+  color: ${COLORS.LIGHT_YELLOW};
+  white-space: pre-line;
+
+  @media (min-width: 768px) {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+  }
 `;
 
 export const YellowText = styled.span`

@@ -32,7 +32,7 @@ const testimonials = [
     name: "giulia",
     text: COPY.TRUST_SECTION.TESTIMONIALS[1].TEXT,
     label: COPY.TRUST_SECTION.TESTIMONIALS[1].AUTHOR,
-    color: "LIGHT_PURPLE" as AvailableColors,
+    color: "LIGHTER_PURPLE" as AvailableColors,
   },
   {
     src: camelliaImage,
@@ -108,7 +108,7 @@ export const TrustSection = ({ isMobile }: Props) => {
               id={`image-to-animate-${img.name}`}
               className={index === 0 ? "" : ""}
             >
-              <Image src={img.src} alt="avatar" />
+              <Image src={img.src} alt="avatar"/>
             </ImageWrapper>
           ))}
         </ImageHolder>

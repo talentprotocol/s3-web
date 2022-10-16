@@ -4,13 +4,14 @@ import {
   ButtonWrapper,
   Container,
   InnerContainer,
+  Title,
   YellowText,
 } from "./styled";
 
 export const OpenSourceBanner = () => (
   <Container>
     <InnerContainer>
-      <Typography type="h3" color="LIGHT_YELLOW">
+      <Title>
         <>
           {COPY.OPEN_SOURCE_BANNER.TITLE_LIGHT_YELLOW}
           <br />
@@ -18,7 +19,7 @@ export const OpenSourceBanner = () => (
             {COPY.OPEN_SOURCE_BANNER.TITLE_YELLOW}
           </YellowText>
         </>
-      </Typography>
+      </Title>
       <Typography
         type="body1"
         text={COPY.OPEN_SOURCE_BANNER.TEXT}

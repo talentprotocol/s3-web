@@ -3,7 +3,7 @@ import { COLORS, fontNormal } from "shared-ui";
 
 export const Container = styled.section`
   position: fixed;
-  z-index: 3;
+  z-index: 25;
   height: calc(100% - 73px);
   width: 100%;
   bottom: 0;

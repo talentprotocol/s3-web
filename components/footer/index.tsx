@@ -18,6 +18,7 @@ import { Props } from "./types";
 
 export const Footer = ({ isMobile }: Props) => {
   return (
+    <>
     <StyledFooter>
       <InnerContainer>
         <FooterRow>
@@ -63,7 +64,7 @@ export const Footer = ({ isMobile }: Props) => {
             </NavList>
           </NavigationArea>
         </FooterRow>
-        <Copyright>
+        {!isMobile && (<Copyright>
           <CopyrightTypography>
             {COPY.FOOTER.COPYRIGHT[0]}
           </CopyrightTypography>
@@ -71,8 +72,18 @@ export const Footer = ({ isMobile }: Props) => {
           <CopyrightTypography>
             {COPY.FOOTER.COPYRIGHT[1]}
           </CopyrightTypography>
-        </Copyright>
+        </Copyright>)}
       </InnerContainer>
     </StyledFooter>
+      {isMobile && (<Copyright>
+        <CopyrightTypography>
+          {COPY.FOOTER.COPYRIGHT[0]}
+        </CopyrightTypography>
+        {!isMobile && <CopyrightTypography>|</CopyrightTypography>}
+        <CopyrightTypography>
+          {COPY.FOOTER.COPYRIGHT[1]}
+        </CopyrightTypography>
+      </Copyright>)}
+    </>
   );
 };

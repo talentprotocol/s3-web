@@ -16,6 +16,7 @@ import {
   Slider,
   SliderContainer,
   SliderEntryContainer,
+  Title,
 } from "./styled";
 
 const AMOUNT_OF_SLIDER_ENTRIES = new Array(100).fill(undefined);
@@ -63,7 +64,7 @@ export const TakeTheLeapBanner = () => {
     <>
       <Container>
         <InnerContainer>
-          <Typography type="h2">
+          <Title>
             <>
               {COPY.TAKE_THE_LEAP_BANNER.TITLE_BLACK1}
               <br />
@@ -71,7 +72,7 @@ export const TakeTheLeapBanner = () => {
                 {COPY.TAKE_THE_LEAP_BANNER.TITLE_PURPLE1}
               </PurpleText>
             </>
-          </Typography>
+          </Title>
           <Typography
             type="body1"
             text={COPY.TAKE_THE_LEAP_BANNER.SUBTITLE}

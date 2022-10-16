@@ -95,14 +95,16 @@ export const NavLink = styled.a`
 `;
 
 export const Copyright = styled.section`
+  background: ${COLORS.DARK_BLUE};
   border-top: 1px solid ${COLORS.LIGHT_YELLOW}33;
-  padding: 22px 0;
+  padding: 22px 24px;
   display: flex;
   gap: 24px;
   flex-direction: column;
 
   @media (min-width: 768px) {
     flex-direction: row;
+    padding: 22px 0;
   }
 `;
 

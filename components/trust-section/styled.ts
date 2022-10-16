@@ -9,7 +9,7 @@ export const Container = styled.div`
   justify-content: center;
   text-align: center;
   margin: auto;
-  padding: 166px 0;
+  padding: 166px 0 0;
 
   @media (min-width: 768px) {
     padding: 246px 0 76px;
@@ -27,7 +27,7 @@ export const Title = styled.h2`
   font-weight: 500;
   font-size: 25px;
   line-height: 120%;
-  color: ${COLORS.WHITE};
+  color: ${COLORS.BLACK};
   white-space: pre-line;
 
   @media (min-width: 768px) {
@@ -43,7 +43,7 @@ export const TagContainer = styled.div`
   div:nth-child(1) {
     position: absolute;
     left: -180px;
-    top: 180px;
+    top: -60px;
 
     @media (min-width: 768px) {
       left: -340px;
@@ -53,8 +53,8 @@ export const TagContainer = styled.div`
 
   div:nth-child(2) {
     position: absolute;
-    left: -140px;
-    top: -60px;
+    left: -60px;
+    top: -80px;
 
     @media (min-width: 768px) {
       left: -200px;
@@ -64,8 +64,8 @@ export const TagContainer = styled.div`
 
   div:nth-child(3) {
     position: absolute;
-    left: -50px;
-    top: 210px;
+    left: -140px;
+    top: 60px;
 
     @media (min-width: 768px) {
       left: -120px;
@@ -75,8 +75,8 @@ export const TagContainer = styled.div`
 
   div:nth-child(4) {
     position: absolute;
-    left: 90px;
-    top: 180px;
+    left: 120px;
+    top: -50px;
 
     @media (min-width: 768px) {
       left: 180px;
@@ -86,8 +86,8 @@ export const TagContainer = styled.div`
 
   div:nth-child(5) {
     position: absolute;
-    left: 50px;
-    top: -50px;
+    left: 60px;
+    top: 50px;
 
     @media (min-width: 768px) {
       left: 220px;
@@ -117,8 +117,8 @@ export const ContentRow = styled.div`
   width: 100%;
   gap: 74px;
   flex-direction: column-reverse;
-  padding: 124px 24px;
-  gap: 48px;
+  padding: 124px 24px 0;
+  gap: 50px;
 
   @media (min-width: 768px) {
     margin-top: 146px;
@@ -156,37 +156,64 @@ export const DisclaimerText = styled.p`
 `;
 
 export const ImageHolder = styled.div`
-  width: 328px;
-  min-height: 446px;
-  flex-grow: 1;
-  position: relative;
-  display: flex;
-  align-self: flex-start;
+  width: 202px;
+  height: 272px;
   z-index: 1;
+
+  @media (min-width: 768px) {
+   width: 320px;
+   height: 446px;
+   flex-grow: 1;
+   position: relative;
+   display: flex;
+  }
 `;
 
 export const ImageWrapper = styled.div`
   position: absolute;
   transition-duration: 1s;
-  top: 30%;
+  left: 50%;
 
   :first-child {
     z-index: 4;
-    transform: translate(0, -50px);
+    transform: translate(-50%, 0);
+
+    @media (min-width: 768px) {
+     width: 320px;
+     height: 446px;
+    }
   }
 
   :nth-child(2) {
     z-index: 3;
-    transform: translate(24px, -50px);
+    transform: translate(calc(-50% + 16px), -0);
+
+    @media (min-width: 768px) {
+      width: 320px;
+      height: 446px;
+      transform: translate(calc(-50% + 24px), -0);
+     }
   }
 
   :nth-child(3) {
     z-index: 2;
-    transform: translate(48px, -50px);
+    transform: translate(calc(-50% + 32px), -0);
+
+    @media (min-width: 768px) {
+      width: 320px;
+      height: 446px;
+      transform: translate(calc(-50% + 48px), -0);
+     }
   }
 
   :nth-child(4) {
     z-index: 1;
-    transform: translate(72px, -50px);
+    transform: translate(calc(-50% + 48px), -0);
+
+    @media (min-width: 768px) {
+      width: 320px;
+      height: 446px;
+      transform: translate(calc(-50% + 72px), -0);
+     }
   }
 `;
