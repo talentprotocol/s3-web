@@ -10,7 +10,7 @@ export default function handler(req, res) {
         `https://api.mailerlite.com/api/v2/subscribers/search?query=${req.body.email}`,
         {
           headers: {
-            "X-MailerLite-ApiKey": `${process.env.MAILERLITE_KEY}`,
+            "X-MailerLite-ApiKey": process.env.MAILERLITE_KEY,
           },
         }
       )
@@ -30,7 +30,7 @@ export default function handler(req, res) {
               },
               {
                 headers: {
-                  "X-MailerLite-ApiKey": `${process.env.MAILERLITE_KEY}`,
+                  "X-MailerLite-ApiKey": process.env.MAILERLITE_KEY,
                 },
               }
             )
@@ -66,7 +66,7 @@ export default function handler(req, res) {
               },
               {
                 headers: {
-                  "X-MailerLite-ApiKey": `${process.env.MAILERLITE_KEY}`,
+                  "X-MailerLite-ApiKey": process.env.MAILERLITE_KEY,
                 },
               }
             )
