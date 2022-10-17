@@ -9,13 +9,13 @@ export const DesktopNav = () => {
         text={COPY.LANDING_HERO.HEADER_LOGIN}
         type="link"
         variant="secondary"
-        href="/"
+        href="https://beta.talentprotocol.com"
       />
       <Button
         text={COPY.LANDING_HERO.HEADER_SIGN_UP}
         type="link"
         variant="primary"
-        href="/"
+        href="https://beta.talentprotocol.com/join"
       />
     </NavArea>
   );

@@ -53,10 +53,6 @@ export const ActionArea = styled.div`
   display: flex;
   gap: 16px;
   flex-direction: column;
-
-  @media (min-width: 768px) {
-    flex-direction: row;
-  }
 `;
 
 export const LogosArea = styled.div`

@@ -31,8 +31,10 @@ export const Door = ({
       <DoorFooter>
         <DoorButton
           onClick={() =>
-            (window.location.href =
-              "https://beta.talentprotocol.com/join")
+            window.open(
+              "https://beta.talentprotocol.com/join",
+              "_blank"
+            )
           }
           isHighlighted={isHighlighted}
         >

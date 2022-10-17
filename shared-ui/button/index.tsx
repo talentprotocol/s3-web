@@ -13,7 +13,7 @@ export const Button = ({
     case ButtonTypeEnum.LINK:
       return (
         <Link href={href} passHref>
-          <ButtonLinkContainer variant={variant}>
+          <ButtonLinkContainer variant={variant} target="_blank">
             {text}
             {children}
           </ButtonLinkContainer>
