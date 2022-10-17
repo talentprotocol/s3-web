@@ -1,6 +1,7 @@
 import { useCallback, useMemo, useRef } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
+import arrowImage from "./assets/arrow.svg";
 import { COPY } from "copy";
 import { Typography } from "shared-ui";
 import {
@@ -18,6 +19,7 @@ import {
   SliderEntryContainer,
   Title,
 } from "./styled";
+import Image from "next/image";
 
 const AMOUNT_OF_SLIDER_ENTRIES = new Array(100).fill(undefined);
 
@@ -88,7 +90,7 @@ export const TakeTheLeapBanner = () => {
               <ButtonWrapper>
                 <StyledButtonWrapper>
                   <StyledButton onClick={subscribeToNewsLetter}>
-                    --E
+                    <Image src={arrowImage} alt="icon image" />
                   </StyledButton>
                 </StyledButtonWrapper>
               </ButtonWrapper>
