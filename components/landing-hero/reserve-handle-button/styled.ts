@@ -8,7 +8,6 @@ export const ButtonContainer = styled.div`
 export const StyledReserveHandleButton = styled.button`
   position: absolute;
   padding: 13px 32px;
-  top: -13px;
   left: -24px;
   transform: translate(-50%, 0);
   border-radius: 32px;

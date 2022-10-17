@@ -27,13 +27,6 @@ export const Footer = ({ isMobile }: Props) => {
               <CopyrightTypography>
                 {COPY.FOOTER.DESCRIPTION}
               </CopyrightTypography>
-              <AwardContainer>
-                <Image
-                  priority
-                  src={awardImage}
-                  alt="smoothie award"
-                />
-              </AwardContainer>
             </PresentationColumn>
             <NavigationArea>
               <NavList>

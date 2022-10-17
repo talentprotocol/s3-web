@@ -7,7 +7,7 @@ export const ReserveHandleButton = ({
   isMobile,
 }: Props) => (
   <ButtonContainer>
-    <StyledReserveHandleButton onClick={callback}>
+    <StyledReserveHandleButton onClick={callback} style={{top: isMobile ? "-15px" : "-13px"}}>
       {isMobile
         ? COPY.LANDING_HERO.RESERVE_TAL.BUTTON_MOBILE
         : COPY.LANDING_HERO.RESERVE_TAL.BUTTON}

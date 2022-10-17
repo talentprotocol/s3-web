@@ -81,11 +81,10 @@ export const StyledButton = styled.button`
   ${fontNormal}
   width: 52px;
   height: 52px;
-  overflow: hidden;
   font-weight: 400;
   font-size: 30px;
-  line-height: 24px;X
-  padding: 12px;
+  line-height: 24px;
+  padding: 0px;
   background: ${COLORS.DARK_BLUE};
   color: ${COLORS.LIGHT_YELLOW};
   border-radius: 60%;
