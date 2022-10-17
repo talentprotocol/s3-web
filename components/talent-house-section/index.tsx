@@ -42,7 +42,7 @@ export const TalentHouseSection = () => (
             text={COPY.TALENT_HOUSE_SECTION.BUTTONS[1]}
             type="link"
             variant="hexanary"
-            href="https://www.youtube.com/c/TalentProtocol/featured"
+            href="https://youtube.com/playlist?list=PLsmSZS4TDbA346CAh4MF-CJlVPj8bS36u"
           >
             <ButtonIcon>--E</ButtonIcon>
           </Button>
