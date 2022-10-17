@@ -27,10 +27,6 @@ const SLIDER_ENTRIES = [
     width: "139px",
   },
   {
-    image: blu3Dao,
-    width: "77px",
-  },
-  {
     image: celo,
     width: "136px",
   },
