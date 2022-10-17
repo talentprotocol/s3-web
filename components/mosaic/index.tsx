@@ -46,7 +46,7 @@ export const Mosaic = ({ isMobile }: Props) => {
           color="LIGHT_PURPLE"
           isBig
         >
-          matthew.tal
+          matt.tal
         </HorizontalOvalShape>
       </Column>
       <Column>
@@ -97,7 +97,7 @@ export const Mosaic = ({ isMobile }: Props) => {
           color="LIGHT_PURPLE"
           isBig
         >
-          matthew.tal
+          matt.tal
         </HorizontalOvalShape>
       </Column>
       <Column>
@@ -148,7 +148,7 @@ export const Mosaic = ({ isMobile }: Props) => {
           color="LIGHT_PURPLE"
           isBig
         >
-          matthew.tal
+          matt.tal
         </HorizontalOvalShape>
       </Column>
       <Column>

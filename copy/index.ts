@@ -25,8 +25,8 @@ export const COPY = {
     SUBTITLE:
       "Create a beautiful web3 resume, make meaningful connections and access exciting web3 opportunities.",
     RESERVE_TAL: {
-      PLACEHOLDER: "yournamehere",
-      PLACEHOLDER_MOBILE: "yourname",
+      PLACEHOLDER: "yourname",
+      PLACEHOLDER_MOBILE: "name",
       TOKEN: ".tal",
       BUTTON: "Reserve handle",
       BUTTON_MOBILE: "Reserve handle",
@@ -147,7 +147,7 @@ export const COPY = {
   },
   TAKE_THE_LEAP_BANNER: {
     TITLE_BLACK1: "Take the",
-    TITLE_PURPLE1: "leap to web3.",
+    TITLE_PURPLE1: "leap into web3.",
     SUBTITLE:
       "Subscribe to our newsletter and we'll keep you in the loop with what’s exciting in the web3 world. Work opportunities from our partners and success stories from our community.",
     INPUT_PLACEHOLDER: "What's your email?",
