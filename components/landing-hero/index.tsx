@@ -42,7 +42,11 @@ export const LandingHero = ({ isMobile }: Props) => {
             }
           }}
           spellCheck={false}
-          placeholder={COPY.LANDING_HERO.RESERVE_TAL.PLACEHOLDER}
+          placeholder={
+            isMobile
+              ? COPY.LANDING_HERO.RESERVE_TAL.PLACEHOLDER_MOBILE
+              : COPY.LANDING_HERO.RESERVE_TAL.PLACEHOLDER
+          }
         />
         <TokenSuffix>
           {COPY.LANDING_HERO.RESERVE_TAL.TOKEN}

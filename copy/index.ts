@@ -26,6 +26,7 @@ export const COPY = {
       "Create a beautiful web3 resume, make meaningful connections and access exciting web3 opportunities.",
     RESERVE_TAL: {
       PLACEHOLDER: "yournamehere",
+      PLACEHOLDER_MOBILE: "yourname",
       TOKEN: ".tal",
       BUTTON: "Reserve handle",
       BUTTON_MOBILE: "Reserve handle",
@@ -136,7 +137,7 @@ export const COPY = {
         AUTHOR: "Giulia Camargo, Marketing @ Decipad",
       },
       {
-        TEXT: "Thanks to Talent Protocol's scholarship, I attended my first web3 conference in Barcelona. Since thenI got to meet the team and join many other web3 events, which helped me settle down in the new city and build up my network.",
+        TEXT: "Thanks to Talent Protocol's scholarship, I attended my first web3 conference in Barcelona. Since then I got to meet the team and join many other web3 events, which helped me settle down in the new city and build up my network.",
         AUTHOR: "Camellia Yang, Independent content creator",
       },
     ],

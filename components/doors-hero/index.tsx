@@ -1,5 +1,4 @@
 import { COPY } from "copy";
-import { Typography } from "shared-ui";
 import { Door } from "./door";
 import {
   ArrowLabel,
@@ -7,13 +6,14 @@ import {
   DoorsRow,
   FooterRow,
   SeeAllBenefitsLabel,
+  Title,
   TitleContainer,
 } from "./styled";
 
 export const DoorsSection = () => (
   <Container>
     <TitleContainer>
-      <Typography type="h2" text={COPY.DOOS_HERO.TITLE} />
+      <Title>{COPY.DOOS_HERO.TITLE}</Title>
     </TitleContainer>
     <DoorsRow>
       <Door

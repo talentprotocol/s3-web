@@ -69,7 +69,7 @@ export const TrustSection = ({ isMobile }: Props) => {
         // @ts-ignore
       }, 1500);
       setCurrentTestimonial(testimonials[0]);
-    }, 6000);
+    }, 11000);
     return () => clearInterval(intervalId);
   }, []);
   return (

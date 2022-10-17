@@ -22,12 +22,15 @@ export const InnerContainer = styled.div`
 
 export const ContentArea = styled.div`
   width: 100%;
-  flex-basis: 468px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   gap: 24px;
+
+  @media (min-width: 768px) {
+    flex-basis: 468px;
+  }
 `;
 
 export const Title = styled.h2`

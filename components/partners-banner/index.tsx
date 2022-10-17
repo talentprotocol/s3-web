@@ -17,6 +17,7 @@ import {
   SliderContainer,
   SliderEntryContainer,
   SliderEntryInnerContainer,
+  TitleContainer,
 } from "./styled";
 import { Props } from "./types";
 
@@ -91,13 +92,17 @@ export const PartnersBanner = ({ isMobile }: Props) => {
   );
   return (
     <Container>
-      <Typography type="h3" text={COPY.PARTNERS_BANNER.TITLE} />
+      <TitleContainer>
+        <Typography type="h3" text={COPY.PARTNERS_BANNER.TITLE} />
+      </TitleContainer>
       <SliderContainer>
-        <Slider>{sliderContent}</Slider>
+        <Slider isMobile={isMobile}>{sliderContent}</Slider>
       </SliderContainer>
       {isMobile && (
         <SliderContainer>
-          <Slider isReversed>{sliderLeftContent}</Slider>
+          <Slider isReversed isMobile={isMobile}>
+            {sliderLeftContent}
+          </Slider>
         </SliderContainer>
       )}
     </Container>

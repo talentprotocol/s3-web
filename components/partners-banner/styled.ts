@@ -16,9 +16,26 @@ export const Container = styled.section`
   }
 `;
 
+export const TitleContainer = styled.div`
+  margin-bottom: 32px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
+`;
+
 const sliderRotation = keyframes`
     from {
         left: -150%;
+    }
+    to {
+        left: -10%;
+    }
+`;
+
+const sliderRotationMobile = keyframes`
+    from {
+        left: -590%;
     }
     to {
         left: -10%;
@@ -30,7 +47,7 @@ const sliderRotationLeft = keyframes`
         left: -10%;
     }
     to {
-        left: -150%;
+        left: -550%;
     }
 `;
 
@@ -62,14 +79,19 @@ export const SliderContainer = styled.section`
   height: 174px;
 `;
 
-export const Slider = styled.div<{ isReversed?: boolean }>`
+export const Slider = styled.div<{
+  isReversed?: boolean;
+  isMobile: boolean;
+}>`
   position: absolute;
   display: flex;
-  gap: 12px;
+  gap: 24px;
   overflow-x: scroll;
   overflow: auto;
   white-space: nowrap;
-  animation: ${({ isReversed }) =>
-      isReversed ? sliderRotationLeft : sliderRotation}
+  animation: ${({ isReversed, isMobile }) =>
+      isReversed
+        ? sliderRotationLeft
+        : (isMobile && sliderRotationMobile) || sliderRotation}
     60s linear infinite;
 `;
