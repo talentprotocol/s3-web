@@ -6,8 +6,8 @@ import { StyledTypographyProps } from "./types";
 export const H1 = styled.h1<StyledTypographyProps>`
   ${fontNormal}
   font-weight: 700;
-  font-size: 48px;
-  line-height: 120%;
+  font-size: 56px;
+  line-height: 100%;
 
   ${({ color }) =>
     css`
