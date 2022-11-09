@@ -23,9 +23,7 @@ export const LandingHero = ({ isMobile }: Props) => {
     <Container>
       <Typography type="h1">
         <>
-          {COPY.LANDING_HERO.TITLE_BLACK_1}
-          <PurpleText>{COPY.LANDING_HERO.TITLE_PURPLE}</PurpleText>
-          {COPY.LANDING_HERO.TITLE_BLACK_2}
+          {COPY.LANDING_HERO.TITLE}
         </>
       </Typography>
       <SubTitleWrapper>

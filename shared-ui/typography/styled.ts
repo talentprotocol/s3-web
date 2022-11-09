@@ -11,12 +11,12 @@ export const H1 = styled.h1<StyledTypographyProps>`
 
   ${({ color }) =>
     css`
-      color: ${COLORS[color || "BLACK"]};
+      color: ${COLORS[color || "DARK_BLUE"]};
     `}
 
   @media (min-width: 768px) {
     font-weight: 700;
-    font-size: 60px;
+    font-size: 90px;
     line-height: 120%;
   }
 `;
