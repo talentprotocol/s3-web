@@ -16,7 +16,7 @@ export const H1 = styled.h1<StyledTypographyProps>`
 
   @media (min-width: 768px) {
     font-weight: 700;
-    font-size: 90px;
+    font-size: 80px;
     line-height: 120%;
   }
 `;

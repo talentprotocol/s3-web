@@ -19,7 +19,10 @@ export const COPY = {
   LANDING_HERO: {
     HEADER_LOGIN: "Login",
     HEADER_SIGN_UP: "Sign up",
-    TITLE: "The web3 resume.",
+    TITLE: "Build your web3 resume.",
+    TITLE_BLACK_1: "Build your ",
+    TITLE_PURPLE: "web3 resume",
+    TITLE_BLACK_2: ".",
     SUBTITLE:
       "Create a beautiful web3 resume, make meaningful connections and access exciting web3 opportunities.",
     RESERVE_TAL: {
