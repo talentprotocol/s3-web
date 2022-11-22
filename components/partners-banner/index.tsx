@@ -10,6 +10,7 @@ import kernelImage from "./assets/kernel.svg";
 import launchHouse from "./assets/launch-house.svg";
 import polygonImage from "./assets/polygon-studios.png";
 import protocolLabsImage from "./assets/protocol-labs.svg";
+import unstoppableDomains from "./assets/unstoppable-domains.png";
 import { Typography } from "shared-ui";
 import {
   Container,
@@ -54,6 +55,10 @@ const SLIDER_ENTRIES = [
     image: protocolLabsImage,
     width: "155px",
   },
+  {
+    image: unstoppableDomains,
+    width: "155px",
+  }
 ];
 
 export const PartnersBanner = ({ isMobile }: Props) => {
