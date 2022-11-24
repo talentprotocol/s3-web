@@ -25,6 +25,7 @@ import { isDevice } from "utils/is-mobile";
 interface Props {
   isMobile: boolean;
   isSafari: boolean;
+  isAndroid: boolean;
 }
 
 const Home: NextPage<Props> = (props) => {
@@ -69,7 +70,7 @@ const Home: NextPage<Props> = (props) => {
             isSidebarVisible={isSidebarVisible}
             toggleSidebar={toggleSidebar}
           />
-          <LandingHero isMobile={props.isMobile} isSafari={props.isSafari} />
+          <LandingHero isMobile={props.isMobile} isSafari={props.isSafari} isAndroid={props.isAndroid} />
           <Mosaic isMobile={props.isMobile} />
         </HeroSection>
         <TabSection />

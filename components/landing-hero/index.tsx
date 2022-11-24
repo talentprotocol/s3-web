@@ -12,7 +12,7 @@ import {
 } from "./styled";
 import { Props } from "./types";
 
-export const LandingHero = ({ isMobile, isSafari }: Props) => {
+export const LandingHero = ({ isMobile, isSafari, isAndroid }: Props) => {
   const talRef = useRef<HTMLSpanElement>(null);
   const handleReverveButtonClick = useCallback(() => {
     window.open(
@@ -55,6 +55,7 @@ export const LandingHero = ({ isMobile, isSafari }: Props) => {
           callback={handleReverveButtonClick}
           isMobile={isMobile}
           isSafari={isSafari}
+          isAndroid={isAndroid}
         />
       </ReserveHandleContainer>
     </Container>

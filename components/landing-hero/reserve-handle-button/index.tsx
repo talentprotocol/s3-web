@@ -5,12 +5,14 @@ import { Props } from "./types";
 export const ReserveHandleButton = ({
   callback,
   isMobile,
-  isSafari
+  isSafari,
+  isAndroid
 }: Props) => (
   <ButtonContainer>
     <StyledReserveHandleButton
       isMobile={isMobile}
       isSafari={isSafari}
+      isAndroid={isAndroid}
       onClick={callback}
       style={{ top: isMobile ? "-15px" : "-13px" }}
     >

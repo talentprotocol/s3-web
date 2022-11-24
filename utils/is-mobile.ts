@@ -10,6 +10,7 @@ export const isDevice = (userAgent: string) => {
   // const isDesktop = () => Boolean(!isMobile() && !isSSR())
   return { 
     isMobile: isMobile(), 
-    isSafari: isSafari()
+    isSafari: isSafari(),
+    isAndroid: isAndroid()
   }
 };

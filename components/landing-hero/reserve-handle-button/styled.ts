@@ -27,8 +27,10 @@ export const StyledReserveHandleButton = styled.button<StyledReserveHandleButton
     transform: translate(-50%, -2px);
   `}
 
-  ${( {isMobile}) => isMobile && css`
-    transform: translate(-50%, 1px);
+  ${( {isMobile, isAndroid }) => isMobile && css`
+    transform: translate(-50%, 2px);
+
+    ${!isAndroid && "transform: translate(-50%, 0);"}
 
     @media (min-width: 560px) {
       transform: translate(-50%, 0px);
