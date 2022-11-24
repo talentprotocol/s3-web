@@ -11,6 +11,7 @@ export const StyledReserveHandleButton = styled.button<StyledReserveHandleButton
   padding: 13px 32px;
   left: -24px;
   transform: translate(-50%, -1px);
+  -webkit-transform: translate(-50%, -3px);
   border-radius: 32px;
   background: ${COLORS.BLACK};
   color: ${COLORS.WHITE};
@@ -25,6 +26,7 @@ export const StyledReserveHandleButton = styled.button<StyledReserveHandleButton
 
   ${( {isMobile}) => isMobile && css`
     transform: translate(-50%, 1px);
+
     @media (min-width: 560px) {
       transform: translate(-50%, 0px);
     }
