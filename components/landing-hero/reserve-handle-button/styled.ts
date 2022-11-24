@@ -10,12 +10,11 @@ export const StyledReserveHandleButton = styled.button<StyledReserveHandleButton
   position: absolute;
   padding: 13px 32px;
   left: -24px;
-  transform: translate(-50%, -1px);
-  -webkit-transform: translate(-50%, -3px);
+  transform: translate(-50%, 0);
   border-radius: 32px;
   background: ${COLORS.BLACK};
   color: ${COLORS.WHITE};
-  border: 1px solid ${COLORS.BLACK};
+  border: none;
   cursor: pointer;
   ${fontNormal}
   font-weight: 700;
@@ -24,6 +23,10 @@ export const StyledReserveHandleButton = styled.button<StyledReserveHandleButton
   white-space: nowrap;
   transition-duration: 0.25s;
 
+  ${( {isSafari}) => isSafari && css`
+    transform: translate(-50%, -2px);
+  `}
+
   ${( {isMobile}) => isMobile && css`
     transform: translate(-50%, 1px);
 
@@ -31,7 +34,6 @@ export const StyledReserveHandleButton = styled.button<StyledReserveHandleButton
       transform: translate(-50%, 0px);
     }
   `}
-
 
   :hover {
     background: ${COLORS.LIGHT_BLACK};

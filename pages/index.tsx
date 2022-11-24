@@ -20,10 +20,11 @@ import { Footer } from "components/footer";
 import { PartnersBanner } from "components/partners-banner";
 import { Sidebar } from "components/sidebar";
 import { useSidebar } from "components/sidebar/useSidebar";
-import { isMobile } from "utils/is-mobile";
+import { isDevice } from "utils/is-mobile";
 
 interface Props {
   isMobile: boolean;
+  isSafari: boolean;
 }
 
 const Home: NextPage<Props> = (props) => {
@@ -68,7 +69,7 @@ const Home: NextPage<Props> = (props) => {
             isSidebarVisible={isSidebarVisible}
             toggleSidebar={toggleSidebar}
           />
-          <LandingHero isMobile={props.isMobile} />
+          <LandingHero isMobile={props.isMobile} isSafari={props.isSafari} />
           <Mosaic isMobile={props.isMobile} />
         </HeroSection>
         <TabSection />
@@ -91,8 +92,8 @@ const Home: NextPage<Props> = (props) => {
   );
 };
 
-Home.getInitialProps = (ctx: NextPageContext) => ({
-  isMobile: isMobile(ctx.req?.headers["user-agent"] || ""),
-});
+Home.getInitialProps = (ctx: NextPageContext) => {
+  return isDevice(ctx.req?.headers["user-agent"] || "");
+}
 
 export default Home;
