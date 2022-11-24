@@ -8,6 +8,7 @@ export const ReserveHandleButton = ({
 }: Props) => (
   <ButtonContainer>
     <StyledReserveHandleButton
+      isMobile={isMobile}
       onClick={callback}
       style={{ top: isMobile ? "-15px" : "-13px" }}
     >

@@ -26,6 +26,7 @@ export const PurpleText = styled.span`
 export const ReserveHandleContainer = styled.div`
   width: calc(100% - 48px);
   margin-top: 8px;
+  max-height: 50px;
   border: 1px solid ${COLORS.DARK_BLUE};
   display: flex;
   padding: 12px 24px;

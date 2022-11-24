@@ -59,5 +59,5 @@ export const ActionArea = styled.div`
 
 export const ButtonContentWrapper = styled.span`
   display: flex;
-  justify-content: centeR;
+  justify-content: center;
 `;
