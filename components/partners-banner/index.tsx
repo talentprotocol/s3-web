@@ -11,6 +11,7 @@ import launchHouse from "./assets/launch-house.svg";
 import polygonImage from "./assets/polygon-studios.png";
 import protocolLabsImage from "./assets/protocol-labs.svg";
 import unstoppableDomains from "./assets/unstoppable-domains.png";
+import uTrust from "./assets/utrust.png";
 import { Typography } from "shared-ui";
 import {
   Container,
@@ -57,6 +58,10 @@ const SLIDER_ENTRIES = [
   },
   {
     image: unstoppableDomains,
+    width: "155px",
+  },
+  {
+    image: uTrust,
     width: "155px",
   }
 ];
