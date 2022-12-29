@@ -28,7 +28,7 @@ export const LevelUpSection = () => (
             text={COPY.LEVEL_UP_SECTION.BUTTON}
             type="link"
             variant="tertiary"
-            href="https://talentprotocol.notion.site/Level-Up-3a09b0c433a34cd88f3a69c6041ec5fa"
+            href="https://mentoring.talentprotocol.com"
           >
             <ButtonIcon>--E</ButtonIcon>
           </Button>
