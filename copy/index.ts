@@ -166,7 +166,7 @@ export const COPY = {
     DESCRIPTION:
       "The web3 professional community for high-potential builders.",
     COPYRIGHT: [
-      "Talent Protocol MTÜ © 2022",
+      `Talent Protocol MTÜ © ${new Date().getFullYear()}`,
       "contact@talentprotocol.com",
     ],
     PROJECT: {
