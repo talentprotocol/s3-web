@@ -1,23 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
-  @font-face {
-    font-family: 'Acid Grotesk TP';
-    src: url('/fonts/AcidGroteskTP-Light.otf');
-  }
-
-  @font-face {
-    font-family: 'Acid Grotesk TP';
-    src: url('/fonts/AcidGroteskTP-Medium.otf');
-    font-weight: 500;
-  }
-
-  @font-face {
-    font-family: 'Acid Grotesk TP';
-    src: url('/fonts/AcidGroteskTP-Bold.otf');
-    font-weight: 700;
-  }
-
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
   a, abbr, acronym, address, big, cite, code,

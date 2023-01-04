@@ -54,6 +54,7 @@ const Home: NextPage<Props> = (props) => {
           property="og:description"
           content="Talent Protocol is the web3 professional community where high-potential individuals can build an on-chain resume and launch a talent token, allowing anyone to easily invest in their careers."
         />
+        <link rel="stylesheet" href="add-fonts.css" />
         <meta property="og:image" content="/metaimage.jpg" />
       </Head>
       <main>
