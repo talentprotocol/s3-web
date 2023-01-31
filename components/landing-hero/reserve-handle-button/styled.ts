@@ -23,19 +23,23 @@ export const StyledReserveHandleButton = styled.button<StyledReserveHandleButton
   white-space: nowrap;
   transition-duration: 0.25s;
 
-  ${( {isSafari}) => isSafari && css`
-    transform: translate(-50%, -2px);
-  `}
+  ${({ isSafari }) =>
+    isSafari &&
+    css`
+      transform: translate(-50%, -2px);
+    `}
 
-  ${( {isMobile, isAndroid }) => isMobile && css`
-    transform: translate(-50%, 2px);
+  ${({ isMobile, isAndroid }) =>
+    isMobile &&
+    css`
+      transform: translate(-50%, 2px);
 
-    ${!isAndroid && "transform: translate(-50%, 0);"}
+      ${!isAndroid && "transform: translate(-50%, 0);"}
 
-    @media (min-width: 560px) {
-      transform: translate(-50%, 0px);
-    }
-  `}
+      @media (min-width: 560px) {
+        transform: translate(-50%, 0px);
+      }
+    `}
 
   :hover {
     background: ${COLORS.LIGHT_BLACK};

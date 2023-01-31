@@ -63,7 +63,7 @@ const SLIDER_ENTRIES = [
   {
     image: uTrust,
     width: "155px",
-  }
+  },
 ];
 
 export const PartnersBanner = ({ isMobile }: Props) => {

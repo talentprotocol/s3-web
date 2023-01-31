@@ -6,7 +6,7 @@ export const ReserveHandleButton = ({
   callback,
   isMobile,
   isSafari,
-  isAndroid
+  isAndroid,
 }: Props) => (
   <ButtonContainer>
     <StyledReserveHandleButton

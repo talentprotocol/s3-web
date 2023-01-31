@@ -62,9 +62,18 @@ export const Sidebar = ({
         </Button>
         <Button type="link" variant="primary">
           <ButtonContentWrapper
-            onClick={() =>
-              window.open("https://beta.talentprotocol.com/join")
-            }
+            onClick={() => {
+              try {
+                // @ts-ignore
+                gtag("event", "sign_up", {
+                  device: "mobile",
+                  event_name: "signup_click",
+                });
+                window.open("https://beta.talentprotocol.com/join");
+              } catch {
+                window.open("https://beta.talentprotocol.com/join");
+              }
+            }}
           >
             Sign up
           </ButtonContentWrapper>

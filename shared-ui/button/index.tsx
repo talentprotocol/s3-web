@@ -7,13 +7,18 @@ export const Button = ({
   type,
   variant,
   children,
+  onClick,
   href = "/",
 }: Props) => {
   switch (type) {
     case ButtonTypeEnum.LINK:
       return (
-        <Link href={href} passHref>
-          <ButtonLinkContainer variant={variant} target="_blank">
+        <Link href={href} passHref onClick={onClick}>
+          <ButtonLinkContainer
+            variant={variant}
+            target="_blank"
+            onClick={onClick}
+          >
             {text}
             {children}
           </ButtonLinkContainer>

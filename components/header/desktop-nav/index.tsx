@@ -15,6 +15,18 @@ export const DesktopNav = () => {
         text={COPY.LANDING_HERO.HEADER_SIGN_UP}
         type="link"
         variant="primary"
+        onClick={() => {
+          try {
+            // @ts-ignore
+            gtag("event", "sign_up", {
+              device: "desktop",
+              event_name: "signup_click",
+            });
+            return true;
+          } catch {
+            return true;
+          }
+        }}
         href="https://beta.talentprotocol.com/join"
       />
     </NavArea>

@@ -1,3 +1,5 @@
+import { ReactEventHandler } from "react";
+
 export enum ButtonTypeEnum {
   DEFAULT = "default",
   LINK = "link",
@@ -32,6 +34,7 @@ export interface Props {
   variant: VariantType;
   href?: string;
   children?: JSX.Element;
+  onClick?: ReactEventHandler;
 }
 
 export interface StyledButtonProps {

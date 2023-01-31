@@ -71,7 +71,11 @@ const Home: NextPage<Props> = (props) => {
             isSidebarVisible={isSidebarVisible}
             toggleSidebar={toggleSidebar}
           />
-          <LandingHero isMobile={props.isMobile} isSafari={props.isSafari} isAndroid={props.isAndroid} />
+          <LandingHero
+            isMobile={props.isMobile}
+            isSafari={props.isSafari}
+            isAndroid={props.isAndroid}
+          />
           <Mosaic isMobile={props.isMobile} />
         </HeroSection>
         <TabSection />
@@ -96,6 +100,6 @@ const Home: NextPage<Props> = (props) => {
 
 Home.getInitialProps = (ctx: NextPageContext) => {
   return isDevice(ctx.req?.headers["user-agent"] || "");
-}
+};
 
 export default Home;
