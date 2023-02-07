@@ -26,12 +26,18 @@ export const ImageContainer = styled.div<{isMobile: boolean}>`
 export const MainContainer = styled.div<{isMobile: boolean, centerContent: boolean}>`
   display: flex;
   flex-direction: row;
+  max-width: 1160px;
 
   ${( {isMobile}) => !isMobile && css`
     gap: 124px;
     margin-top: 140px;
     margin-left: 140px;
     margin-right: 140px;
+
+    @media (min-width: 1300px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
   `}
 
   ${( {centerContent}) => centerContent && css`
