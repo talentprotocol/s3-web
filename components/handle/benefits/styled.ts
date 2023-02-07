@@ -63,7 +63,6 @@ export const ItalicText = styled.span`
 
 export const DarkButton = styled.button`
   ${fontNormal}
-  width: 100%;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
@@ -76,6 +75,7 @@ export const DarkButton = styled.button`
   cursor: pointer;
   transition-duration: 0.25s;
   outline: none;
+  align-self: start;
 
   :hover {
     background-color: ${COLORS.LIGHT_BLACK};
@@ -96,6 +96,7 @@ export const LightButton = styled.button`
   cursor: pointer;
   transition-duration: 0.25s;
   outline: none;
+  align-self: start;
 
   :hover {
     background-color: ${COLORS.LIGHT_BLACK};

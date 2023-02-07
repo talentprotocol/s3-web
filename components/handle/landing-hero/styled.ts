@@ -23,7 +23,7 @@ export const ImageContainer = styled.div<{isMobile: boolean}>`
   `}
 `
 
-export const MainContainer = styled.div<{isMobile: boolean}>`
+export const MainContainer = styled.div<{isMobile: boolean, centerContent: boolean}>`
   display: flex;
   flex-direction: row;
 
@@ -32,6 +32,10 @@ export const MainContainer = styled.div<{isMobile: boolean}>`
     margin-top: 140px;
     margin-left: 140px;
     margin-right: 140px;
+  `}
+
+  ${( {centerContent}) => centerContent && css`
+    justify-content: center;
   `}
 `;
 
@@ -147,7 +151,7 @@ export const SearchingSection = styled.div`
   gap: 16px;
 `;
 
-export const PinkButton = styled.button`
+export const PinkButton = styled.button<{alignButtonLeft: boolean}>`
   ${fontNormal}
   font-weight: 700;
   font-size: 16px;
@@ -165,6 +169,10 @@ export const PinkButton = styled.button`
   :hover {
     background-color: ${COLORS.LIGHT_PURPLE};
   }
+
+  @media (min-width: 768px) {
+    align-self: ${({ alignButtonLeft }) => alignButtonLeft ? "start" : "end"};
+  }
 `;
 
 export const StepBox = styled.div`
@@ -173,8 +181,11 @@ export const StepBox = styled.div`
   display: flex;
   flex-direction: column;
   padding: 24px;
-  margin-top: 80px;
   margin-bottom: 24px;
+
+  @media (min-width: 768px) {
+    width: 568px;
+  }
 `;
 
 export const StepNumberContainer = styled.div`
@@ -230,9 +241,22 @@ export const NeutralButton = styled.button`
   cursor: pointer;
   transition-duration: 0.25s;
   outline: none;
-  margin-top: 8px;
 
   :hover {
     background-color: ${COLORS.LIGHT_PURPLE};
   }
+
+  @media (min-width: 768px) {
+    align-self: end;
+  }
 `;
+
+export const ButtonConfirmationContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  @media (min-width: 768px) {
+    flex-direction: row-reverse;
+  }
+`

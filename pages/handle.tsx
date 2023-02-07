@@ -48,7 +48,7 @@ const Handle: NextPage<Props> = (props) => {
         <link rel="stylesheet" href="add-fonts.css" />
         <meta property="og:image" content="/metaimage.jpg" />
       </Head>
-      <main>
+      <main id="main">
         {isSidebarVisible && (
           <Sidebar
             isSidebarVisible={isSidebarVisible}

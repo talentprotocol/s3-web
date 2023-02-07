@@ -26,13 +26,27 @@ import Onchain from "./assets/onchain.png";
 import Payments from "./assets/payments.png";
 import TalentMates from "./assets/talentmates.png";
 
+// @ts-ignore
+let scrollAnimation;
+
 export const Benefits = ({ isMobile, isSafari, isAndroid }: Props) => {
+
+  const scrollToTop = () => {
+    const position = document.body.scrollTop || document.documentElement.scrollTop;
+
+    if (position) {
+      window.scrollBy(0, -Math.max(1, Math.floor(position / 10)));
+      scrollAnimation = setTimeout(scrollToTop, 30);
+      // @ts-ignore
+    } else clearTimeout(scrollAnimation);
+  };
+
   return (
     <>
       <Container dark={false}>
         <HandleSection isMobile={isMobile}>
           <ImageContainer>
-            <Image src={Profile} alt="icon image" />
+            <Image src={Profile} alt="Talent Protocol profile image" />
           </ImageContainer>
           <DescriptionContainer>
             <Typography type="h3">
@@ -53,7 +67,7 @@ export const Benefits = ({ isMobile, isSafari, isAndroid }: Props) => {
         </HandleSection>
         <HandleSection isMobile={isMobile} reverseOrder={true}>
           <ImageContainer>
-            <Image src={Onchain} alt="icon image" />
+            <Image src={Onchain} alt="Interconnection of blockchain data with the handle" />
           </ImageContainer>
           <DescriptionContainer>
             <Typography type="h3">
@@ -76,7 +90,7 @@ export const Benefits = ({ isMobile, isSafari, isAndroid }: Props) => {
       <Container dark={true}>
         <HandleSection isMobile={isMobile}>
           <ImageContainer>
-            <Image src={TalentMates} alt="icon image" />
+            <Image src={TalentMates} alt="Talent Mate skin" />
           </ImageContainer>
           <DescriptionContainer>
             <Typography type="h3" color="WHITE">
@@ -97,7 +111,7 @@ export const Benefits = ({ isMobile, isSafari, isAndroid }: Props) => {
         </HandleSection>
         <HandleSection isMobile={isMobile} reverseOrder={true}>
           <ImageContainer>
-            <Image src={Payments} alt="icon image" />
+            <Image src={Payments} alt="Using the Talent Protocol handle as a payment address" />
           </ImageContainer>
           <DescriptionContainer>
             <Typography type="h3" color="WHITE">
@@ -134,7 +148,7 @@ export const Benefits = ({ isMobile, isSafari, isAndroid }: Props) => {
                 <CallToActionPeriod>{COPY.BENEFITS.CALL_TO_ACTION.PERIOD}</CallToActionPeriod>
               </CallToActionPriceDescription>
             </CallToActionDescription>
-            <PinkButton onClick={() => console.log("pink button")}>
+            <PinkButton onClick={() => scrollToTop()}>
               {COPY.BENEFITS.CALL_TO_ACTION.BUTTON}
             </PinkButton>
           </CallToActionContainer>

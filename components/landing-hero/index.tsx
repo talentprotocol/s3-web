@@ -19,9 +19,7 @@ export const LandingHero = ({
 }: Props) => {
   const talRef = useRef<HTMLSpanElement>(null);
   const handleReverveButtonClick = useCallback(() => {
-    window.open(
-      `https://beta.talentprotocol.com/join?handle=${talRef.current?.innerText}`
-    );
+    window.location.href = `/handle?name=${talRef.current?.innerText}`;
   }, []);
   return (
     <Container>

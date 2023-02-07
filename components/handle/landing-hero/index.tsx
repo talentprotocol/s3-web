@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { COPY } from "copy/handle";
 import { Typography } from "shared-ui";
@@ -24,7 +24,8 @@ import {
   PaymentSection,
   PaymentsRow,
   HelpText,
-  NeutralButton
+  NeutralButton,
+  ButtonConfirmationContainer
 } from "./styled";
 import { Props } from "./types";
 import arrowDown from "./assets/arrow-down.svg";
@@ -39,9 +40,7 @@ import { ethers } from "ethers";
 import REGISTRAR from "./TalRegistrar.json";
 
 // TODO: REPLACE MAINNET
-// TOOD: REPLACE ALT IMAGES descriptions
-// TODO: CALL TO ACTION SEND TO TOP OF PAGE
-// TODO: CHECK WITH PP OVERSTATE ON available step
+// TODO: CHECK WITH PP hover state ON available step
 const DOMAIN_CONTRACT = "0x38B5Fb838e5A605dF510525d4A4D197Ae0DB20f0";
 const CHAIN_ID = 5;
 const CHAIN = "goerli";
@@ -53,10 +52,40 @@ export const LandingHero = ({ isMobile, isSafari, isAndroid }: Props) => {
   const [currentStage, changeCurrentStage] = useState("search");
   const [desiredName, setDesiredName] = useState("");
 
+  useEffect(() => {
+    // @ts-ignore
+    const url = new URL(document.location);
+    const name = url.searchParams.get("name") || "";
+
+    if (name != "") {
+      // @ts-ignore
+      talRef.current.innerText = name;
+      window.history.pushState(
+        {},
+        document.location.href,
+        document.location.href.replace(document.location.search, "")
+      );
+    }
+
+  });
+
   const checkAvailability = async () => {
     if ((talRef.current?.innerText?.length || 0) < 3) {
       return;
     }
+
+    // @ts-ignore
+    const { ethereum } = window;
+    if (!ethereum || !ethereum.isMetaMask) {
+      alert("You need to have metamask on your browser or use the matemask browser");
+      return;
+    }
+    const defaultProvider = new ethers.providers.Web3Provider(ethereum);
+
+    const chainHex = ethers.utils.hexValue(ethers.utils.hexlify(CHAIN_ID));
+    await defaultProvider.send("wallet_switchEthereumChain", [
+      { chainId: chainHex },
+    ]);
 
     changeCurrentStage("searching");
     const desiredDomain = talRef.current?.innerText || "";
@@ -65,7 +94,7 @@ export const LandingHero = ({ isMobile, isSafari, isAndroid }: Props) => {
     console.log(desiredDomain);
 
     // @ts-ignore
-    const provider = ethers.getDefaultProvider(CHAIN);
+    const provider = new ethers.providers.Web3Provider(ethereum);
     const subdomainContract = new ethers.Contract(
       DOMAIN_CONTRACT,
       REGISTRAR.abi,
@@ -171,7 +200,7 @@ export const LandingHero = ({ isMobile, isSafari, isAndroid }: Props) => {
               </Typography>
             </SearchingSection>
             <BenefitsArea>
-              <Image src={arrowDown} alt="icon image" />
+              <Image src={arrowDown} alt="arrow pointing down" />
               <Typography type="body1" color="PINK"><>{COPY.LANDING_HERO.BENEFITS}</></Typography>
             </BenefitsArea>
           </>
@@ -179,7 +208,7 @@ export const LandingHero = ({ isMobile, isSafari, isAndroid }: Props) => {
       case "taken":
         return (
           <>
-            <Image src={Taken} alt="icon image"/>
+            <Image src={Taken} alt="red cross"/>
             <SearchingSection>
               <Typography type="h3" color="WHITE">
                 <>{desiredName}{COPY.BENEFITS.TAKEN.TITLE}</>
@@ -208,7 +237,7 @@ export const LandingHero = ({ isMobile, isSafari, isAndroid }: Props) => {
               </StyledReserveHandleButton>
             </SearchContainer>
             <BenefitsArea>
-              <Image src={arrowDown} alt="icon image" />
+              <Image src={arrowDown} alt="arrow pointing down" />
               <Typography type="body1" color="PINK"><>{COPY.LANDING_HERO.BENEFITS}</></Typography>
             </BenefitsArea>
           </>
@@ -216,7 +245,7 @@ export const LandingHero = ({ isMobile, isSafari, isAndroid }: Props) => {
       case "available":
         return (
           <>
-            <Image src={Available} alt="icon image"/>
+            <Image src={Available} alt="Green check mark"/>
             <SearchingSection>
               <Typography type="h3" color="WHITE">
                 <>{desiredName}{COPY.BENEFITS.AVAILABLE.TITLE}</>
@@ -225,11 +254,11 @@ export const LandingHero = ({ isMobile, isSafari, isAndroid }: Props) => {
                 <>{COPY.BENEFITS.AVAILABLE.SUBTITLE}</>
               </Typography>
             </SearchingSection>
-            <PinkButton onClick={() => startBuyProcess()}>
+            <PinkButton onClick={() => startBuyProcess()} alignButtonLeft={true}>
               {COPY.BENEFITS.AVAILABLE.BUTTON}
             </PinkButton>
             <BenefitsArea>
-              <Image src={arrowDown} alt="icon image" />
+              <Image src={arrowDown} alt="arrow pointing down" />
               <Typography type="body1" color="PINK"><>{COPY.LANDING_HERO.BENEFITS}</></Typography>
             </BenefitsArea>
           </>
@@ -252,7 +281,7 @@ export const LandingHero = ({ isMobile, isSafari, isAndroid }: Props) => {
                   <>{COPY.BENEFITS.STEP_1.SUBTITLE}</>
                 </Typography>
               </StepDescriptionContainer>
-              <PinkButton onClick={() => connectWallet()}>
+              <PinkButton onClick={() => connectWallet()} alignButtonLeft={false}>
                 {COPY.BENEFITS.STEP_1.BUTTON}
               </PinkButton>
             </StepBox>
@@ -297,12 +326,14 @@ export const LandingHero = ({ isMobile, isSafari, isAndroid }: Props) => {
                   <>{COPY.BENEFITS.STEP_2.HELP}</>
                 </Typography>
               </HelpText>
-              <PinkButton onClick={() => buyDomain()}>
-                {COPY.BENEFITS.STEP_2.BUTTON_YES}
-              </PinkButton>
-              <NeutralButton onClick={() => cancelBuy()}>
-                {COPY.BENEFITS.STEP_2.BUTTON_NO}
-              </NeutralButton>
+              <ButtonConfirmationContainer>
+                <PinkButton onClick={() => buyDomain()} alignButtonLeft={false}>
+                  {COPY.BENEFITS.STEP_2.BUTTON_YES}
+                </PinkButton>
+                <NeutralButton onClick={() => cancelBuy()}>
+                  {COPY.BENEFITS.STEP_2.BUTTON_NO}
+                </NeutralButton>
+              </ButtonConfirmationContainer>
             </StepBox>
           </>
         );
@@ -311,7 +342,7 @@ export const LandingHero = ({ isMobile, isSafari, isAndroid }: Props) => {
           <>
             <Typography type="h3" color={"WHITE"}>
               <>
-                <Image src={arrow} alt="icon image" />
+                <Image src={arrow} alt="arrow pointing right" />
                 <><br/>{COPY.LANDING_HERO.TITLE_REGULAR_1}<br/></>
                 <ItalicText>{COPY.LANDING_HERO.TITLE_ITALIC_1}</ItalicText>
                 <><br/>{COPY.LANDING_HERO.TITLE_REGULAR_2}<br/></>
@@ -354,7 +385,7 @@ export const LandingHero = ({ isMobile, isSafari, isAndroid }: Props) => {
                   </StyledReserveHandleButton>
                 </SearchContainer>
                 <BenefitsArea>
-                  <Image src={arrowDown} alt="icon image" />
+                  <Image src={arrowDown} alt="arrow pointing down" />
                   <Typography type="body1" color="PINK"><>{COPY.LANDING_HERO.BENEFITS}</></Typography>
                 </BenefitsArea>
             </EarlyBird>
@@ -364,12 +395,12 @@ export const LandingHero = ({ isMobile, isSafari, isAndroid }: Props) => {
   }
 
   return (
-    <MainContainer isMobile={isMobile}>
+    <MainContainer isMobile={isMobile} centerContent={currentStage.includes("step")}>
       <Container isMobile={isMobile}>
         {renderStage()}
       </Container>
       <ImageContainer isMobile={isMobile || currentStage.includes("step")}>
-        <Image src={Circles} alt="icon image" />
+        <Image src={Circles} alt="Pink circles" />
       </ImageContainer>
     </MainContainer>
   );
