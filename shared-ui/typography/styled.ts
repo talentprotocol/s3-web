@@ -36,7 +36,7 @@ export const H3 = styled.h3<StyledTypographyProps>`
   ${fontNormal}
   font-weight: 500;
   font-size: 25px;
-  line-height: 120%;
+  line-height: 130%;
   ${({ color }) =>
     css`
       color: ${COLORS[color || "BLACK"]};
@@ -45,7 +45,7 @@ export const H3 = styled.h3<StyledTypographyProps>`
   @media (min-width: 768px) {
     font-weight: 500;
     font-size: 32px;
-    line-height: 120%;
+    line-height: 130%;
   }
 `;
 

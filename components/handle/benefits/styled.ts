@@ -30,6 +30,9 @@ export const HandleSection = styled.div<{isMobile: boolean, reverseOrder?: boole
     justify-content: center;
     align-items: center;
     gap: 120px;
+    max-width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
   `}
 `;
 

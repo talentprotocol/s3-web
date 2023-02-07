@@ -446,9 +446,9 @@ export const LandingHero = ({ isMobile, isSafari, isAndroid }: Props) => {
             <Typography type="h3" color={"WHITE"}>
               <>
                 <Image src={arrow} alt="arrow pointing right" />
-                <><br/>{COPY.LANDING_HERO.TITLE_REGULAR_1}<br/></>
+                <>{<br/>}{COPY.LANDING_HERO.TITLE_REGULAR_1}{isMobile && <br/>}</>
                 <ItalicText>{COPY.LANDING_HERO.TITLE_ITALIC_1}</ItalicText>
-                <><br/>{COPY.LANDING_HERO.TITLE_REGULAR_2}<br/></>
+                <><br/>{COPY.LANDING_HERO.TITLE_REGULAR_2}{isMobile && <br/>}</>
                 <ItalicText>{COPY.LANDING_HERO.TITLE_ITALIC_2}</ItalicText>
               </>
             </Typography>
@@ -487,11 +487,11 @@ export const LandingHero = ({ isMobile, isSafari, isAndroid }: Props) => {
                     {COPY.LANDING_HERO.EARLY_BIRD.BUTTON}
                   </StyledReserveHandleButton>
                 </SearchContainer>
-                <BenefitsArea>
-                  <Image src={arrowDown} alt="arrow pointing down" />
-                  <Typography type="body1" color="PINK"><>{COPY.LANDING_HERO.BENEFITS}</></Typography>
-                </BenefitsArea>
             </EarlyBird>
+            <BenefitsArea>
+              <Image src={arrowDown} alt="arrow pointing down" />
+              <Typography type="body1" color="PINK"><>{COPY.LANDING_HERO.BENEFITS}</></Typography>
+            </BenefitsArea>
           </>
         )
     }

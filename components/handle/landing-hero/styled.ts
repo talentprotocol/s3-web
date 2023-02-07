@@ -4,7 +4,7 @@ import { COLORS, fontNormal } from "shared-ui";
 export const Container = styled.div<{isMobile: boolean}>`
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 48px;
   width: 50%;
 
   ${( {isMobile}) => isMobile && css`
@@ -30,13 +30,16 @@ export const MainContainer = styled.div<{isMobile: boolean, centerContent: boole
 
   ${( {isMobile}) => !isMobile && css`
     gap: 124px;
-    margin-top: 140px;
+    margin-top: auto;
+    margin-bottom: auto;
     margin-left: 140px;
     margin-right: 140px;
 
     @media (min-width: 1300px) {
       margin-left: auto;
       margin-right: auto;
+      margin-top: auto;
+      margin-bottom: auto;
     }
   `}
 
@@ -50,6 +53,10 @@ export const ItalicText = styled.span`
   font-size: 25px;
   font-style: italic;
   line-height: 32.5px;
+
+  @media (min-width: 768px) {
+    font-size: 32px;
+  }
 `;
 
 export const EarlyBird = styled.div`
@@ -146,8 +153,10 @@ export const BenefitsArea = styled.div`
   left: 24px;
 
   @media (min-width: 768px) {
-    bottom: 200px;
-    left: 140px;
+    position: relative;
+    margin-top: auto;
+    bottom: 0px;
+    left: 0px;
   }
 `
 
