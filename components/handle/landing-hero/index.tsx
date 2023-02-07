@@ -41,10 +41,10 @@ import REGISTRAR from "./TalRegistrar.json";
 
 // TODO: REPLACE MAINNET
 // TODO: CHECK WITH PP hover state ON available step
-const DOMAIN_CONTRACT = "0x38B5Fb838e5A605dF510525d4A4D197Ae0DB20f0";
-const CHAIN_ID = 5;
-const CHAIN = "goerli";
-const RPC_URL = "https://goerli.infura.io/v3/";
+// MAINNET ADDRESS: 0xc187Cf217f578B7Ef6b895E08197a18E77FCd185
+// TESTNET ADDRESS: 0xa25976089f3A74319660c088063Ebf8B4a55B039
+const DOMAIN_CONTRACT = "0xc187Cf217f578B7Ef6b895E08197a18E77FCd185";
+const CHAIN_ID = 1;
 const NO_OWNER = "0x0000000000000000000000000000000000000000";
 
 export const LandingHero = ({ isMobile, isSafari, isAndroid }: Props) => {
@@ -162,23 +162,34 @@ export const LandingHero = ({ isMobile, isSafari, isAndroid }: Props) => {
     ]);
 
     // @ts-ignore
-    const provider = ethers.getDefaultProvider(CHAIN);
+    const provider = new ethers.providers.Web3Provider(ethereum);
+    const signer = provider.getSigner();
+
     const subdomainContract = new ethers.Contract(
       DOMAIN_CONTRACT,
       REGISTRAR.abi,
-      provider
+      signer
     );
 
-    const account = accounts[0];
-
     const valueInEth = await subdomainContract.domainPriceInEth();
-    const event = await subdomainContract.connect(account).register(desiredName, { value: valueInEth });
+    console.log(valueInEth);
+    console.log("Value: ", ethers.utils.formatUnits(valueInEth));
+
+    // Add rejection;
+    const event = await subdomainContract.connect(signer).register(desiredName, { value: valueInEth });
+    console.log("before wait");
+    if (!event) {
+      alert("You need to confirm the transaction");
+      return;
+    }
     await event.wait();
     console.log("done");
 
     console.log("Double checking");
     const newOwner = await subdomainContract.subDomainOwner(desiredName);
     console.log(newOwner);
+
+    // show https://app.ens.domains/address/0x33041027dd8F4dC82B6e825FB37ADf8f15d44053/controller
   };
 
   const cancelBuy = () => {
