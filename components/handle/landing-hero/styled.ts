@@ -131,4 +131,108 @@ export const BenefitsArea = styled.div`
   flex-direction: row;
   gap: 16px;
   align-items: center;
+  position: absolute;
+  bottom: 80px;
+  left: 24px;
+
+  @media (min-width: 768px) {
+    bottom: 200px;
+    left: 140px;
+  }
 `
+
+export const SearchingSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+`;
+
+export const PinkButton = styled.button`
+  ${fontNormal}
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 14px 32px;
+  gap: 10px;
+  border-radius: 32px;
+  background: ${COLORS.PINK};
+  color: ${COLORS.DARK_BLUE};
+  border: none;
+  cursor: pointer;
+  transition-duration: 0.25s;
+  outline: none;
+
+  :hover {
+    background-color: ${COLORS.LIGHT_PURPLE};
+  }
+`;
+
+export const StepBox = styled.div`
+  border: 1px solid ${COLORS.SURFACE_DARK};
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  margin-top: 80px;
+  margin-bottom: 24px;
+`;
+
+export const StepNumberContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-bottom: 24px;
+`;
+
+export const StepDescriptionContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 40px;
+`
+
+export const WhiteText = styled.span`
+  color: ${COLORS.WHITE};
+`
+
+export const PaymentSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-top: 1px solid ${COLORS.SURFACE_DARK};
+  padding-top: 16px;
+  padding-bottom: 16px;
+`
+
+export const PaymentsRow = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`
+
+export const HelpText = styled.div`
+  border-top: 1px solid ${COLORS.SURFACE_DARK};
+  padding-top: 16px;
+  margin-bottom: 40px;
+`
+
+export const NeutralButton = styled.button`
+  ${fontNormal}
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 14px 32px;
+  gap: 10px;
+  border-radius: 32px;
+  background: ${COLORS.DARK_BLUE};
+  color: ${COLORS.WHITE};
+  border: 1px solid ${COLORS.SURFACE_DARK};
+  cursor: pointer;
+  transition-duration: 0.25s;
+  outline: none;
+  margin-top: 8px;
+
+  :hover {
+    background-color: ${COLORS.LIGHT_PURPLE};
+  }
+`;

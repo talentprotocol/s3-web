@@ -7,6 +7,8 @@ export const Container = styled.section<ContainerProps>`
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  position: relative;
+
   ${({ darkMode }) =>
     `background-color: ${darkMode ? COLORS.DARK_BLUE : COLORS.WHITE};`
   }

@@ -49,6 +49,17 @@ export const H3 = styled.h3<StyledTypographyProps>`
   }
 `;
 
+export const H5 = styled.h5<StyledTypographyProps>`
+  ${fontNormal}
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  ${({ color }) =>
+    css`
+      color: ${COLORS[color || "BLACK"]};
+    `}
+`;
+
 export const BODY1 = styled.p<StyledTypographyProps>`
   ${fontNormal}
   font-weight: 500;
@@ -82,6 +93,19 @@ export const P1 = styled.p<StyledTypographyProps>`
   font-weight: 400;
   font-size: 16px;
   line-height: 26.4px;
+
+  ${({ color }) =>
+    css`
+      color: ${COLORS[color || "BLACK"]};
+    `}
+`;
+
+export const P2 = styled.p<StyledTypographyProps>`
+  ${fontNormal}
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23.1px;
+  letter: 0.02;
 
   ${({ color }) =>
     css`

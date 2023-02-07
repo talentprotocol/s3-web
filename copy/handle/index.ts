@@ -46,6 +46,35 @@ export const COPY = {
       PRICE: "$8,00",
       PERIOD: "/year",
       BUTTON: "Reserve now!",
+    },
+    SEARCHING: {
+      TITLE: "Checking, please wait",
+      SUBTITLE: "This could be the start of something big!",
+    },
+    TAKEN: {
+      TITLE: ".tal.community is taken",
+      SUBTITLE: "We apologize, the custom domain you wanted is not available. Could you please try another one?",
+    },
+    AVAILABLE: {
+      TITLE: ".tal.community is available!",
+      SUBTITLE: "Your domain is available. Get it before someone else does.",
+      BUTTON: "Claim your domain",
+    },
+    STEP_1: {
+      TITLE: "Connect your wallet",
+      SUBTITLE: "Connect your wallet to confirm and purchase your domain. You'll need a metamask enabled browser in order to acquire your domain.",
+      BUTTON: "Connect wallet"
+    },
+    STEP_2: {
+      TITLE: "Confirm your domain",
+      SUBTITLE_PART_1: "When purchasing the ",
+      WHITE_TEXT_PART_1: ".tal.community",
+      SUBTITLE_PART_2: " domain, you will also secure the ",
+      WHITE_TEXT_PART_2: ".tal",
+      SUBTITLE_PART_3: " domain.",
+      HELP: "Please note that this is an estimate and the actual value may vary based on the Ethereum gas fee.",
+      BUTTON_YES: "Buy your domain",
+      BUTTON_NO: "Cancel"
     }
   }
 };
