@@ -168,7 +168,7 @@ export const PinkButton = styled.button<{alignButtonLeft: boolean}>`
   white-space: nowrap;
 
   :hover {
-    background-color: ${COLORS.LIGHT_PURPLE};
+    background-color: ${COLORS.LIGHT_PINK};
   }
 
   @media (min-width: 768px) {
