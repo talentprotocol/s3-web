@@ -24,7 +24,7 @@ export const Footer = ({ isMobile, darkMode = false }: Props) => {
           <FooterRow>
             <PresentationColumn>
               <Image priority src={darkMode ? logoPinkImage : logoImage} alt="logo" />
-              <CopyrightTypography darkMode={darkMode}>
+              <CopyrightTypography>
                 {COPY.FOOTER.DESCRIPTION}
               </CopyrightTypography>
             </PresentationColumn>
@@ -63,13 +63,13 @@ export const Footer = ({ isMobile, darkMode = false }: Props) => {
           </FooterRow>
           {!isMobile && (
             <Copyright>
-              <CopyrightTypography darkMode={darkMode}>
+              <CopyrightTypography>
                 {COPY.FOOTER.COPYRIGHT[0]}
               </CopyrightTypography>
               {!isMobile && (
-                <CopyrightTypography darkMode={darkMode}>|</CopyrightTypography>
+                <CopyrightTypography>|</CopyrightTypography>
               )}
-              <CopyrightTypography darkMode={darkMode}>
+              <CopyrightTypography>
                 {COPY.FOOTER.COPYRIGHT[1]}
               </CopyrightTypography>
             </Copyright>
@@ -78,11 +78,11 @@ export const Footer = ({ isMobile, darkMode = false }: Props) => {
       </StyledFooter>
       {isMobile && (
         <Copyright>
-          <CopyrightTypography darkMode={darkMode}>
+          <CopyrightTypography>
             {COPY.FOOTER.COPYRIGHT[0]}
           </CopyrightTypography>
-          {!isMobile && <CopyrightTypography darkMode={darkMode}>|</CopyrightTypography>}
-          <CopyrightTypography darkMode={darkMode}>
+          {!isMobile && <CopyrightTypography>|</CopyrightTypography>}
+          <CopyrightTypography>
             {COPY.FOOTER.COPYRIGHT[1]}
           </CopyrightTypography>
         </Copyright>

@@ -165,6 +165,7 @@ export const PinkButton = styled.button<{alignButtonLeft: boolean}>`
   cursor: pointer;
   transition-duration: 0.25s;
   outline: none;
+  white-space: nowrap;
 
   :hover {
     background-color: ${COLORS.LIGHT_PURPLE};
@@ -258,5 +259,21 @@ export const ButtonConfirmationContainer = styled.div`
 
   @media (min-width: 768px) {
     flex-direction: row-reverse;
+  }
+`
+
+export const LeftAlignSVG = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+`;
+
+export const TextWithButton = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
   }
 `

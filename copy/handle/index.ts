@@ -53,28 +53,46 @@ export const COPY = {
     },
     TAKEN: {
       TITLE: ".tal.community is taken",
-      SUBTITLE: "We apologize, the custom domain you wanted is not available. Could you please try another one?",
+      SUBTITLE: "We apologize, the custom handle you wanted is not available. Could you please try another one?",
     },
     AVAILABLE: {
       TITLE: ".tal.community is available!",
-      SUBTITLE: "Your domain is available. Get it before someone else does.",
-      BUTTON: "Claim your domain",
+      SUBTITLE: "Your handle is available. Get it before someone else does.",
+      BUTTON: "Claim your handle",
     },
     STEP_1: {
       TITLE: "Connect your wallet",
-      SUBTITLE: "Connect your wallet to confirm and purchase your domain. You'll need a metamask enabled browser in order to acquire your domain.",
+      SUBTITLE: "Connect your wallet to confirm and purchase your handle. You'll need a metamask enabled browser in order to acquire your domain.",
       BUTTON: "Connect wallet"
     },
     STEP_2: {
-      TITLE: "Confirm your domain",
+      TITLE: "Confirm your handle",
       SUBTITLE_PART_1: "When purchasing the ",
       WHITE_TEXT_PART_1: ".tal.community",
       SUBTITLE_PART_2: " domain, you will also secure the ",
       WHITE_TEXT_PART_2: ".tal",
       SUBTITLE_PART_3: " domain.",
       HELP: "Please note that this is an estimate and the actual value may vary based on the Ethereum gas fee.",
-      BUTTON_YES: "Buy your domain",
+      BUTTON_YES: "Buy your handle",
       BUTTON_NO: "Cancel"
+    },
+    SUCCESS: {
+      TITLE: ".tal.community",
+      SUBTITLE_PART_1: "Next payment of ",
+      SUBTITLE_WHITE_1: "$8.00",
+      SUBTITLE_PART_2: " (yearly) occurs on ",
+      BUTTON: "Renew Subscription",
+    },
+    SETTINGS: {
+      TITLE: ".tal.community is yours!",
+      SUBTITLE_PART_1: "And ",
+      SUBTITLE_PART_2: ".tal is reserved! Your handle is now live on ethereum! You'll be able to manage your domain using ENS and the Settings on our beta. Take a look at the information below.",
+      PROFILE_SECTION_TITLE: "Talent Protocol Profile",
+      PROFILE_SECTION_DESCRIPTION: "Go to your settings on our beta and set your brand new domain free!",
+      PROFILE_SECTION_BUTTON: "Set on my profile",
+      ENS_INTEGRATION_TITLE: "Wallet Address",
+      ENS_INTEGRATION_DESCRIPTION: "Take advantage of ENS to set your custom domain as your unique wallet address.",
+      ENS_INTEGRATION_BUTTON: "Set up on ENS",
     }
   }
 };

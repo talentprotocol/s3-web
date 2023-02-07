@@ -25,7 +25,9 @@ import {
   PaymentsRow,
   HelpText,
   NeutralButton,
-  ButtonConfirmationContainer
+  ButtonConfirmationContainer,
+  LeftAlignSVG,
+  TextWithButton
 } from "./styled";
 import { Props } from "./types";
 import arrowDown from "./assets/arrow-down.svg";
@@ -43,14 +45,14 @@ import REGISTRAR from "./TalRegistrar.json";
 // TODO: CHECK WITH PP hover state ON available step
 // MAINNET ADDRESS: 0xc187Cf217f578B7Ef6b895E08197a18E77FCd185
 // TESTNET ADDRESS: 0xa25976089f3A74319660c088063Ebf8B4a55B039
-const DOMAIN_CONTRACT = "0xc187Cf217f578B7Ef6b895E08197a18E77FCd185";
+const DOMAIN_CONTRACT = "0xe86C5ea96eA47D3A9D835672C1428329bD0bb7Af";
 const CHAIN_ID = 1;
 const NO_OWNER = "0x0000000000000000000000000000000000000000";
 
 export const LandingHero = ({ isMobile, isSafari, isAndroid }: Props) => {
   const talRef = useRef<HTMLSpanElement>(null);
-  const [currentStage, changeCurrentStage] = useState("search");
-  const [desiredName, setDesiredName] = useState("");
+  const [currentStage, changeCurrentStage] = useState("step3");
+  const [desiredName, setDesiredName] = useState("leal");
 
   useEffect(() => {
     // @ts-ignore
@@ -58,8 +60,10 @@ export const LandingHero = ({ isMobile, isSafari, isAndroid }: Props) => {
     const name = url.searchParams.get("name") || "";
 
     if (name != "") {
-      // @ts-ignore
-      talRef.current.innerText = name;
+      if (talRef?.current) {
+        // @ts-ignore
+        talRef.current.innerText = name;
+      }
       window.history.pushState(
         {},
         document.location.href,
@@ -190,6 +194,7 @@ export const LandingHero = ({ isMobile, isSafari, isAndroid }: Props) => {
     console.log(newOwner);
 
     // show https://app.ens.domains/address/0x33041027dd8F4dC82B6e825FB37ADf8f15d44053/controller
+    changeCurrentStage("step3");
   };
 
   const cancelBuy = () => {
@@ -219,7 +224,9 @@ export const LandingHero = ({ isMobile, isSafari, isAndroid }: Props) => {
       case "taken":
         return (
           <>
-            <Image src={Taken} alt="red cross"/>
+            <LeftAlignSVG>
+              <Image src={Taken} alt="red cross"/>
+            </LeftAlignSVG>
             <SearchingSection>
               <Typography type="h3" color="WHITE">
                 <>{desiredName}{COPY.BENEFITS.TAKEN.TITLE}</>
@@ -256,7 +263,9 @@ export const LandingHero = ({ isMobile, isSafari, isAndroid }: Props) => {
       case "available":
         return (
           <>
-            <Image src={Available} alt="Green check mark"/>
+            <LeftAlignSVG>
+              <Image src={Available} alt="Green check mark"/>
+            </LeftAlignSVG>
             <SearchingSection>
               <Typography type="h3" color="WHITE">
                 <>{desiredName}{COPY.BENEFITS.AVAILABLE.TITLE}</>
@@ -282,7 +291,7 @@ export const LandingHero = ({ isMobile, isSafari, isAndroid }: Props) => {
                 <Typography type="p2" color="WHITE">
                   <>{"Step 1/"}</>
                 </Typography>
-                <Typography type="p2" color="LIGHT_GREY"><>{"2"}</></Typography>
+                <Typography type="p2" color="LIGHT_GREY"><>{"3"}</></Typography>
               </StepNumberContainer>
               <StepDescriptionContainer>
                 <Typography type="h5" color="WHITE">
@@ -306,7 +315,7 @@ export const LandingHero = ({ isMobile, isSafari, isAndroid }: Props) => {
                 <Typography type="p2" color="WHITE">
                   <>{"Step 2/"}</>
                 </Typography>
-                <Typography type="p2" color="LIGHT_GREY"><>{"2"}</></Typography>
+                <Typography type="p2" color="LIGHT_GREY"><>{"3"}</></Typography>
               </StepNumberContainer>
               <StepDescriptionContainer>
                 <Typography type="h5" color="WHITE">
@@ -348,6 +357,53 @@ export const LandingHero = ({ isMobile, isSafari, isAndroid }: Props) => {
             </StepBox>
           </>
         );
+      case "step3":
+        return (
+          <>
+            <StepBox>
+              <StepNumberContainer>
+                <Typography type="p2" color="WHITE">
+                  <>{"Step 3/"}</>
+                </Typography>
+                <Typography type="p2" color="LIGHT_GREY"><>{"3"}</></Typography>
+              </StepNumberContainer>
+              <StepDescriptionContainer>
+                <Typography type="h5" color="WHITE">
+                  <>{desiredName}{COPY.BENEFITS.SETTINGS.TITLE} 👏</>
+                </Typography>
+                <Typography type="p2" color="LIGHT_GREY">
+                  <>{COPY.BENEFITS.SETTINGS.SUBTITLE_PART_1}{desiredName}{COPY.BENEFITS.SETTINGS.SUBTITLE_PART_2}</>
+                </Typography>
+              </StepDescriptionContainer>
+              <StepDescriptionContainer>
+                <Typography type="h5" color="WHITE">
+                  <>{COPY.BENEFITS.SETTINGS.PROFILE_SECTION_TITLE}</>
+                </Typography>
+                <TextWithButton>
+                  <Typography type="p2" color="LIGHT_GREY">
+                    <>{COPY.BENEFITS.SETTINGS.PROFILE_SECTION_DESCRIPTION}</>
+                  </Typography>
+                  <PinkButton onClick={() => connectWallet()} alignButtonLeft={false}>
+                    {COPY.BENEFITS.SETTINGS.PROFILE_SECTION_BUTTON}
+                  </PinkButton>
+                </TextWithButton>
+              </StepDescriptionContainer>
+              <StepDescriptionContainer>
+                <Typography type="h5" color="WHITE">
+                  <>{COPY.BENEFITS.SETTINGS.ENS_INTEGRATION_TITLE}</>
+                </Typography>
+                <TextWithButton>
+                  <Typography type="p2" color="LIGHT_GREY">
+                    <>{COPY.BENEFITS.SETTINGS.ENS_INTEGRATION_DESCRIPTION}</>
+                  </Typography>
+                  <PinkButton onClick={() => connectWallet()} alignButtonLeft={false}>
+                    {COPY.BENEFITS.SETTINGS.ENS_INTEGRATION_BUTTON}
+                  </PinkButton>
+                </TextWithButton>
+              </StepDescriptionContainer>
+            </StepBox>
+          </>
+        )
       default:
         return (
           <>

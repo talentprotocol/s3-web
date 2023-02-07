@@ -108,10 +108,10 @@ export const Copyright = styled.section`
   }
 `;
 
-export const CopyrightTypography = styled.span<{ darkMode: boolean}>`
+export const CopyrightTypography = styled.span`
   ${fontNormal}
   font-weight: 400;
   font-size: 14px;
   line-height: 165%;
-  color: ${({ darkMode }) => darkMode ? COLORS.PINK : COLORS.LIGHT_YELLOW};
+  color: ${COLORS.WHITE};
 `;
