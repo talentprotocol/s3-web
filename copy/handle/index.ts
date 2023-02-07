@@ -37,6 +37,15 @@ export const COPY = {
       TITLE_REGULAR: "for getting paid",
       DESCRIPTION: "Empower your financial transactions and secure your assets by using your custom domain as your unique wallet address.",
       BUTTON: "Learn more --E",
+    },
+    CALL_TO_ACTION: {
+      TITLE_REGULAR_1: "Get your handle",
+      TITLE_ITALIC: "before someone",
+      TITLE_REGULAR_2: "else does",
+      PROMO: "Early bird promo",
+      PRICE: "$8,00",
+      PERIOD: "/year",
+      BUTTON: "Reserve now!",
     }
   }
 };

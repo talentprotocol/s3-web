@@ -44,7 +44,7 @@ export const H3 = styled.h3<StyledTypographyProps>`
 
   @media (min-width: 768px) {
     font-weight: 500;
-    font-size: 40px;
+    font-size: 32px;
     line-height: 120%;
   }
 `;
