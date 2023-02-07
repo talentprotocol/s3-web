@@ -51,8 +51,8 @@ const NO_OWNER = "0x0000000000000000000000000000000000000000";
 
 export const LandingHero = ({ isMobile, isSafari, isAndroid }: Props) => {
   const talRef = useRef<HTMLSpanElement>(null);
-  const [currentStage, changeCurrentStage] = useState("step3");
-  const [desiredName, setDesiredName] = useState("leal");
+  const [currentStage, changeCurrentStage] = useState("search");
+  const [desiredName, setDesiredName] = useState("");
 
   useEffect(() => {
     // @ts-ignore
@@ -376,7 +376,7 @@ export const LandingHero = ({ isMobile, isSafari, isAndroid }: Props) => {
                 </Typography>
               </StepDescriptionContainer>
               <StepDescriptionContainer>
-                <Typography type="h5" color="WHITE">
+                <Typography type="p1" color="WHITE">
                   <>{COPY.BENEFITS.SETTINGS.PROFILE_SECTION_TITLE}</>
                 </Typography>
                 <TextWithButton>
@@ -389,7 +389,7 @@ export const LandingHero = ({ isMobile, isSafari, isAndroid }: Props) => {
                 </TextWithButton>
               </StepDescriptionContainer>
               <StepDescriptionContainer>
-                <Typography type="h5" color="WHITE">
+                <Typography type="p1" color="WHITE">
                   <>{COPY.BENEFITS.SETTINGS.ENS_INTEGRATION_TITLE}</>
                 </Typography>
                 <TextWithButton>
@@ -412,8 +412,6 @@ export const LandingHero = ({ isMobile, isSafari, isAndroid }: Props) => {
                 <Image src={arrow} alt="arrow pointing right" />
                 <><br/>{COPY.LANDING_HERO.TITLE_REGULAR_1}<br/></>
                 <ItalicText>{COPY.LANDING_HERO.TITLE_ITALIC_1}</ItalicText>
-                <><br/>{COPY.LANDING_HERO.TITLE_REGULAR_2}<br/></>
-                <ItalicText>{COPY.LANDING_HERO.TITLE_ITALIC_2}</ItalicText>
               </>
             </Typography>
             <EarlyBird>
