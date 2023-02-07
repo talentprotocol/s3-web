@@ -195,6 +195,44 @@ export const LandingHero = ({ isMobile, isSafari, isAndroid }: Props) => {
     changeCurrentStage("step3");
   };
 
+  const goToProfile = async () => {
+    // @ts-ignore
+    const { ethereum } = window;
+    if (!ethereum || !ethereum.isMetaMask) {
+      alert("You need to have metamask on your browser or use the matemask browser");
+      return;
+    }
+    const defaultProvider = new ethers.providers.Web3Provider(ethereum);
+
+    const accounts = await defaultProvider.send("eth_requestAccounts", []);
+    if (accounts.length == 0) {
+      alert("You need to allow us to connect to at least one wallet.");
+      return;
+    }
+
+    const account = accounts[0];
+    window.open(`https://beta.talentprotocol.com/u/${account}`);
+  };
+
+  const goToENS = async() => {
+    // @ts-ignore
+    const { ethereum } = window;
+    if (!ethereum || !ethereum.isMetaMask) {
+      alert("You need to have metamask on your browser or use the matemask browser");
+      return;
+    }
+    const defaultProvider = new ethers.providers.Web3Provider(ethereum);
+
+    const accounts = await defaultProvider.send("eth_requestAccounts", []);
+    if (accounts.length == 0) {
+      alert("You need to allow us to connect to at least one wallet.");
+      return;
+    }
+
+    const account = accounts[0];
+    window.open(`https://app.ens.domains/address/${account}/controller`);
+  }
+
   const cancelBuy = () => {
     changeCurrentStage("search");
   }
@@ -381,7 +419,7 @@ export const LandingHero = ({ isMobile, isSafari, isAndroid }: Props) => {
                   <Typography type="p2" color="LIGHT_GREY">
                     <>{COPY.BENEFITS.SETTINGS.PROFILE_SECTION_DESCRIPTION}</>
                   </Typography>
-                  <PinkButton onClick={() => connectWallet()} alignButtonLeft={false}>
+                  <PinkButton onClick={() => goToProfile()} alignButtonLeft={false}>
                     {COPY.BENEFITS.SETTINGS.PROFILE_SECTION_BUTTON}
                   </PinkButton>
                 </TextWithButton>
@@ -394,7 +432,7 @@ export const LandingHero = ({ isMobile, isSafari, isAndroid }: Props) => {
                   <Typography type="p2" color="LIGHT_GREY">
                     <>{COPY.BENEFITS.SETTINGS.ENS_INTEGRATION_DESCRIPTION}</>
                   </Typography>
-                  <PinkButton onClick={() => connectWallet()} alignButtonLeft={false}>
+                  <PinkButton onClick={() => goToENS()} alignButtonLeft={false}>
                     {COPY.BENEFITS.SETTINGS.ENS_INTEGRATION_BUTTON}
                   </PinkButton>
                 </TextWithButton>
