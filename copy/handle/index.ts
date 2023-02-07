@@ -2,6 +2,8 @@ export const COPY = {
   LANDING_HERO: {
     TITLE_REGULAR_1: "Reserve your",
     TITLE_ITALIC_1: "John.tal",
+    TITLE_REGULAR_2: "and get your",
+    TITLE_ITALIC_2: "john.tal.community",
     EARLY_BIRD: {
       PROMO: "Early bird promo",
       PRICE: "$8,00",

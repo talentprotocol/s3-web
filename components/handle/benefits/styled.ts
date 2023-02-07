@@ -213,6 +213,6 @@ export const PinkButton = styled.button`
   outline: none;
 
   :hover {
-    background-color: ${COLORS.LIGHT_BLACK};
+    background-color: ${COLORS.LIGHT_PINK};
   }
 `;

@@ -41,8 +41,6 @@ import Spinner from "components/handle/spinner";
 import { ethers } from "ethers";
 import REGISTRAR from "./TalRegistrar.json";
 
-// TODO: REPLACE MAINNET
-// TODO: CHECK WITH PP hover state ON available step
 // MAINNET ADDRESS: 0xc187Cf217f578B7Ef6b895E08197a18E77FCd185
 // TESTNET ADDRESS: 0xa25976089f3A74319660c088063Ebf8B4a55B039
 const DOMAIN_CONTRACT = "0xe86C5ea96eA47D3A9D835672C1428329bD0bb7Af";
@@ -412,6 +410,8 @@ export const LandingHero = ({ isMobile, isSafari, isAndroid }: Props) => {
                 <Image src={arrow} alt="arrow pointing right" />
                 <><br/>{COPY.LANDING_HERO.TITLE_REGULAR_1}<br/></>
                 <ItalicText>{COPY.LANDING_HERO.TITLE_ITALIC_1}</ItalicText>
+                <><br/>{COPY.LANDING_HERO.TITLE_REGULAR_2}<br/></>
+                <ItalicText>{COPY.LANDING_HERO.TITLE_ITALIC_2}</ItalicText>
               </>
             </Typography>
             <EarlyBird>
