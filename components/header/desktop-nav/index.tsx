@@ -2,7 +2,7 @@ import { COPY } from "copy";
 import { Button } from "shared-ui";
 import { NavArea } from "./styled";
 
-export const DesktopNav = () => {
+export const DesktopNav = ({darkMode = false}: {darkMode: boolean}) => {
   return (
     <NavArea>
       <Button
@@ -10,6 +10,7 @@ export const DesktopNav = () => {
         type="link"
         variant="secondary"
         href="https://beta.talentprotocol.com"
+        darkMode={darkMode}
       />
       <Button
         text={COPY.LANDING_HERO.HEADER_SIGN_UP}

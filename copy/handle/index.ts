@@ -30,7 +30,7 @@ export const COPY = {
       TITLE_ITALIC: "The handle ",
       TITLE_REGULAR: "that unlocks an exclusive skin",
       DESCRIPTION: "Talent Mates is an NFT collection of unique avatars that also serve as a community membership pass. Holding a Talent Mate grants you access to community perks such as new features, exclusive swag and scholarships.",
-      BUTTON: "Learn more --E",
+      BUTTON: "Get your Talent Mate --E",
     },
     PAYMENTS: {
       TITLE_ITALIC: "The handle ",

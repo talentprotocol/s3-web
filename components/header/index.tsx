@@ -15,7 +15,7 @@ export const Header = ({
       <LogoArea>
         <Logo color={darkMode ? "PINK" : "LIGHTER_PURPLE"}/>
       </LogoArea>
-      {!isMobile && <DesktopNav />}
+      {!isMobile && <DesktopNav darkMode={darkMode}/>}
       {isMobile && (
         <MobileNav
           isSidebarVisible={isSidebarVisible}

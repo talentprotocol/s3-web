@@ -1,5 +1,5 @@
 import { COLORS } from "shared-ui";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { ContainerProps } from "./types";
 
 export const Container = styled.section<ContainerProps>`
@@ -11,8 +11,10 @@ export const Container = styled.section<ContainerProps>`
     `background-color: ${darkMode ? COLORS.DARK_BLUE : COLORS.WHITE};`
   }
 
-  @media (min-height: 950px) {
-    max-height: 1220px;
-    min-height: 1220px;
-  }
+  ${({darkMode}) => !darkMode && css`
+    @media (min-height: 950px) {
+      max-height: 1220px;
+      min-height: 1220px;    
+    }
+  `}
 `;

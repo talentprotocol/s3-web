@@ -1,13 +1,38 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { COLORS, fontNormal } from "shared-ui";
 
-export const Container = styled.div`
+export const Container = styled.div<{isMobile: boolean}>`
   display: flex;
   flex-direction: column;
-  margin-top: 24px;
-  margin-left: 24px;
-  margin-right: 24px;
   gap: 40px;
+  width: 50%;
+
+  ${( {isMobile}) => isMobile && css`
+    margin-top: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+    width: 100%;
+  `}
+`;
+
+export const ImageContainer = styled.div<{isMobile: boolean}>`
+  width: 50%;
+  ${( {isMobile}) => isMobile && css`
+    width: 0px;
+    display: none;
+  `}
+`
+
+export const MainContainer = styled.div<{isMobile: boolean}>`
+  display: flex;
+  flex-direction: row;
+
+  ${( {isMobile}) => !isMobile && css`
+    gap: 124px;
+    margin-top: 140px;
+    margin-left: 140px;
+    margin-right: 140px;
+  `}
 `;
 
 export const ItalicText = styled.span`

@@ -8,6 +8,7 @@ export const Button = ({
   variant,
   children,
   onClick,
+  darkMode = false,
   href = "/",
 }: Props) => {
   switch (type) {
@@ -17,6 +18,7 @@ export const Button = ({
           <ButtonLinkContainer
             variant={variant}
             target="_blank"
+            darkMode={darkMode}
             onClick={onClick}
           >
             {text}
