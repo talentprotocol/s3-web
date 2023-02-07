@@ -41,6 +41,14 @@ export const Benefits = ({ isMobile, isSafari, isAndroid }: Props) => {
     } else clearTimeout(scrollAnimation);
   };
 
+  const goToLearnMore = () => {
+    window.open("https://blog.talentprotocol.com/taldomain/");
+  }
+
+  const goToTalentMates = () => {
+    window.open("https://mates.talentprotocol.com/");
+  }
+
   return (
     <>
       <Container dark={false}>
@@ -59,7 +67,7 @@ export const Benefits = ({ isMobile, isSafari, isAndroid }: Props) => {
               <>{COPY.BENEFITS.PROFILE.DESCRIPTION}</>
             </Typography>
             <DarkButton
-              onClick={() => console.log("LEARN MORE")}
+              onClick={() => goToLearnMore()}
             >
               {COPY.BENEFITS.PROFILE.BUTTON}
             </DarkButton>
@@ -80,7 +88,7 @@ export const Benefits = ({ isMobile, isSafari, isAndroid }: Props) => {
               <>{COPY.BENEFITS.ONCHAIN.DESCRIPTION}</>
             </Typography>
             <DarkButton
-              onClick={() => console.log("LEARN MORE")}
+              onClick={() => goToLearnMore()}
             >
               {COPY.BENEFITS.ONCHAIN.BUTTON}
             </DarkButton>
@@ -103,7 +111,7 @@ export const Benefits = ({ isMobile, isSafari, isAndroid }: Props) => {
               <>{COPY.BENEFITS.TALENT_MATES.DESCRIPTION}</>
             </Typography>
             <LightButton
-              onClick={() => console.log("LEARN MORE")}
+              onClick={() => goToTalentMates()}
             >
               {COPY.BENEFITS.TALENT_MATES.BUTTON}
             </LightButton>
@@ -124,7 +132,7 @@ export const Benefits = ({ isMobile, isSafari, isAndroid }: Props) => {
               <>{COPY.BENEFITS.PAYMENTS.DESCRIPTION}</>
             </Typography>
             <LightButton
-              onClick={() => console.log("LEARN MORE")}
+              onClick={() => goToLearnMore()}
             >
               {COPY.BENEFITS.PAYMENTS.BUTTON}
             </LightButton>
