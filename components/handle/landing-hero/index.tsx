@@ -90,7 +90,7 @@ export const LandingHero = ({ isMobile, isSafari, isAndroid }: Props) => {
     ]);
 
     changeCurrentStage("searching");
-    const desiredDomain = talRef.current?.innerText || "";
+    const desiredDomain = (talRef.current?.innerText || "").toLowerCase();
     setDesiredName(desiredDomain);
     console.log("checking availability");
     console.log(desiredDomain);
