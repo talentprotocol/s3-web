@@ -126,4 +126,10 @@ export const ButtonLinkContainer = styled.a<StyledButtonProps>`
         return primaryStyles;
     }
   }}
+
+  ${({ darkMode }) => 
+    darkMode && css`
+      color: ${COLORS.WHITE};
+    `
+  }
 `;

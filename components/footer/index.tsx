@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { COPY } from "copy";
 import logoImage from "./assets/logo.svg";
-import awardImage from "./assets/award.svg";
+import logoPinkImage from "./assets/logo-pink.svg";
 import {
   AwardContainer,
   Copyright,
@@ -16,20 +16,20 @@ import {
 } from "./styled";
 import { Props } from "./types";
 
-export const Footer = ({ isMobile }: Props) => {
+export const Footer = ({ isMobile, darkMode = false }: Props) => {
   return (
     <>
-      <StyledFooter>
+      <StyledFooter darkMode={darkMode}>
         <InnerContainer>
           <FooterRow>
             <PresentationColumn>
-              <Image priority src={logoImage} alt="logo" />
+              <Image priority src={darkMode ? logoPinkImage : logoImage} alt="logo" />
               <CopyrightTypography>
                 {COPY.FOOTER.DESCRIPTION}
               </CopyrightTypography>
             </PresentationColumn>
             <NavigationArea>
-              <NavList>
+              <NavList darkMode={darkMode}>
                 <li>{COPY.FOOTER.PROJECT.TITLE}</li>
                 {COPY.FOOTER.PROJECT.LINKS.map((el) => (
                   <li key={el.NAME}>
@@ -39,7 +39,7 @@ export const Footer = ({ isMobile }: Props) => {
                   </li>
                 ))}
               </NavList>
-              <NavList>
+              <NavList darkMode={darkMode}>
                 <li>{COPY.FOOTER.HELP.TITLE}</li>
                 {COPY.FOOTER.HELP.LINKS.map((el) => (
                   <li key={el.NAME}>
@@ -49,7 +49,7 @@ export const Footer = ({ isMobile }: Props) => {
                   </li>
                 ))}
               </NavList>
-              <NavList>
+              <NavList darkMode={darkMode}>
                 <li>{COPY.FOOTER.SOCIALS.TITLE}</li>
                 {COPY.FOOTER.SOCIALS.LINKS.map((el) => (
                   <li key={el.NAME}>

@@ -35,8 +35,10 @@ export interface Props {
   href?: string;
   children?: JSX.Element;
   onClick?: ReactEventHandler;
+  darkMode?: boolean;
 }
 
 export interface StyledButtonProps {
   variant: VariantType;
+  darkMode: boolean;
 }

@@ -30,6 +30,7 @@ interface Props {
 
 const Home: NextPage<Props> = (props) => {
   const { isClosing, toggleSidebar, isSidebarVisible } = useSidebar();
+
   return (
     <>
       <Head>
@@ -70,6 +71,7 @@ const Home: NextPage<Props> = (props) => {
             isMobile={props.isMobile}
             isSidebarVisible={isSidebarVisible}
             toggleSidebar={toggleSidebar}
+            darkMode={false}
           />
           <LandingHero
             isMobile={props.isMobile}

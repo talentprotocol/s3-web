@@ -14,3 +14,10 @@
   src: url("/fonts/AcidGroteskTP-Bold.otf");
   font-weight: 700;
 }
+
+@font-face {
+  font-family: 'Acid Grotesk TP';
+  src: url('/fonts/AcidGroteskTP-Light-Italic.otf');
+  font-weight: 300;
+  font-style: italic;
+}

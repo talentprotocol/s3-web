@@ -21,9 +21,11 @@ export const MobileMenu = styled.button<MobileMenuProps>`
     width: 18px;
     border-radius: 4px;
     height: 2px;
-    background: ${COLORS.BLACK};
     content: "";
     transition-duration: 0.2s;
+    ${({ darkMode }) =>
+      `background: ${darkMode ? COLORS.PINK : COLORS.BLACK};`
+    }
     ${({ isSidebarVisible }) =>
       isSidebarVisible &&
       `
@@ -37,9 +39,11 @@ export const MobileMenu = styled.button<MobileMenuProps>`
     border-radius: 4px;
     height: 2px;
     margin-top: 8px;
-    background: ${COLORS.BLACK};
     content: "";
     transition-duration: 0.2s;
+    ${({ darkMode }) =>
+      `background: ${darkMode ? COLORS.PINK : COLORS.BLACK};`
+    }
     ${({ isSidebarVisible }) =>
       isSidebarVisible &&
       `

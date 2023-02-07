@@ -90,7 +90,7 @@ export const TakeTheLeapBanner = () => {
               <ButtonWrapper>
                 <StyledButtonWrapper>
                   <StyledButton onClick={subscribeToNewsLetter}>
-                    <Image src={arrowImage} alt="icon image" />
+                    <Image src={arrowImage} alt="Arrow pointing down" />
                   </StyledButton>
                 </StyledButtonWrapper>
               </ButtonWrapper>

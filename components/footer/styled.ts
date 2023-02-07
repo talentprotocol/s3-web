@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { COLORS, fontNormal } from "shared-ui";
 
-export const StyledFooter = styled.footer`
+export const StyledFooter = styled.footer<{ darkMode: boolean}>`
   background: ${COLORS.DARK_BLUE};
-  border-top: 1px solid ${COLORS.LIGHT_YELLOW}33;
+  border-top: 1px solid ${({ darkMode }) => darkMode ? COLORS.PINK : COLORS.LIGHTER_YELLOW}33;
   overflow: hidden;
   padding: 0 24px;
 
@@ -56,7 +56,7 @@ export const NavigationArea = styled.nav`
   }
 `;
 
-export const NavList = styled.ul`
+export const NavList = styled.ul<{ darkMode: boolean}>`
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -69,7 +69,7 @@ export const NavList = styled.ul`
     letter-spacing: 0.02em;
 
     :first-child {
-      color: ${COLORS.LIGHT_YELLOW};
+      color: ${({ darkMode }) => darkMode ? COLORS.PINK : COLORS.LIGHT_YELLOW};
       font-weight: 500;
       font-size: 14px;
       line-height: 165%;
@@ -113,5 +113,5 @@ export const CopyrightTypography = styled.span`
   font-weight: 400;
   font-size: 14px;
   line-height: 165%;
-  color: ${COLORS.LIGHT_YELLOW};
+  color: ${COLORS.WHITE};
 `;
