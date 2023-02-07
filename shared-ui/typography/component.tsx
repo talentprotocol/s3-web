@@ -1,4 +1,4 @@
-import { H1, H2, H3, BODY1, BODY2, GENERAL } from "./styled";
+import { H1, H2, H3, BODY1, BODY2, GENERAL, P1, P3 } from "./styled";
 import { Props, TypographyTypeEnum } from "./types";
 
 export const Typography = ({
@@ -18,6 +18,10 @@ export const Typography = ({
       return <BODY1 color={color}>{text || children}</BODY1>;
     case TypographyTypeEnum.BODY2:
       return <BODY2 color={color}>{text || children}</BODY2>;
+    case TypographyTypeEnum.P1:
+      return <P1 color={color}>{text || children}</P1>;
+    case TypographyTypeEnum.P3:
+      return <P3 color={color}>{text || children}</P3>;
     case TypographyTypeEnum.GENERAL:
     default:
       return <GENERAL color={color}>{text || children}</GENERAL>;

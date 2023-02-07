@@ -8,17 +8,19 @@ export const Header = ({
   toggleSidebar,
   isSidebarVisible,
   isMobile,
+  darkMode,
 }: Props) => {
   return (
-    <Container isMobile={isMobile}>
+    <Container isMobile={isMobile} darkMode={darkMode}>
       <LogoArea>
-        <Logo />
+        <Logo color={darkMode ? "PINK" : "LIGHTER_PURPLE"}/>
       </LogoArea>
       {!isMobile && <DesktopNav />}
       {isMobile && (
         <MobileNav
           isSidebarVisible={isSidebarVisible}
           toggleSidebar={toggleSidebar}
+          darkMode={darkMode}
         />
       )}
     </Container>

@@ -13,7 +13,9 @@ export type AvailableColors =
   | "SUPER_LIGHT_YELLOW"
   | "YELLOW"
   | "LIGHT_YELLOW"
-  | "ORANGE";
+  | "ORANGE"
+  | "PINK"
+  | "SURFACE_DARK";
 
 export const COLORS: Record<AvailableColors, string> = {
   LIGHT_PURPLE: "#7857ED",
@@ -31,4 +33,6 @@ export const COLORS: Record<AvailableColors, string> = {
   ORANGE: "#FD9A00",
   LIGHT_GREY: "#697F8F",
   LIGHTER_GREY: "#EBEDF0",
+  PINK: "#E1C3FF",
+  SURFACE_DARK: "#3B3C3F",
 };

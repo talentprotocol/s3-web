@@ -1,12 +1,15 @@
 import { COLORS } from "shared-ui";
 import styled from "styled-components";
+import { ContainerProps } from "./types";
 
-export const Container = styled.section`
+export const Container = styled.section<ContainerProps>`
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: ${COLORS.WHITE};
   overflow: hidden;
+  ${({ darkMode }) =>
+    `background-color: ${darkMode ? COLORS.DARK_BLUE : COLORS.WHITE};`
+  }
 
   @media (min-height: 950px) {
     max-height: 1220px;

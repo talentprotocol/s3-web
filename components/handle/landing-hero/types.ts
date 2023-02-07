@@ -1,4 +1,5 @@
 export interface Props {
   isMobile: boolean;
-  darkMode?: boolean;
+  isSafari: boolean;
+  isAndroid: boolean;
 }
