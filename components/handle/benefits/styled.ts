@@ -231,3 +231,9 @@ export const PinkButton = styled.button`
     background-color: ${COLORS.LIGHT_BLACK};
   }
 `;
+
+export const TitleAndSubTitle = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+`;
