@@ -27,6 +27,8 @@ import Profile from "./assets/profile.png";
 import Onchain from "./assets/onchain.png";
 import Payments from "./assets/payments.png";
 import TalentMates from "./assets/talentmates.png";
+import DarkArrow from "./assets/dark-arrow.svg";
+import LightArrow from "./assets/light-arrow.svg";
 
 // @ts-ignore
 let scrollAnimation;
@@ -73,7 +75,7 @@ export const Benefits = ({ isMobile, isSafari, isAndroid }: Props) => {
             <DarkButton
               onClick={() => goToLearnMore()}
             >
-              {COPY.BENEFITS.PROFILE.BUTTON}
+              {COPY.BENEFITS.PROFILE.BUTTON} <Image src={LightArrow} alt="arrow pointing right" style={{ marginLeft: 16}} />
             </DarkButton>
           </DescriptionContainer>
         </HandleSection>
@@ -96,7 +98,7 @@ export const Benefits = ({ isMobile, isSafari, isAndroid }: Props) => {
             <DarkButton
               onClick={() => goToLearnMore()}
             >
-              {COPY.BENEFITS.ONCHAIN.BUTTON}
+              {COPY.BENEFITS.ONCHAIN.BUTTON} <Image src={LightArrow} alt="arrow pointing right" style={{ marginLeft: 16}} />
             </DarkButton>
           </DescriptionContainer>
         </HandleSection>
@@ -121,7 +123,7 @@ export const Benefits = ({ isMobile, isSafari, isAndroid }: Props) => {
             <LightButton
               onClick={() => goToTalentMates()}
             >
-              {COPY.BENEFITS.TALENT_MATES.BUTTON}
+              {COPY.BENEFITS.TALENT_MATES.BUTTON} <Image src={DarkArrow} alt="arrow pointing right" style={{ marginLeft: 16}} />
             </LightButton>
           </DescriptionContainer>
         </HandleSection>
@@ -144,7 +146,7 @@ export const Benefits = ({ isMobile, isSafari, isAndroid }: Props) => {
             <LightButton
               onClick={() => goToLearnMore()}
             >
-              {COPY.BENEFITS.PAYMENTS.BUTTON}
+              {COPY.BENEFITS.PAYMENTS.BUTTON} <Image src={DarkArrow} alt="arrow pointing right" style={{ marginLeft: 16}} />
             </LightButton>
           </DescriptionContainer>
         </HandleSection>

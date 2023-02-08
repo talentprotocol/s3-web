@@ -34,6 +34,7 @@ import {
 import { Props } from "./types";
 import arrowDown from "./assets/arrow-down.svg";
 import arrow from "./assets/arrow.svg";
+import LightArrow from "./assets/light-arrow.svg";
 import Circles from "./assets/circles.png";
 import Taken from "./assets/taken.svg";
 import Available from "./assets/available.svg";

@@ -91,6 +91,8 @@ export const DarkButton = styled.button`
   transition-duration: 0.25s;
   outline: none;
   align-self: start;
+  display: flex;
+  align-items: center;
 
   :hover {
     background-color: ${COLORS.LIGHT_BLACK};
@@ -112,6 +114,8 @@ export const LightButton = styled.button`
   transition-duration: 0.25s;
   outline: none;
   align-self: start;
+  display: flex;
+  align-items: center;
 
   :hover {
     background-color: ${COLORS.LIGHT_BLACK};

@@ -130,6 +130,9 @@ export const ButtonLinkContainer = styled.a<StyledButtonProps>`
   ${({ darkMode }) => 
     darkMode && css`
       color: ${COLORS.WHITE};
+      :hover {
+        color: ${COLORS.DARK_BLUE};
+      }
     `
   }
 `;
