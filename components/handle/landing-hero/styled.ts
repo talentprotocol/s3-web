@@ -92,7 +92,7 @@ export const SearchContainer = styled.div`
   position: relative;
 `
 
-export const HandleInput = styled.span<{ placeholder: string }>`
+export const HandleInput = styled.div<{ placeholder: string }>`
   max-width: 170px;
   white-space: nowrap;
   ${fontNormal}
