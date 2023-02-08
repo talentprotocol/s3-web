@@ -50,7 +50,7 @@ const CHAIN_ID = 1;
 const NO_OWNER = "0x0000000000000000000000000000000000000000";
 
 export const LandingHero = ({ isMobile, isSafari, isAndroid }: Props) => {
-  const talRef = useRef<HTMLSpanElement>(null);
+  const talRef = useRef<HTMLDivElement>(null);
   const [currentStage, changeCurrentStage] = useState("search");
   const [desiredName, setDesiredName] = useState("");
 
