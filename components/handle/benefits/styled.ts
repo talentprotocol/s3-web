@@ -64,6 +64,18 @@ export const ItalicText = styled.span`
   }
 `;
 
+export const BigItalicText = styled.span`
+  font-weight: 300;
+  font-size: 25px;
+  font-style: italic;
+  line-height: 30px;
+
+  @media (min-width: 768px) {
+    font-size: 40px;
+    line-height: 120%;
+  }
+`;
+
 export const DarkButton = styled.button`
   ${fontNormal}
   font-weight: 700;

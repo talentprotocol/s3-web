@@ -1,9 +1,8 @@
 export const COPY = {
   LANDING_HERO: {
-    TITLE_REGULAR_1: "Reserve your ",
-    TITLE_ITALIC_1: "john.tal",
-    TITLE_REGULAR_2: "and get your ",
-    TITLE_ITALIC_2: "john.tal.community",
+    TITLE_REGULAR_1: "Get your handle ",
+    TITLE_ITALIC_1: "before someone",
+    TITLE_REGULAR_2: " else does",
     EARLY_BIRD: {
       PROMO: "Early bird promo",
       PRICE: "$8,00",
@@ -40,7 +39,8 @@ export const COPY = {
     },
     CALL_TO_ACTION: {
       TITLE_REGULAR_1: "Get your handle",
-      TITLE_ITALIC: "before someone",
+      TITLE_ITALIC_1: "before",
+      TITLE_ITALIC_2: " someone ",
       TITLE_REGULAR_2: "else does",
       PROMO: "Early bird promo",
       PRICE: "$8,00",
@@ -84,9 +84,11 @@ export const COPY = {
       BUTTON: "Renew Subscription",
     },
     SETTINGS: {
-      TITLE: ".tal.community is yours!",
+      TITLE_PART_1: ".tal.community",
+      TITLE_PART_2: "is yours!",
       SUBTITLE_PART_1: "And ",
-      SUBTITLE_PART_2: ".tal is reserved! Your handle is now live on ethereum! You'll be able to manage your domain using ENS and the Settings on our beta. Take a look at the information below.",
+      SUBTITLE_PART_2_WHITE: ".tal is reserved! ",
+      SUBTITLE_PART_3: "Your handle is now live on ethereum! You'll be able to manage your domain using ENS and the Settings on our beta. Take a look at the information below.",
       PROFILE_SECTION_TITLE: "Talent Protocol Profile",
       PROFILE_SECTION_DESCRIPTION: "Go to your settings on our beta and set your brand new domain free!",
       PROFILE_SECTION_BUTTON: "Set on my profile",

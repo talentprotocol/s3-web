@@ -8,7 +8,7 @@ export const Container = styled.div<{isMobile: boolean}>`
   width: 50%;
 
   ${( {isMobile}) => isMobile && css`
-    margin-top: 24px;
+    margin-top: 48px;
     margin-left: 24px;
     margin-right: 24px;
     width: 100%;
@@ -110,14 +110,6 @@ export const HandleInput = styled.span<{ placeholder: string }>`
     content: "${({ placeholder }) => placeholder}";
     color: ${COLORS.LIGHT_GREY};
   }
-
-  :not:empty:focus::before {
-    content: "";
-  }
-
-  br {
-    display: none;
-  }
 `;
 
 export const StyledReserveHandleButton = styled.button`
@@ -149,7 +141,7 @@ export const BenefitsArea = styled.div`
   gap: 16px;
   align-items: center;
   position: absolute;
-  bottom: 80px;
+  bottom: 48px;
   left: 24px;
 
   @media (min-width: 768px) {
@@ -287,8 +279,27 @@ export const TextWithButton = styled.div`
   display: flex;
   flex-direction: column;
   gap: 24px;
+`
+export const StyledText = styled.span`
+  ${fontNormal}
+  font-feature-settings: 'ss04' on, 'ss05' on, 'ss07' on, 'ss11' on, 'ss12' on, 'liga' off;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 120%;
 
   @media (min-width: 768px) {
-    flex-direction: row;
+    font-size: 40px;    
   }
 `
+
+export const BigItalicText = styled.span`
+  font-weight: 300;
+  font-size: 25px;
+  font-style: italic;
+  line-height: 30px;
+
+  @media (min-width: 768px) {
+    font-size: 40px;
+    line-height: 120%;
+  }
+`;

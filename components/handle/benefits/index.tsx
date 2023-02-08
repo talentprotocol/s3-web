@@ -15,7 +15,8 @@ import {
   CallToActionPrice,
   PinkButton,
   CallToActionContainer,
-  CallToActionDescription
+  CallToActionDescription,
+  BigItalicText
 } from "./styled";
 import { Props } from "./types";
 import { COPY } from "copy/handle";
@@ -142,7 +143,7 @@ export const Benefits = ({ isMobile, isSafari, isAndroid }: Props) => {
           <Typography type="h3">
             <>
               <StyledText>{COPY.BENEFITS.CALL_TO_ACTION.TITLE_REGULAR_1}</StyledText>{isMobile ? <br/> : " "}
-              <ItalicText>{COPY.BENEFITS.CALL_TO_ACTION.TITLE_ITALIC}</ItalicText><br/>
+              <BigItalicText>{COPY.BENEFITS.CALL_TO_ACTION.TITLE_ITALIC_1}{!isMobile && <br/>}{COPY.BENEFITS.CALL_TO_ACTION.TITLE_ITALIC_2}</BigItalicText>{isMobile && <br/>}
               <StyledText>{COPY.BENEFITS.CALL_TO_ACTION.TITLE_REGULAR_2}</StyledText>
             </>
           </Typography>

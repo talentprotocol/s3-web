@@ -27,7 +27,9 @@ import {
   NeutralButton,
   ButtonConfirmationContainer,
   LeftAlignSVG,
-  TextWithButton
+  TextWithButton,
+  StyledText,
+  BigItalicText
 } from "./styled";
 import { Props } from "./types";
 import arrowDown from "./assets/arrow-down.svg";
@@ -405,10 +407,10 @@ export const LandingHero = ({ isMobile, isSafari, isAndroid }: Props) => {
               </StepNumberContainer>
               <StepDescriptionContainer>
                 <Typography type="h5" color="WHITE">
-                  <>{desiredName}{COPY.BENEFITS.SETTINGS.TITLE} 👏</>
+                  <>{desiredName}{COPY.BENEFITS.SETTINGS.TITLE_PART_1}{isMobile ? <br/> : " "}{COPY.BENEFITS.SETTINGS.TITLE_PART_2} 👏</>
                 </Typography>
                 <Typography type="p2" color="LIGHT_GREY">
-                  <>{COPY.BENEFITS.SETTINGS.SUBTITLE_PART_1}{desiredName}{COPY.BENEFITS.SETTINGS.SUBTITLE_PART_2}</>
+                  <><WhiteText>{COPY.BENEFITS.SETTINGS.SUBTITLE_PART_1}{desiredName}{COPY.BENEFITS.SETTINGS.SUBTITLE_PART_2_WHITE}</WhiteText>{COPY.BENEFITS.SETTINGS.SUBTITLE_PART_3}</>
                 </Typography>
               </StepDescriptionContainer>
               <StepDescriptionContainer>
@@ -419,12 +421,12 @@ export const LandingHero = ({ isMobile, isSafari, isAndroid }: Props) => {
                   <Typography type="p2" color="LIGHT_GREY">
                     <>{COPY.BENEFITS.SETTINGS.PROFILE_SECTION_DESCRIPTION}</>
                   </Typography>
-                  <PinkButton onClick={() => goToProfile()} alignButtonLeft={false}>
+                  <PinkButton onClick={() => goToProfile()} alignButtonLeft={true}>
                     {COPY.BENEFITS.SETTINGS.PROFILE_SECTION_BUTTON}
                   </PinkButton>
                 </TextWithButton>
               </StepDescriptionContainer>
-              <StepDescriptionContainer>
+              <StepDescriptionContainer style={{marginBottom: 0}}>
                 <Typography type="p1" color="WHITE">
                   <>{COPY.BENEFITS.SETTINGS.ENS_INTEGRATION_TITLE}</>
                 </Typography>
@@ -432,7 +434,7 @@ export const LandingHero = ({ isMobile, isSafari, isAndroid }: Props) => {
                   <Typography type="p2" color="LIGHT_GREY">
                     <>{COPY.BENEFITS.SETTINGS.ENS_INTEGRATION_DESCRIPTION}</>
                   </Typography>
-                  <PinkButton onClick={() => goToENS()} alignButtonLeft={false}>
+                  <PinkButton onClick={() => goToENS()} alignButtonLeft={true}>
                     {COPY.BENEFITS.SETTINGS.ENS_INTEGRATION_BUTTON}
                   </PinkButton>
                 </TextWithButton>
@@ -443,13 +445,12 @@ export const LandingHero = ({ isMobile, isSafari, isAndroid }: Props) => {
       default:
         return (
           <>
-            <Typography type="h3" color={"WHITE"}>
+            <Typography type="h3" color="WHITE">
               <>
-                <Image src={arrow} alt="arrow pointing right" />
-                <>{<br/>}{COPY.LANDING_HERO.TITLE_REGULAR_1}{isMobile && <br/>}</>
-                <ItalicText>{COPY.LANDING_HERO.TITLE_ITALIC_1}</ItalicText>
-                <><br/>{COPY.LANDING_HERO.TITLE_REGULAR_2}{isMobile && <br/>}</>
-                <ItalicText>{COPY.LANDING_HERO.TITLE_ITALIC_2}</ItalicText>
+                <Image src={arrow} alt="arrow pointing right" /><br/>
+                <StyledText>{COPY.BENEFITS.CALL_TO_ACTION.TITLE_REGULAR_1}</StyledText>{" "}
+                <BigItalicText>{COPY.BENEFITS.CALL_TO_ACTION.TITLE_ITALIC_1}<br/>{COPY.BENEFITS.CALL_TO_ACTION.TITLE_ITALIC_2}</BigItalicText>
+                <StyledText>{COPY.BENEFITS.CALL_TO_ACTION.TITLE_REGULAR_2}</StyledText>
               </>
             </Typography>
             <EarlyBird>
