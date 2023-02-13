@@ -241,3 +241,26 @@ export const TitleAndSubTitle = styled.div`
   flex-direction: column;
   gap: 16px;
 `;
+
+export const WhySection = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+`;
+
+export const WhyRow = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 24px
+  }
+`;
+
+export const WhyBlock = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+`;

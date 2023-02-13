@@ -37,6 +37,14 @@ export const COPY = {
       DESCRIPTION: "Empower your financial transactions and secure your assets by using your custom domain as your unique wallet address.",
       BUTTON: "Learn more",
     },
+    WHY: {
+      TITLE_ITALIC: "Here's why",
+      TITLE_REGULAR: " it's a smart move",
+      ENS_TITLE: "Build on top of ENS",
+      ENS_DESCRIPTION: ".tal.community was build on top of ENS so you get all the features of an ens handle combined with a web2 domain that you own. We're building the tools for this to become the entry point for on-chain professional data.",
+      AIRDROP_TITLE: ".tal airdrop",
+      AIRDROP_DESCRIPTION: ".tal doesn't exist yet, however we wanted to ship everything we needed to get the functionality we want out of these handles. .tal.community enables just that. We'll airdrop you your equivalent .tal handle in the future.",
+    },
     CALL_TO_ACTION: {
       TITLE_REGULAR_1: "Get your handle",
       TITLE_ITALIC_1: "before",

@@ -17,7 +17,10 @@ import {
   CallToActionContainer,
   CallToActionDescription,
   BigItalicText,
-  TitleAndSubTitle
+  TitleAndSubTitle,
+  WhySection,
+  WhyBlock,
+  WhyRow
 } from "./styled";
 import { Props } from "./types";
 import { COPY } from "copy/handle";
@@ -29,6 +32,8 @@ import Payments from "./assets/payments.png";
 import TalentMates from "./assets/talentmates.png";
 import DarkArrow from "./assets/dark-arrow.svg";
 import LightArrow from "./assets/light-arrow.svg";
+import ENS from "./assets/ens.png";
+import Airdrop from "./assets/airdrop.png";
 
 // @ts-ignore
 let scrollAnimation;
@@ -150,6 +155,30 @@ export const Benefits = ({ isMobile, isSafari, isAndroid }: Props) => {
             </LightButton>
           </DescriptionContainer>
         </HandleSection>
+        <WhySection>
+          <Typography type="h3" color="WHITE">
+            <>
+              <ItalicText>{COPY.BENEFITS.WHY.TITLE_ITALIC}</ItalicText>
+              {COPY.BENEFITS.WHY.TITLE_REGULAR}
+            </>
+          </Typography>
+          <WhyRow>
+            <WhyBlock>
+              <div style={{ marginBottom: 8}}>
+                <Image src={ENS} alt="Ethereum Name Service logo" width={58} height={58}/>
+              </div>
+              <Typography type="h5" color="WHITE"><>{COPY.BENEFITS.WHY.ENS_TITLE}</></Typography>
+              <Typography type="p2" color="WHITE"><>{COPY.BENEFITS.WHY.ENS_DESCRIPTION}</></Typography>
+            </WhyBlock>
+            <WhyBlock>
+              <div style={{ marginBottom: 8}}>
+                <Image src={Airdrop} alt="gift icon" width={58} height={58}/>
+              </div>
+              <Typography type="h5" color="WHITE"><>{COPY.BENEFITS.WHY.AIRDROP_TITLE}</></Typography>
+              <Typography type="p2" color="WHITE"><>{COPY.BENEFITS.WHY.AIRDROP_DESCRIPTION}</></Typography>
+            </WhyBlock>
+          </WhyRow>
+        </WhySection>
         <CallToAction>
           <Typography type="h3">
             <>
