@@ -110,13 +110,13 @@ export const COPY = {
   OPPORTUNITY_SECTION: {
     TAG: "Opportunities",
     TITLE: "There’s a Web3\nopportunity waiting\nfor you.",
-    TEXT: "Access a curated list of fresh opportunities. Work on exciting web3 projects, meet a co-founder, partner on side projects & more.",
+    TEXT: "Discover fresh web3 opportunities. Collaborate on thrilling projects, find co-founders, and partner on side ventures.",
     BUTTON: "Discover opportunities",
   },
   TALENT_HOUSE_SECTION: {
     TAG: "Scholarships",
     TITLE: "Talent House. Home to the next web3 builders.",
-    TEXT: "Win a scholarship to attend your first web3 event and hang out with the most talented innovators in the space.",
+    TEXT: "Win a scholarship to attend your first web3 hackathon and hang out with the most talented innovators in the space.",
     BUTTONS: ["Apply to next edition", "See past editions"],
   },
   TRUST_SECTION: {
