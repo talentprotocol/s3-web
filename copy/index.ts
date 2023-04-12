@@ -75,7 +75,7 @@ export const COPY = {
         LABEL_TEXT: "Beginner",
         TITLE: "Create your profile.",
         SUB_TITLE:
-          "Unlock access to scholarships, work opportunities and a supportive community.",
+          "Unlock access to scholarships and a supportive community.",
         BUTTON: "Get started",
       },
       {
