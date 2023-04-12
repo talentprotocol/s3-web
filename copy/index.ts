@@ -40,7 +40,7 @@ export const COPY = {
         CONTENT_HEADER:
           "You’re more than a job title or a Twitter bio.",
         CONTENT_DESCRIPTION:
-          "Express who you really are and show what you care about. You deserve control over how you're represented online. Arrange your profile however you'd like to be seen. No strict templates.",
+          "Reveal your true self and passions. Gain control over your online image. Customize your profile as desired. No rigid templates.",
       },
       {
         TITLE: "Journey",
