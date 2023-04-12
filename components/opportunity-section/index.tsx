@@ -31,7 +31,7 @@ export const OpportunitySection = () => (
             text={COPY.OPPORTUNITY_SECTION.BUTTON}
             type="link"
             variant="quaternary"
-            href="https://talentprotocol.pallet.com/jobs"
+            href="https://t.me/talentprotocol"
           >
             <ButtonIcon>--E</ButtonIcon>
           </Button>
