@@ -143,8 +143,7 @@ export const COPY = {
   TAKE_THE_LEAP_BANNER: {
     TITLE_BLACK1: "Take the",
     TITLE_PURPLE1: "leap into web3.",
-    SUBTITLE:
-      "Subscribe to our newsletter and we'll keep you in the loop with what’s exciting in the web3 world. Work opportunities from our partners and success stories from our community.",
+    SUBTITLE: "Subscribe to our newsletter to get community updates.",
     INPUT_PLACEHOLDER: "What's your email?",
     SLIDER: "Reserve your handle",
     SLIDER_SUFFIX: "--E",
@@ -177,8 +176,7 @@ export const COPY = {
         },
         {
           NAME: "Bounties",
-          TARGET:
-            "https://talentprotocol.notion.site/Contribute-74c27972ac554ce0b9702e8a9131cfa7",
+          TARGET: "https://app.dework.xyz/talent-protocol",
         },
         {
           NAME: "Ambassadors",
