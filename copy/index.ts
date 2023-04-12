@@ -178,11 +178,6 @@ export const COPY = {
           NAME: "Bounties",
           TARGET: "https://app.dework.xyz/talent-protocol",
         },
-        {
-          NAME: "Ambassadors",
-          TARGET:
-            "https://talentprotocol.notion.site/Ambassadors-Program-194c5580446a45d6b2c510bd8052e91c",
-        },
       ],
     },
     HELP: {
