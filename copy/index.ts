@@ -119,12 +119,6 @@ export const COPY = {
     TEXT: "Win a scholarship to attend your first web3 event and hang out with the most talented innovators in the space.",
     BUTTONS: ["Apply to next edition", "See past editions"],
   },
-  LEVEL_UP_SECTION: {
-    TAG: "Mentorship",
-    TITLE: "Level up your career.",
-    TEXT: "Looking for guidance? Get matched with a mentor or mentee who can help you grow, and access exclusive resources and events.",
-    BUTTON: "Find out more",
-  },
   TRUST_SECTION: {
     TITLE: "Trusted by builders worldwide.",
 

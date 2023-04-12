@@ -12,7 +12,6 @@ import { ProfileSection } from "components/profile-section";
 import { CareerCircleSection } from "components/career-circle-section";
 import { OpportunitySection } from "components/opportunity-section";
 import { TalentHouseSection } from "components/talent-house-section";
-import { LevelUpSection } from "components/level-up-section";
 import { TrustSection } from "components/trust-section";
 import { TakeTheLeapBanner } from "components/take-the-leap-banner";
 import { OpenSourceBanner } from "components/open-source-banner";
@@ -86,7 +85,6 @@ const Home: NextPage<Props> = (props) => {
         <CareerCircleSection />
         <OpportunitySection />
         <TalentHouseSection />
-        <LevelUpSection />
         <HeroSection>
           <TrustSection isMobile={props.isMobile} />
         </HeroSection>
