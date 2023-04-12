@@ -101,7 +101,7 @@ export const TakeTheLeapBanner = () => {
       <SliderContainer>
         <Slider
           onClick={() =>
-            window.open("https://beta.talentprotocol.com/join")
+            window.location.href = "/handle"
           }
         >
           {sliderContent}
