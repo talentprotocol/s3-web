@@ -103,7 +103,7 @@ export const COPY = {
   CAREER_CIRCLE_SECTION: {
     TAG: " Community",
     TITLE: "Start a career circle, your token-gated community.",
-    TEXT: "A Career Circle is your personal community of supporters. You can token-gate it with NFTs or a Social Token. Give away your tokens to people that helped you in the past and sell them to new supporters.",
+    TEXT: "Your Career Circle: a personal support network with token-gated access to updates, goals, and exclusive perks.",
     BUTTON: "Apply for a Token",
     MORE_COMING: "More coming",
   },
