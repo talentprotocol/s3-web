@@ -29,8 +29,8 @@ export const COPY = {
       PLACEHOLDER: "yourname",
       PLACEHOLDER_MOBILE: "name",
       TOKEN: ".tal",
-      BUTTON: "Reserve handle",
-      BUTTON_MOBILE: "Reserve handle",
+      BUTTON: "Reserve username",
+      BUTTON_MOBILE: "Reserve username",
     },
   },
   TAB_HERO: {
@@ -80,7 +80,7 @@ export const COPY = {
       },
       {
         LABEL_TEXT: "Intermediate",
-        TITLE: "Reserve your handle.",
+        TITLE: "Reserve your username.",
         SUB_TITLE: "Own your profile and career data as an NFT.",
         BUTTON: "Learn more",
       },
@@ -145,7 +145,7 @@ export const COPY = {
     TITLE_PURPLE1: "leap into web3.",
     SUBTITLE: "Subscribe to our newsletter to get community updates.",
     INPUT_PLACEHOLDER: "What's your email?",
-    SLIDER: "Reserve your handle",
+    SLIDER: "Reserve your username",
     SLIDER_SUFFIX: "--E",
   },
   OPEN_SOURCE_BANNER: {

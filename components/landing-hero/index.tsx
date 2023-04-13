@@ -19,7 +19,7 @@ export const LandingHero = ({
 }: Props) => {
   const talRef = useRef<HTMLSpanElement>(null);
   const handleReverveButtonClick = useCallback(() => {
-    window.location.href = `/handle?name=${talRef.current?.innerText}`;
+    window.location.href = `/username?name=${talRef.current?.innerText}`;
   }, []);
   return (
     <Container>

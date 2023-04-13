@@ -101,7 +101,7 @@ export const TakeTheLeapBanner = () => {
       <SliderContainer>
         <Slider
           onClick={() =>
-            window.location.href = "/handle"
+            window.location.href = "/username"
           }
         >
           {sliderContent}
