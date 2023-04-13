@@ -86,7 +86,7 @@ export const Benefits = ({ isMobile, isSafari, isAndroid }: Props) => {
         </HandleSection>
         <HandleSection isMobile={isMobile} reverseOrder={true}>
           <ImageContainer>
-            <Image src={Onchain} alt="Interconnection of blockchain data with the handle" />
+            <Image src={Onchain} alt="Interconnection of blockchain data with the .tal username" />
           </ImageContainer>
           <DescriptionContainer>
             <TitleAndSubTitle>
@@ -134,7 +134,7 @@ export const Benefits = ({ isMobile, isSafari, isAndroid }: Props) => {
         </HandleSection>
         <HandleSection isMobile={isMobile} reverseOrder={true}>
           <ImageContainer>
-            <Image src={Payments} alt="Using the Talent Protocol handle as a payment address" />
+            <Image src={Payments} alt="Using the Talent Protocol username as a payment address" />
           </ImageContainer>
           <DescriptionContainer>
             <TitleAndSubTitle>

@@ -2,7 +2,6 @@ import Image from "next/image";
 import { useMemo } from "react";
 import { COPY } from "copy";
 import allianceImage from "./assets/alliance.png";
-import blu3Dao from "./assets/blu3-dao.png";
 import celo from "./assets/celo.svg";
 import floriImage from "./assets/flori.png";
 import herLatamImage from "./assets/her-latam.png";
