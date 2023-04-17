@@ -24,8 +24,7 @@ export const MobileMenu = styled.button<MobileMenuProps>`
     content: "";
     transition-duration: 0.2s;
     ${({ darkMode }) =>
-      `background: ${darkMode ? COLORS.PINK : COLORS.BLACK};`
-    }
+      `background: ${darkMode ? COLORS.PINK : COLORS.BLACK};`}
     ${({ isSidebarVisible }) =>
       isSidebarVisible &&
       `
@@ -42,8 +41,7 @@ export const MobileMenu = styled.button<MobileMenuProps>`
     content: "";
     transition-duration: 0.2s;
     ${({ darkMode }) =>
-      `background: ${darkMode ? COLORS.PINK : COLORS.BLACK};`
-    }
+      `background: ${darkMode ? COLORS.PINK : COLORS.BLACK};`}
     ${({ isSidebarVisible }) =>
       isSidebarVisible &&
       `

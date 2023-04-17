@@ -23,7 +23,11 @@ export const Footer = ({ isMobile, darkMode = false }: Props) => {
         <InnerContainer>
           <FooterRow>
             <PresentationColumn>
-              <Image priority src={darkMode ? logoPinkImage : logoImage} alt="logo" />
+              <Image
+                priority
+                src={darkMode ? logoPinkImage : logoImage}
+                alt="logo"
+              />
               <CopyrightTypography>
                 {COPY.FOOTER.DESCRIPTION}
               </CopyrightTypography>

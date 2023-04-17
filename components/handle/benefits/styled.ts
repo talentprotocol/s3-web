@@ -10,7 +10,8 @@ export const Container = styled.div<ContainerProps>`
   padding-left: 24px;
   padding-right: 24px;
   gap: 80px;
-  background-color: ${({ dark }) => dark ? COLORS.DARK_BLUE : COLORS.WHITE};
+  background-color: ${({ dark }) =>
+    dark ? COLORS.DARK_BLUE : COLORS.WHITE};
 
   @media (min-width: 768px) {
     padding-top: 112px;
@@ -20,20 +21,25 @@ export const Container = styled.div<ContainerProps>`
   }
 `;
 
-export const HandleSection = styled.div<{isMobile: boolean, reverseOrder?: boolean}>`
+export const HandleSection = styled.div<{
+  isMobile: boolean;
+  reverseOrder?: boolean;
+}>`
   display: flex;
   flex-direction: column;
   gap: 40px;
 
-  ${( {isMobile, reverseOrder }) => !isMobile && css`
-    flex-direction: ${reverseOrder ? "row-reverse" : "row"};
-    justify-content: center;
-    align-items: center;
-    gap: 120px;
-    max-width: 1160px;
-    margin-left: auto;
-    margin-right: auto;
-  `}
+  ${({ isMobile, reverseOrder }) =>
+    !isMobile &&
+    css`
+      flex-direction: ${reverseOrder ? "row-reverse" : "row"};
+      justify-content: center;
+      align-items: center;
+      gap: 120px;
+      max-width: 1160px;
+      margin-left: auto;
+      margin-right: auto;
+    `}
 `;
 
 export const ImageContainer = styled.div`
@@ -138,7 +144,7 @@ export const CallToAction = styled.div`
     padding: 64px;
     text-align: left;
   }
-`
+`;
 
 export const CallToActionDescription = styled.div`
   display: flex;
@@ -170,9 +176,9 @@ export const StyledText = styled.span`
   line-height: 120%;
 
   @media (min-width: 768px) {
-    font-size: 40px;    
+    font-size: 40px;
   }
-`
+`;
 
 export const CallToActionPromo = styled.div`
   margin-top: 40px;
@@ -198,7 +204,7 @@ export const CallToActionPriceDescription = styled.div`
   @media (min-width: 768px) {
     margin-bottom: 0px;
   }
-`
+`;
 
 export const CallToActionPrice = styled.span`
   ${fontNormal}
@@ -255,7 +261,7 @@ export const WhyRow = styled.div`
 
   @media (min-width: 768px) {
     flex-direction: row;
-    gap: 24px
+    gap: 24px;
   }
 `;
 

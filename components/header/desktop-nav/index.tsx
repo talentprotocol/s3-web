@@ -2,7 +2,11 @@ import { COPY } from "copy";
 import { Button } from "shared-ui";
 import { NavArea } from "./styled";
 
-export const DesktopNav = ({darkMode = false}: {darkMode: boolean}) => {
+export const DesktopNav = ({
+  darkMode = false,
+}: {
+  darkMode: boolean;
+}) => {
   return (
     <NavArea>
       <Button

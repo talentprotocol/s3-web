@@ -11,6 +11,7 @@ export const Container = styled.div<StyledDoorProps>`
   gap: 16px;
   border-radius: 24px;
   border: 2px solid ${COLORS.GREY};
+  min-height: 403px;
 
   ${({ isHighlighted }) =>
     isHighlighted &&

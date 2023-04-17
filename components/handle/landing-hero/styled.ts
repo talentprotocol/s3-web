@@ -1,51 +1,62 @@
 import styled, { css } from "styled-components";
 import { COLORS, fontNormal } from "shared-ui";
 
-export const Container = styled.div<{isMobile: boolean}>`
+export const Container = styled.div<{ isMobile: boolean }>`
   display: flex;
   flex-direction: column;
   gap: 48px;
   width: 50%;
 
-  ${( {isMobile}) => isMobile && css`
-    margin-top: 48px;
-    margin-left: 24px;
-    margin-right: 24px;
-    width: 100%;
-  `}
+  ${({ isMobile }) =>
+    isMobile &&
+    css`
+      margin-top: 48px;
+      margin-left: 24px;
+      margin-right: 24px;
+      width: 100%;
+    `}
 `;
 
-export const ImageContainer = styled.div<{isMobile: boolean}>`
+export const ImageContainer = styled.div<{ isMobile: boolean }>`
   width: 50%;
-  ${( {isMobile}) => isMobile && css`
-    width: 0px;
-    display: none;
-  `}
-`
+  ${({ isMobile }) =>
+    isMobile &&
+    css`
+      width: 0px;
+      display: none;
+    `}
+`;
 
-export const MainContainer = styled.div<{isMobile: boolean, centerContent: boolean}>`
+export const MainContainer = styled.div<{
+  isMobile: boolean;
+  centerContent: boolean;
+}>`
   display: flex;
   flex-direction: row;
   max-width: 1160px;
 
-  ${( {isMobile}) => !isMobile && css`
-    gap: 124px;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 140px;
-    margin-right: 140px;
-
-    @media (min-width: 1300px) {
-      margin-left: auto;
-      margin-right: auto;
+  ${({ isMobile }) =>
+    !isMobile &&
+    css`
+      gap: 124px;
       margin-top: auto;
       margin-bottom: auto;
-    }
-  `}
+      margin-left: 140px;
+      margin-right: 140px;
 
-  ${( {centerContent}) => centerContent && css`
-    justify-content: center;
-  `}
+      @media (min-width: 1300px) {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+    `}
+
+  ${({ centerContent }) =>
+    centerContent &&
+    css`
+      justify-content: center;
+    `}
 `;
 
 export const ItalicText = styled.span`
@@ -67,14 +78,14 @@ export const EarlyBird = styled.div`
 export const EarlyBirdPromo = styled.div`
   display: flex;
   flex-direction: row;
-`
+`;
 
 export const PriceTag = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 8px;
-`
+`;
 
 export const EarlyBirdPromoTag = styled.div`
   padding: 2px 8px;
@@ -90,7 +101,7 @@ export const SearchContainer = styled.div`
   margin-bottom: 80px;
   border: 1px solid ${COLORS.GREY};
   position: relative;
-`
+`;
 
 export const HandleInput = styled.div<{ placeholder: string }>`
   max-width: 170px;
@@ -150,7 +161,7 @@ export const BenefitsArea = styled.div`
     bottom: 0px;
     left: 0px;
   }
-`
+`;
 
 export const SearchingSection = styled.div`
   display: flex;
@@ -158,7 +169,7 @@ export const SearchingSection = styled.div`
   gap: 16px;
 `;
 
-export const PinkButton = styled.button<{alignButtonLeft: boolean}>`
+export const PinkButton = styled.button<{ alignButtonLeft: boolean }>`
   ${fontNormal}
   font-weight: 700;
   font-size: 16px;
@@ -179,7 +190,8 @@ export const PinkButton = styled.button<{alignButtonLeft: boolean}>`
   }
 
   @media (min-width: 768px) {
-    align-self: ${({ alignButtonLeft }) => alignButtonLeft ? "start" : "end"};
+    align-self: ${({ alignButtonLeft }) =>
+      alignButtonLeft ? "start" : "end"};
   }
 `;
 
@@ -208,11 +220,11 @@ export const StepDescriptionContainer = styled.div`
   flex-direction: column;
   gap: 8px;
   margin-bottom: 40px;
-`
+`;
 
 export const WhiteText = styled.span`
   color: ${COLORS.WHITE};
-`
+`;
 
 export const PaymentSection = styled.div`
   display: flex;
@@ -221,19 +233,19 @@ export const PaymentSection = styled.div`
   border-top: 1px solid ${COLORS.SURFACE_DARK};
   padding-top: 16px;
   padding-bottom: 16px;
-`
+`;
 
 export const PaymentsRow = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-`
+`;
 
 export const HelpText = styled.div`
   border-top: 1px solid ${COLORS.SURFACE_DARK};
   padding-top: 16px;
   margin-bottom: 40px;
-`
+`;
 
 export const NeutralButton = styled.button`
   ${fontNormal}
@@ -267,7 +279,7 @@ export const ButtonConfirmationContainer = styled.div`
   @media (min-width: 768px) {
     flex-direction: row-reverse;
   }
-`
+`;
 
 export const LeftAlignSVG = styled.div`
   display: flex;
@@ -279,7 +291,7 @@ export const TextWithButton = styled.div`
   display: flex;
   flex-direction: column;
   gap: 24px;
-`
+`;
 export const StyledText = styled.span`
   ${fontNormal}
   font-feature-settings: 'ss04' on, 'ss05' on, 'ss07' on, 'ss11' on, 'ss12' on, 'liga' off;
@@ -288,9 +300,9 @@ export const StyledText = styled.span`
   line-height: 120%;
 
   @media (min-width: 768px) {
-    font-size: 40px;    
+    font-size: 40px;
   }
-`
+`;
 
 export const BigItalicText = styled.span`
   font-weight: 300;

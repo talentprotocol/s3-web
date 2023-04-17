@@ -6,6 +6,12 @@ interface Props {
   darkMode?: boolean;
 }
 
-export const HeroSection = ({ children, className, darkMode = false }: Props) => (
-  <Container darkMode={darkMode} className={className}>{children}</Container>
+export const HeroSection = ({
+  children,
+  className,
+  darkMode = false,
+}: Props) => (
+  <Container darkMode={darkMode} className={className}>
+    {children}
+  </Container>
 );

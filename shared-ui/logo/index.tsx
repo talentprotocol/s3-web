@@ -6,7 +6,7 @@ import pinkLogo from "./assets/pink-logo.svg";
 
 export const Logo = ({ color = "LIGHTER_PURPLE" }: Props) => {
   const logo = () => {
-    switch(color) {
+    switch (color) {
       case "LIGHTER_PURPLE":
         return purpleLogo;
       case "PINK":
@@ -20,5 +20,5 @@ export const Logo = ({ color = "LIGHTER_PURPLE" }: Props) => {
     <Container color={color}>
       <Image src={logo()} alt="logo" />
     </Container>
-  )
+  );
 };

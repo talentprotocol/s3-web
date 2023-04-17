@@ -1,4 +1,15 @@
-import { H1, H2, H3, H5, BODY1, BODY2, GENERAL, P1, P2, P3 } from "./styled";
+import {
+  H1,
+  H2,
+  H3,
+  H5,
+  BODY1,
+  BODY2,
+  GENERAL,
+  P1,
+  P2,
+  P3,
+} from "./styled";
 import { Props, TypographyTypeEnum } from "./types";
 
 export const Typography = ({

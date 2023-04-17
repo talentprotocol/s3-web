@@ -10,13 +10,16 @@ export const Container = styled.section<ContainerProps>`
   position: relative;
 
   ${({ darkMode }) =>
-    `background-color: ${darkMode ? COLORS.DARK_BLUE : COLORS.WHITE};`
-  }
+    `background-color: ${
+      darkMode ? COLORS.DARK_BLUE : COLORS.WHITE
+    };`}
 
-  ${({darkMode}) => !darkMode && css`
-    @media (min-height: 950px) {
-      max-height: 1220px;
-      min-height: 1220px;    
-    }
-  `}
+  ${({ darkMode }) =>
+    !darkMode &&
+    css`
+      @media (min-height: 950px) {
+        max-height: 1220px;
+        min-height: 1220px;
+      }
+    `}
 `;

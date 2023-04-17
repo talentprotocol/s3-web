@@ -90,7 +90,10 @@ export const TakeTheLeapBanner = () => {
               <ButtonWrapper>
                 <StyledButtonWrapper>
                   <StyledButton onClick={subscribeToNewsLetter}>
-                    <Image src={arrowImage} alt="Arrow pointing down" />
+                    <Image
+                      src={arrowImage}
+                      alt="Arrow pointing down"
+                    />
                   </StyledButton>
                 </StyledButtonWrapper>
               </ButtonWrapper>
@@ -99,11 +102,7 @@ export const TakeTheLeapBanner = () => {
         </InnerContainer>
       </Container>
       <SliderContainer>
-        <Slider
-          onClick={() =>
-            window.location.href = "/username"
-          }
-        >
+        <Slider onClick={() => (window.location.href = "/username")}>
           {sliderContent}
         </Slider>
       </SliderContainer>

@@ -1,7 +1,7 @@
 export interface Props {
-	noBox?: boolean;
+  noBox?: boolean;
 }
 
 export interface ContainerProps {
-	noBox: boolean;
+  noBox: boolean;
 }

@@ -21,9 +21,9 @@ interface Props {
 const Handle: NextPage<Props> = (props) => {
   const { isClosing, toggleSidebar, isSidebarVisible } = useSidebar();
 
-	return (
-		<>
-			<Head>
+  return (
+    <>
+      <Head>
         <title>Talent Protocol - Web3 Professional Community</title>
         <meta name="description" content="TALENT APP" />
         <meta
@@ -63,17 +63,25 @@ const Handle: NextPage<Props> = (props) => {
             toggleSidebar={toggleSidebar}
             darkMode={true}
           />
-          <LandingHero isMobile={props.isMobile} isSafari={props.isSafari} isAndroid={props.isAndroid} />
+          <LandingHero
+            isMobile={props.isMobile}
+            isSafari={props.isSafari}
+            isAndroid={props.isAndroid}
+          />
         </HeroSection>
-        <Benefits isMobile={props.isMobile} isSafari={props.isSafari} isAndroid={props.isAndroid} />
-        <Footer isMobile={props.isMobile} darkMode={true}/>
+        <Benefits
+          isMobile={props.isMobile}
+          isSafari={props.isSafari}
+          isAndroid={props.isAndroid}
+        />
+        <Footer isMobile={props.isMobile} darkMode={true} />
       </main>
-		</>
-	);
+    </>
+  );
 };
 
 Handle.getInitialProps = (ctx: NextPageContext) => {
   return isDevice(ctx.req?.headers["user-agent"] || "");
-}
+};
 
 export default Handle;
