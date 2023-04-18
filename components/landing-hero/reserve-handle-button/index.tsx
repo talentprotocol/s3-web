@@ -1,5 +1,9 @@
 import { COPY } from "copy";
-import { ButtonContainer, StyledReserveHandleButton } from "./styled";
+import {
+  ButtonContainer,
+  ButtonIcon,
+  StyledReserveHandleButton,
+} from "./styled";
 import { Props } from "./types";
 
 export const ReserveHandleButton = ({
@@ -13,12 +17,10 @@ export const ReserveHandleButton = ({
       isMobile={isMobile}
       isSafari={isSafari}
       isAndroid={isAndroid}
-      onClick={callback}
+      href="https://beta.talentprotocol.com/join?ref=landing"
       style={{ top: isMobile ? "-15px" : "-13px" }}
     >
-      {isMobile
-        ? COPY.LANDING_HERO.RESERVE_TAL.BUTTON_MOBILE
-        : COPY.LANDING_HERO.RESERVE_TAL.BUTTON}
+      Sign up now <ButtonIcon>--E</ButtonIcon>
     </StyledReserveHandleButton>
   </ButtonContainer>
 );

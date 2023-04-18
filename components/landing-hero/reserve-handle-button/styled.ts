@@ -3,14 +3,14 @@ import { COLORS, fontNormal } from "shared-ui";
 import { StyledReserveHandleButtonProps } from "./types";
 
 export const ButtonContainer = styled.div`
+  margin-top: 8px;
   position: relative;
 `;
 
-export const StyledReserveHandleButton = styled.button<StyledReserveHandleButtonProps>`
-  position: absolute;
+export const StyledReserveHandleButton = styled.a<StyledReserveHandleButtonProps>`
+  display: flex;
+  gap: 8px;
   padding: 13px 32px;
-  left: -24px;
-  transform: translate(-50%, 0);
   border-radius: 32px;
   background: ${COLORS.BLACK};
   color: ${COLORS.WHITE};
@@ -22,26 +22,16 @@ export const StyledReserveHandleButton = styled.button<StyledReserveHandleButton
   line-height: 24px;
   white-space: nowrap;
   transition-duration: 0.25s;
-
-  ${({ isSafari }) =>
-    isSafari &&
-    css`
-      transform: translate(-50%, -2px);
-    `}
-
-  ${({ isMobile, isAndroid }) =>
-    isMobile &&
-    css`
-      transform: translate(-50%, 2px);
-
-      ${!isAndroid && "transform: translate(-50%, 0);"}
-
-      @media (min-width: 560px) {
-        transform: translate(-50%, 0px);
-      }
-    `}
+  text-decoration: none;
 
   :hover {
     background: ${COLORS.LIGHT_BLACK};
   }
+`;
+
+export const ButtonIcon = styled.span`
+  font-size: 24px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
 `;

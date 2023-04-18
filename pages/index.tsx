@@ -72,11 +72,7 @@ const Home: NextPage<Props> = (props) => {
             toggleSidebar={toggleSidebar}
             darkMode={false}
           />
-          <LandingHero
-            isMobile={props.isMobile}
-            isSafari={props.isSafari}
-            isAndroid={props.isAndroid}
-          />
+          <LandingHero />
           <Mosaic isMobile={props.isMobile} />
         </HeroSection>
         <TabSection />

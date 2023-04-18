@@ -1,5 +1,1 @@
-export interface Props {
-  isMobile: boolean;
-  isSafari: boolean;
-  isAndroid: boolean;
-}
+export interface Props {}
