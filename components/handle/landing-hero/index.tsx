@@ -85,7 +85,7 @@ export const LandingHero = ({
     const { ethereum } = window;
     if (!ethereum || !ethereum.isMetaMask) {
       alert(
-        "You need to have metamask on your browser or use the matemask browser"
+        "You need to have metamask on your browser or use the metamask browser"
       );
       return;
     }
@@ -140,7 +140,7 @@ export const LandingHero = ({
     const { ethereum } = window;
     if (!ethereum || !ethereum.isMetaMask) {
       alert(
-        "You need to have metamask on your browser or use the matemask browser"
+        "You need to have metamask on your browser or use the metamask browser"
       );
       return;
     }
@@ -174,7 +174,7 @@ export const LandingHero = ({
     const { ethereum } = window;
     if (!ethereum || !ethereum.isMetaMask) {
       alert(
-        "You need to have metamask on your browser or use the matemask browser"
+        "You need to have metamask on your browser or use the metamask browser"
       );
       return;
     }
@@ -241,7 +241,7 @@ export const LandingHero = ({
     const { ethereum } = window;
     if (!ethereum || !ethereum.isMetaMask) {
       alert(
-        "You need to have metamask on your browser or use the matemask browser"
+        "You need to have metamask on your browser or use the metamask browser"
       );
       return;
     }
@@ -269,7 +269,7 @@ export const LandingHero = ({
     const { ethereum } = window;
     if (!ethereum || !ethereum.isMetaMask) {
       alert(
-        "You need to have metamask on your browser or use the matemask browser"
+        "You need to have metamask on your browser or use the metamask browser"
       );
       return;
     }
