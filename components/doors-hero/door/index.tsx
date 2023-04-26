@@ -15,6 +15,7 @@ export const Door = ({
   title,
   subTitle,
   buttonText,
+  url,
 }: Props) => {
   const textColor: AvailableColors = isHighlighted
     ? "WHITE"
@@ -30,12 +31,7 @@ export const Door = ({
       </DescriptionContainer>
       <DoorFooter>
         <DoorButton
-          onClick={() =>
-            window.open(
-              "https://beta.talentprotocol.com/join",
-              "_blank"
-            )
-          }
+          onClick={() => window.open(url, "_blank")}
           isHighlighted={isHighlighted}
         >
           {buttonText}

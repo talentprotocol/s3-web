@@ -14,7 +14,7 @@ export const COPY = {
       { LABEL: "Telegram", HREF: "https://t.me/talentprotocol" },
     ],
     LOGIN_BUTTON: "Log in",
-    SIGNUP_BUTTON: "Sing up",
+    SIGNUP_BUTTON: "Sign up",
   },
   LANDING_HERO: {
     HEADER_LOGIN: "Login",
@@ -38,7 +38,7 @@ export const COPY = {
       {
         TITLE: "About",
         CONTENT_HEADER:
-          "You’re more than a job title or a Twitter bio.",
+          "You're more than a job title or a Twitter bio.",
         CONTENT_DESCRIPTION:
           "Reveal your true self and passions. Gain control over your online image. Customize your profile as desired. No rigid templates.",
       },
@@ -77,12 +77,14 @@ export const COPY = {
         SUB_TITLE:
           "Unlock access to scholarships and a supportive community.",
         BUTTON: "Get started",
+        URL: "https://beta.talentprotocol.com/join",
       },
       {
         LABEL_TEXT: "Intermediate",
         TITLE: "Reserve your username.",
         SUB_TITLE: "Own your profile and career data as an NFT.",
         BUTTON: "Learn more",
+        URL: "https://talentprotocol.com/username",
       },
       {
         LABEL_TEXT: "Advanced",
@@ -90,6 +92,7 @@ export const COPY = {
         SUB_TITLE:
           "Build an on-chain community, truly vested in your career.",
         BUTTON: "Learn more",
+        URL: "https://beta.talentprotocol.com/join",
       },
     ],
     FOOTER: "See all benefits",
@@ -109,7 +112,7 @@ export const COPY = {
   },
   OPPORTUNITY_SECTION: {
     TAG: "Opportunities",
-    TITLE: "There’s a Web3\nopportunity waiting\nfor you.",
+    TITLE: "There's a Web3\nopportunity waiting\nfor you.",
     TEXT: "Discover fresh web3 opportunities. Collaborate on thrilling projects, find co-founders, and partner on side ventures.",
     BUTTON: "Discover opportunities",
   },
@@ -158,6 +161,11 @@ export const COPY = {
     LOGO: "Talent Protocol",
     DESCRIPTION:
       "The web3 professional community for high-potential builders.",
+    FEEDBACK: {
+      DESCRIPTION:
+        "We would love to hear from you. Let us know your challenges and goals ",
+      LINK: "https://talentprotocol.typeform.com/productfeedback",
+    },
     COPYRIGHT: [
       `Talent Protocol MTÜ © ${new Date().getFullYear()}`,
       "contact@talentprotocol.com",

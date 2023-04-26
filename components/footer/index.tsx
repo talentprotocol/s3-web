@@ -70,11 +70,19 @@ export const Footer = ({ isMobile, darkMode = false }: Props) => {
               <CopyrightTypography>
                 {COPY.FOOTER.COPYRIGHT[0]}
               </CopyrightTypography>
-              {!isMobile && (
-                <CopyrightTypography>|</CopyrightTypography>
-              )}
+              <CopyrightTypography>|</CopyrightTypography>
               <CopyrightTypography>
                 {COPY.FOOTER.COPYRIGHT[1]}
+              </CopyrightTypography>
+              <CopyrightTypography>|</CopyrightTypography>
+              <CopyrightTypography>
+                {COPY.FOOTER.FEEDBACK.DESCRIPTION}
+                <NavLink
+                  href={COPY.FOOTER.FEEDBACK.LINK}
+                  target="_blank"
+                >
+                  here.
+                </NavLink>
               </CopyrightTypography>
             </Copyright>
           )}
@@ -85,9 +93,14 @@ export const Footer = ({ isMobile, darkMode = false }: Props) => {
           <CopyrightTypography>
             {COPY.FOOTER.COPYRIGHT[0]}
           </CopyrightTypography>
-          {!isMobile && <CopyrightTypography>|</CopyrightTypography>}
           <CopyrightTypography>
             {COPY.FOOTER.COPYRIGHT[1]}
+          </CopyrightTypography>
+          <CopyrightTypography>
+            {COPY.FOOTER.FEEDBACK.DESCRIPTION}
+            <NavLink href={COPY.FOOTER.FEEDBACK.LINK} target="_blank">
+              here.
+            </NavLink>
           </CopyrightTypography>
         </Copyright>
       )}

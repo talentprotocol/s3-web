@@ -7,6 +7,7 @@ export interface Props {
   title: string;
   subTitle: string;
   buttonText: string;
+  url: string;
 }
 
 export interface StyledDoorProps {
