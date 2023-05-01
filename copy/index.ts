@@ -186,6 +186,10 @@ export const COPY = {
           NAME: "Bounties",
           TARGET: "https://app.dework.xyz/talent-protocol",
         },
+        {
+          NAME: "API",
+          TARGET: "https://docs.talentprotocol.com/api",
+        },
       ],
     },
     HELP: {
