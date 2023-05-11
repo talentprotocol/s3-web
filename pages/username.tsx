@@ -46,8 +46,8 @@ const Handle: NextPage<Props> = (props) => {
           content="Talent Protocol is a web3 professional network where the next generation of builders can share their goals and find the support they need to succeed."
         />
         <link rel="stylesheet" href="add-fonts.css" />
-        <meta property="og:image" content="/metaimage.jpg?1" />
-        <meta property="twitter:image" content="/metaimage.jpg?1" />
+        <meta property="og:image" content="/metaimage.jpg?2" />
+        <meta property="twitter:image" content="/metaimage.jpg?2" />
       </Head>
       <main id="main">
         {isSidebarVisible && (
