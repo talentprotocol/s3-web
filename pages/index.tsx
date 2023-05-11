@@ -56,6 +56,7 @@ const Home: NextPage<Props> = (props) => {
         />
         <link rel="stylesheet" href="add-fonts.css" />
         <meta property="og:image" content="/metaimage.jpg?1" />
+        <meta property="twitter:image" content="/metaimage.jpg?1" />
       </Head>
       <main>
         {isSidebarVisible && (
