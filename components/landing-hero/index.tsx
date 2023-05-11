@@ -28,7 +28,7 @@ export const LandingHero = ({}: Props) => {
       </SubTitleWrapper>
 
       <Button
-        text="Get started"
+        text="Join Talent Protocol"
         type="link"
         variant="primary"
         href="https://beta.talentprotocol.com/join"

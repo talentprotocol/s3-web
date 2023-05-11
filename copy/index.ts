@@ -19,12 +19,12 @@ export const COPY = {
   LANDING_HERO: {
     HEADER_LOGIN: "Login",
     HEADER_SIGN_UP: "Sign up",
-    TITLE: "Build your web3 resume.",
-    TITLE_BLACK_1: "Build your ",
-    TITLE_PURPLE: "web3 resume",
-    TITLE_BLACK_2: ".",
+    TITLE: "Find the support you need to succeed.",
+    TITLE_BLACK_1: "Find the ",
+    TITLE_PURPLE: "support ",
+    TITLE_BLACK_2: "you need to succeed.",
     SUBTITLE:
-      "Create a beautiful web3 resume, make meaningful connections and access exciting web3 opportunities.",
+      "Publish your goals, make meaningful connections and grow your circle of supporters.",
     RESERVE_TAL: {
       PLACEHOLDER: "yourname",
       PLACEHOLDER_MOBILE: "name",
@@ -160,7 +160,7 @@ export const COPY = {
   FOOTER: {
     LOGO: "Talent Protocol",
     DESCRIPTION:
-      "The web3 professional community for high-potential builders.",
+      "Publish your goals, make meaningful connections and grow your circle of supporters.",
     FEEDBACK: {
       DESCRIPTION:
         "We would love to hear from you. Let us know your challenges and goals ",

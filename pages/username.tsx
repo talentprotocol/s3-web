@@ -43,7 +43,7 @@ const Handle: NextPage<Props> = (props) => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           property="og:description"
-          content="Talent Protocol is the web3 professional community where high-potential individuals can build an on-chain resume and launch a talent token, allowing anyone to easily invest in their careers."
+          content="Talent Protocol is a web3 professional network where the next generation of builders can share their goals and find the support they need to succeed. 🙌"
         />
         <link rel="stylesheet" href="add-fonts.css" />
         <meta property="og:image" content="/metaimage.jpg" />
