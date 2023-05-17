@@ -176,7 +176,7 @@ export const COPY = {
         {
           NAME: "About",
           TARGET:
-            "https://talentprotocol.notion.site/Talent-Protocol-101-26a6c4b9f8284e5e8f55603a38629e76",
+            "https://talentprotocol.notion.site/Talent-Protocol-2b10dc798a3941d5814bc10dfd102c25",
         },
         {
           NAME: "Blog",
@@ -184,7 +184,8 @@ export const COPY = {
         },
         {
           NAME: "Bounties",
-          TARGET: "https://app.dework.xyz/talent-protocol",
+          TARGET:
+            "https://talentprotocol.notion.site/Bounties-74c27972ac554ce0b9702e8a9131cfa7",
         },
         {
           NAME: "API",
