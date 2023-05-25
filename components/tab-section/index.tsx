@@ -6,7 +6,7 @@ import aboutImage from "./assets/about.png";
 import careerCircleImage from "./assets/career-circle.png";
 import credentialsImage from "./assets/credentials.png";
 import journyImage from "./assets/journey.png";
-import perksImage from "./assets/perks.png";
+// import perksImage from "./assets/perks.png";
 import {
   Container,
   ContentArea,
@@ -22,7 +22,7 @@ const images = [
   aboutImage,
   journyImage,
   credentialsImage,
-  perksImage,
+  // perksImage,
   careerCircleImage,
 ];
 
