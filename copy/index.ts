@@ -54,15 +54,15 @@ export const COPY = {
         CONTENT_DESCRIPTION:
           "A digital resume that combines on-chain and off-chain data. From formal, super curated resumes to more authentic and verifiable expressions of uniqueness. Made for web3 builders and designed for the future of work.",
       },
-      {
-        TITLE: "Perks",
-        CONTENT_HEADER: "Connect with like-minded builders. ",
-        CONTENT_DESCRIPTION:
-          "Create exclusive perks that can be claimed by anyone that owns your social token or NFT. Perks can be anything from IRL experiences to digital content. Your circle, your choice.",
-      },
+      // {
+      //   TITLE: "Perks",
+      //   CONTENT_HEADER: "Offer Perks to your supporters.",
+      //   CONTENT_DESCRIPTION:
+      //     "Create exclusive perks that can be claimed by anyone that owns your social token or NFT. Perks can be anything from IRL experiences to digital content. Your circle, your choice.",
+      // },
       {
         TITLE: "Career Circle",
-        CONTENT_HEADER: "Offer Perks to your supporters.",
+        CONTENT_HEADER: "Connect with like-minded builders. ",
         CONTENT_DESCRIPTION:
           "Start building the support network you need to succeed. Launch a token to let other people invest in your career or discover inspiring talent that you can support. Success is collective.",
       },
@@ -106,7 +106,7 @@ export const COPY = {
   CAREER_CIRCLE_SECTION: {
     TAG: " Community",
     TITLE: "Start a career circle, your token-gated community.",
-    TEXT: "Your Career Circle: a personal support network with token-gated access to updates, goals, and exclusive perks.",
+    TEXT: "Your Career Circle: a personal support network with token-gated access to updates and goals.",
     BUTTON: "Apply for a Token",
     MORE_COMING: "More coming",
   },
