@@ -1,4 +1,3 @@
-import { COPY } from "copy";
 import {
   ButtonContainer,
   ButtonIcon,
@@ -7,7 +6,6 @@ import {
 import { Props } from "./types";
 
 export const ReserveHandleButton = ({
-  callback,
   isMobile,
   isSafari,
   isAndroid,

@@ -58,13 +58,13 @@ export const COPY = {
         TITLE: "Perks",
         CONTENT_HEADER: "Connect with like-minded builders. ",
         CONTENT_DESCRIPTION:
-          "Start building the support network you need to succeed. Launch a token to let other people invest in your career or discover inspiring talent that you can support. Success is collective.",
+          "Create exclusive perks that can be claimed by anyone that owns your social token or NFT. Perks can be anything from IRL experiences to digital content. Your circle, your choice.",
       },
       {
         TITLE: "Career Circle",
         CONTENT_HEADER: "Offer Perks to your supporters.",
         CONTENT_DESCRIPTION:
-          "Create exclusive perks that can be claimed by anyone that owns your social token or NFT. Perks can be anything from IRL experiences to digital content. Your circle, your choice.",
+          "Start building the support network you need to succeed. Launch a token to let other people invest in your career or discover inspiring talent that you can support. Success is collective.",
       },
     ],
   },
