@@ -37,14 +37,14 @@ export const COPY = {
     TABS: [
       {
         TITLE: "About",
-        CONTENT_HEADER:
-          "You're more than a job title.",
+        CONTENT_HEADER: "You're more than a job title.",
         CONTENT_DESCRIPTION:
           "Reveal your true self and take control of your online image. Customize your profile as desired.",
       },
       {
         TITLE: "Goals",
-        CONTENT_HEADER: "Your future is more interesting than your past.",
+        CONTENT_HEADER:
+          "Your future is more interesting than your past.",
         CONTENT_DESCRIPTION:
           "Add goals to your journey and keep track of your progress. Ambition is as important as past work experiences and education.",
       },
@@ -69,7 +69,8 @@ export const COPY = {
     ],
   },
   DOOS_HERO: {
-    TITLE: "Helping the next generation of builders achieve success and fulfilment.",
+    TITLE:
+      "Helping the next generation of builders achieve success and fulfilment.",
     DOORS: [
       {
         LABEL_TEXT: "Step 1",
@@ -82,9 +83,9 @@ export const COPY = {
       {
         LABEL_TEXT: "Step 2",
         TITLE: "Share your goals.",
-        SUB_TITLE: "Commit to your goals publicly, and you’ll be closer to achieving them.",
+        SUB_TITLE:
+          "Commit to your goals publicly, and you’ll be closer to achieving them.",
         BUTTON: "Learn more",
-        URL: "https://beta.talentprotocol.com/join",
       },
       {
         LABEL_TEXT: "Step 3",
@@ -92,7 +93,6 @@ export const COPY = {
         SUB_TITLE:
           "Build your support network, truly vested in your career.",
         BUTTON: "Learn more",
-        URL: "https://beta.talentprotocol.com/join",
       },
     ],
     FOOTER: "",

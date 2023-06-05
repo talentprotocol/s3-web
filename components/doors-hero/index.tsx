@@ -31,7 +31,6 @@ export const DoorsSection = () => (
         title={COPY.DOOS_HERO.DOORS[1].TITLE}
         subTitle={COPY.DOOS_HERO.DOORS[1].SUB_TITLE}
         buttonText={COPY.DOOS_HERO.DOORS[1].BUTTON}
-        url={COPY.DOOS_HERO.DOORS[1].URL}
       />
       <Door
         labelType="default"
@@ -39,7 +38,6 @@ export const DoorsSection = () => (
         title={COPY.DOOS_HERO.DOORS[2].TITLE}
         subTitle={COPY.DOOS_HERO.DOORS[2].SUB_TITLE}
         buttonText={COPY.DOOS_HERO.DOORS[2].BUTTON}
-        url={COPY.DOOS_HERO.DOORS[2].URL}
       />
     </DoorsRow>
     <FooterRow>

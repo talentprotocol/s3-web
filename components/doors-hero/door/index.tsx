@@ -29,14 +29,16 @@ export const Door = ({
       <DescriptionContainer>
         <Typography type="body2" text={subTitle} color={textColor} />
       </DescriptionContainer>
-      <DoorFooter>
-        <DoorButton
-          onClick={() => window.open(url, "_blank")}
-          isHighlighted={isHighlighted}
-        >
-          {buttonText}
-        </DoorButton>
-      </DoorFooter>
+      {url && (
+        <DoorFooter>
+          <DoorButton
+            onClick={() => window.open(url, "_blank")}
+            isHighlighted={isHighlighted}
+          >
+            {buttonText}
+          </DoorButton>
+        </DoorFooter>
+      )}
     </Container>
   );
 };
