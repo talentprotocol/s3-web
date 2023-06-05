@@ -38,21 +38,21 @@ export const COPY = {
       {
         TITLE: "About",
         CONTENT_HEADER:
-          "You're more than a job title or a Twitter bio.",
+          "You're more than a job title.",
         CONTENT_DESCRIPTION:
-          "Reveal your true self and passions. Gain control over your online image. Customize your profile as desired. No rigid templates.",
+          "Reveal your true self and take control of your online image. Customize your profile as desired.",
       },
       {
-        TITLE: "Journey",
-        CONTENT_HEADER: "More than a list of past work and schools.",
+        TITLE: "Goals",
+        CONTENT_HEADER: "Your future is more interesting than your past.",
         CONTENT_DESCRIPTION:
-          "Add future goals to your career journey. Drive is as important as experience. Add images and videos to prove what you’re capable of. What you did says more than where you did it. Tag collaborators who contributed to your success. Work is collaborative.",
+          "Add goals to your journey and keep track of your progress. Ambition is as important as past work experiences and education.",
       },
       {
-        TITLE: "Credentials",
-        CONTENT_HEADER: "Show your on-chain credentials.",
+        TITLE: "Updates",
+        CONTENT_HEADER: "Make yourself accountable.",
         CONTENT_DESCRIPTION:
-          "A digital resume that combines on-chain and off-chain data. From formal, super curated resumes to more authentic and verifiable expressions of uniqueness. Made for web3 builders and designed for the future of work.",
+          "Maintaining accountability by sharing regular career updates with your circle of supporters.",
       },
       // {
       //   TITLE: "Perks",
@@ -61,65 +61,65 @@ export const COPY = {
       //     "Create exclusive perks that can be claimed by anyone that owns your social token or NFT. Perks can be anything from IRL experiences to digital content. Your circle, your choice.",
       // },
       {
-        TITLE: "Career Circle",
+        TITLE: "Connections",
         CONTENT_HEADER: "Connect with like-minded builders. ",
         CONTENT_DESCRIPTION:
-          "Start building the support network you need to succeed. Launch a token to let other people invest in your career or discover inspiring talent that you can support. Success is collective.",
+          "Build the support network you need to succeed. Let other people stake on you or sponsor your goals.",
       },
     ],
   },
   DOOS_HERO: {
-    TITLE: "Your key to open the doors to web3.",
+    TITLE: "Helping the next generation of builders achieve success and fulfilment.",
     DOORS: [
       {
-        LABEL_TEXT: "Beginner",
+        LABEL_TEXT: "Step 1",
         TITLE: "Create your profile.",
         SUB_TITLE:
-          "Unlock access to scholarships and a supportive community.",
+          "Unlock access to a supportive community of builders.",
         BUTTON: "Get started",
         URL: "https://beta.talentprotocol.com/join",
       },
       {
-        LABEL_TEXT: "Intermediate",
-        TITLE: "Reserve your username.",
-        SUB_TITLE: "Own your profile and career data as an NFT.",
+        LABEL_TEXT: "Step 2",
+        TITLE: "Share your goals.",
+        SUB_TITLE: "Commit to your goals publicly, and you’ll be closer to achieving them.",
         BUTTON: "Learn more",
-        URL: "https://talentprotocol.com/username",
+        URL: "https://beta.talentprotocol.com/join",
       },
       {
-        LABEL_TEXT: "Advanced",
-        TITLE: "Launch your token.",
+        LABEL_TEXT: "Step 3",
+        TITLE: "Connect with peers.",
         SUB_TITLE:
-          "Build an on-chain community, truly vested in your career.",
+          "Build your support network, truly vested in your career.",
         BUTTON: "Learn more",
         URL: "https://beta.talentprotocol.com/join",
       },
     ],
-    FOOTER: "See all benefits",
+    FOOTER: "",
   },
   PROFILE_HERO: {
     TAG: "Ownership",
     TITLE: "Own your profile,\ncontrol your future.",
-    TEXT: "Claim ownership of your profile. Your career data and your social graph, stored as an NFT. You decide where and how to use it. You’re in control.",
+    TEXT: "Claim ownership of your profile, your career data and your social graph. You’re the one in control",
     BUTTON: "Create your profile",
   },
   CAREER_CIRCLE_SECTION: {
     TAG: " Community",
-    TITLE: "Start a career circle, your token-gated community.",
-    TEXT: "Your Career Circle: a personal support network with token-gated access to updates and goals.",
-    BUTTON: "Apply for a Token",
+    TITLE: "Build your support network.",
+    TEXT: "Create your personal circle of supporters with privileged access to your career updates.",
+    BUTTON: "Get started",
     MORE_COMING: "More coming",
   },
   OPPORTUNITY_SECTION: {
     TAG: "Opportunities",
-    TITLE: "There's a Web3\nopportunity waiting\nfor you.",
-    TEXT: "Discover fresh web3 opportunities. Collaborate on thrilling projects, find co-founders, and partner on side ventures.",
+    TITLE: "Opportunities\nwaiting for\nyou.",
+    TEXT: "Discover fresh web3 opportunities and collaborate on exciting projects.",
     BUTTON: "Discover opportunities",
   },
   TALENT_HOUSE_SECTION: {
     TAG: "Scholarships",
     TITLE: "Talent House. Home to the next web3 builders.",
-    TEXT: "Win a scholarship to attend your first web3 hackathon and hang out with the most talented innovators in the space.",
+    TEXT: " Win a scholarship to attend your first hackathon and hang out with other talented builders.",
     BUTTONS: ["Apply to next edition", "See past editions"],
   },
   TRUST_SECTION: {
@@ -144,8 +144,8 @@ export const COPY = {
     TITLE: "Partners that believe in us.",
   },
   TAKE_THE_LEAP_BANNER: {
-    TITLE_BLACK1: "Take the",
-    TITLE_PURPLE1: "leap into web3.",
+    TITLE_BLACK1: "Join the community",
+    TITLE_PURPLE1: "stay updated by subscribing to our newsletter.",
     SUBTITLE: "Subscribe to our newsletter to get community updates.",
     INPUT_PLACEHOLDER: "What's your email?",
     SLIDER: "Reserve your username",
