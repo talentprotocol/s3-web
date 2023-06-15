@@ -86,7 +86,7 @@ const Home: NextPage<Props> = (props) => {
           <TrustSection isMobile={props.isMobile} />
         </HeroSection>
         <PartnersBanner isMobile={props.isMobile} />
-        <TakeTheLeapBanner />
+        {/* <TakeTheLeapBanner /> */}
         <OpenSourceBanner />
       </main>
       <Footer isMobile={props.isMobile} />
