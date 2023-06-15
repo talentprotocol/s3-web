@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { COPY } from "copy";
-import ownershipImage from "./assets/ownership.png";
+import ownershipImage from "./assets/ownership.svg";
 import { Button, LabelTag, Typography } from "shared-ui";
 import {
   ActionArea,

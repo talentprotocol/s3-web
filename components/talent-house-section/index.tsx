@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { COPY } from "copy";
 import { Button, LabelTag, Typography } from "shared-ui";
-import scholarshipImage from "./assets/scholarship.png";
+import talentBrunchImage from "./assets/talent-brunch.png";
 import {
   ActionArea,
   ButtonIcon,
@@ -16,7 +16,7 @@ export const TalentHouseSection = () => (
   <Container>
     <InnerContainer>
       <ImageHolder>
-        <Image priority src={scholarshipImage} alt="scholarship" />
+        <Image priority src={talentBrunchImage} alt="scholarship" />
       </ImageHolder>
       <ContentArea>
         <LabelTag

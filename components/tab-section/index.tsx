@@ -4,7 +4,7 @@ import { Typography } from "shared-ui";
 import { COPY } from "copy";
 import aboutImage from "./assets/about.png";
 import careerCircleImage from "./assets/career-circle.png";
-import credentialsImage from "./assets/credentials.png";
+import updatesImage from "./assets/updates.png";
 import journyImage from "./assets/journey.png";
 // import perksImage from "./assets/perks.png";
 import {
@@ -21,7 +21,7 @@ import {
 const images = [
   aboutImage,
   journyImage,
-  credentialsImage,
+  updatesImage,
   // perksImage,
   careerCircleImage,
 ];

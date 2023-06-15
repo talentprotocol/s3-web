@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { COPY } from "copy";
 import { Button, LabelTag, Typography } from "shared-ui";
-import opportunitiesImage from "./assets/opportunities.png";
+import opportunitiesImage from "./assets/opportunities.svg";
 import {
   ActionArea,
   ButtonIcon,
