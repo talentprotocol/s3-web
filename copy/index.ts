@@ -118,7 +118,7 @@ export const COPY = {
   },
   TALENT_HOUSE_SECTION: {
     TAG: "Scholarships",
-    TITLE: "Talent House. Home to the next web3 builders.",
+    TITLE: "Take Off. \nYour boarding pass to build the future.",
     TEXT: " Win a scholarship to attend your first hackathon and hang out with other talented builders.",
     BUTTONS: ["Apply to next edition", "See past editions"],
   },
